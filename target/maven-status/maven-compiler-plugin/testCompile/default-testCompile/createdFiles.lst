@@ -1,0 +1,7 @@
+TSAGOV\pages\TSAGOVMemberPage.class
+TSAGOV\pages\TSAGOVWhatCanIBringPage.class
+TSAGOV\steps\TSAGOVSteps.class
+serenity\CucumberTestSuite.class
+TSAGOV\glue\TSAGOVWhatCanIBringRegressionGlue.class
+TSAGOV\glue\TSAGOVBasePageGlue.class
+TSAGOV\pages\TSAGOVBasePage.class
