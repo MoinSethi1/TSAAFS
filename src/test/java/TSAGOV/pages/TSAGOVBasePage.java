@@ -1,13 +1,15 @@
 package TSAGOV.pages;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
-import net.thucydides.core.annotations.Managed;
+
 
 
 @DefaultUrl("/")
@@ -52,14 +54,31 @@ public class TSAGOVBasePage extends PageObject {
 		return this.switchToPage(TSAGOVMemberPage.class);
 	}
 	
-	public void navigateToWhatCanIBring() throws InterruptedException{
+	
+	public TSAGOVWhatCanIBringPage navigateToWhatCanIBring() throws InterruptedException {
 		whatCanIBringLink.click();
 		Thread.sleep(1000);
-		//return this.switchToPage(TSAGOVWhatCanIBringPage.class);
-		
-	}
-
+		return this.switchToPage(TSAGOVWhatCanIBringPage.class);
 	
 	}
+	
+	public WebElementFacade expectedText() {
+		return (memberText);
+	}
+	public String actualUrl() {
+
+		WebDriver driver = getDriver();
+		return (driver.getCurrentUrl());
+		
+	}
+	
+		
+	public void waitForPageload() throws InterruptedException {
+		
+		getDriver().manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
+	}
+
+}
+	
 	
 

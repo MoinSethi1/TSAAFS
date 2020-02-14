@@ -5,7 +5,7 @@ Feature: What can I Bring? section regression test
   Scenario: As user I want to access all pages on What Can I Bring? section
     Given user logged into TSA.gov application
     When user access What Can I Bring? page
-    Then user is directed to correct page
+    Then user is directed to What Can I Bring page
     And all pages on this section are accessible
 
   
