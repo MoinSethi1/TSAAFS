@@ -1,3 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"login into TSA.gov","As user I want to login to the TSA.gov application","SUCCESS","2020-02-11T12:40:55.551-05:00[America/New_York]","0.0","13.51"
-"What can I Bring? section regression test","As user I want to access all pages on What Can I Bring? section","SUCCESS","2020-02-11T12:41:09.727-05:00[America/New_York]","0.0","17.23"
+"login into TSA.gov","As user I want to login to the TSA.gov application","SUCCESS","2020-02-14T12:17:03.477-05:00[America/New_York]","0.0","25.97"
