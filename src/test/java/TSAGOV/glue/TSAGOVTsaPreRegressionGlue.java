@@ -28,8 +28,10 @@ public class TSAGOVTsaPreRegressionGlue {
 
 	@When("^user access TSAPre page$")
 	public void user_access_TSAPre_page() {
-	   user.navigateToTSATravel(); 
+	   user.navigateToTSATravel();
+	   user.navigateToTSAPre();
 	}
+	
 
 
 	@Then("^user is directed to TSAPre page$")

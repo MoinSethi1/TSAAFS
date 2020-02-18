@@ -33,7 +33,7 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy (xpath = "//button[@class='usa-accordion__button usa-nav__link']//span[text()='Travel']")
 	private WebElementFacade travelMenu;
 	
-	@FindBy (xpath ="//*[@href='/travel\']")
+	@FindBy (xpath ="//a[@href='/travel\']")
 	private WebElementFacade travelLink;	
 	
 	public void navigateToTSAGOV() {
