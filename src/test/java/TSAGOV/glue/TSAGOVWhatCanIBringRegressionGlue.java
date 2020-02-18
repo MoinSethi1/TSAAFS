@@ -20,9 +20,9 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 	@Steps 
 	TSAGOVSteps user;
 	
-
-	@Given("^user logged into TSA\\.gov application$")
-	public void user_logged_into_TSA_gov_application() throws InterruptedException {
+	
+	@Given("^user wants to access all pages on What Can I Bring? section$")
+	public void user_wants_to_access_all_pages_on_WhatCanIBring_section() throws InterruptedException {
 		user.navigateToTSAGOV();
 		user.enterUsername("moinpreet.sethi@associates.tsa.dhs.gov");
 		user.enterPassword("password1");
@@ -47,8 +47,8 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 		   
 	}
 
-	@Then("^all pages on this section are accessible$")
-	public void all_pages_on_this_section_are_accessible() {
+	@Then("^all sections on this page are accessible$")
+	public void all_sections_on_this_page_are_accessible() {
 	   user.navigateToAll();
 	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
 	   assertion.assertThat(user.verifyWhatCanIBringText()).isTrue();
@@ -85,9 +85,9 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 	   assertion.assertThat(user.verifySportingCampingText()).isTrue();
 	   
 	   user.navigateToMiscellaneous();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov//travel/security-screening/whatcanibring/miscellaneous");
-	   assertion.assertThat(user.verifyMiscellaneousText()).isTrue();
-	   System.out.println(assertion.assertThat(user.verifyMiscellaneousText()).isTrue());
+	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/miscellaneous");
+	   //assertion.assertThat(user.verifyMiscellaneousText()).isTrue();
+	   
 	   	   
 	  assertion.assertAll();
 	}

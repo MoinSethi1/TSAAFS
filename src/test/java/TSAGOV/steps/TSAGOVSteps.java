@@ -3,6 +3,8 @@ package TSAGOV.steps;
 import java.util.concurrent.TimeUnit;
 import TSAGOV.pages.TSAGOVBasePage;
 import TSAGOV.pages.TSAGOVMemberPage;
+import TSAGOV.pages.TSAGOVTSAPrePage;
+import TSAGOV.pages.TSAGOVTravelPage;
 import TSAGOV.pages.TSAGOVWharCanIBringHouseholdToolsPage;
 import TSAGOV.pages.TSAGOVWhatCanIBringAllItemsPage;
 import TSAGOV.pages.TSAGOVWhatCanIBringFirearmsPage;
@@ -20,7 +22,10 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class TSAGOVSteps extends ScenarioSteps {
 
 	TSAGOVBasePage tSAGOVBasePage;
-	TSAGOV.pages.TSAGOVWhatCanIBringPage TSAGOVWhatCanIBringPage;
+	
+	//TSAGOV.pages.
+	TSAGOVWhatCanIBringPage tSAGOVWhatCanIBringPage;
+	TSAGOVTravelPage tSAGOVTravelPage;
 	
 	/***********************************************
 	 * Steps for TSAGOVBasePage
@@ -60,6 +65,14 @@ public TSAGOVMemberPage login() throws InterruptedException {
 }
 
 @Step
+public TSAGOVTravelPage navigateToTSATravel() {
+	
+	return tSAGOVBasePage.navigateToTSATravel();
+			
+	
+}
+
+@Step
 public boolean verifyExpectedText(WebElementFacade expectedText) {
 	return expectedText.isPresent();
 }
@@ -87,117 +100,126 @@ public void waitForPageload() throws InterruptedException {
 
 @Step
 public boolean verifyWhatCanIBringText() {
-	return TSAGOVWhatCanIBringPage.verifyWhatCanIBringText();
+	return tSAGOVWhatCanIBringPage.verifyWhatCanIBringText();
 
 }
 
 @Step
 public TSAGOVWhatCanIBringAllItemsPage navigateToAll() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToAll();
+	return tSAGOVWhatCanIBringPage.navigateToAll();
 	
 }
 
 @Step
 public TSAGovWhatCanIBringFlammablesPage navigateToFlammables() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToFlammables();
+	return tSAGOVWhatCanIBringPage.navigateToFlammables();
 	
 }
 
 @Step
 public boolean verifyFlammablesText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyFlammablesText();
+	return tSAGOVWhatCanIBringPage.verifyFlammablesText();
 }
 
 @Step
 public TSAGOVWhatCanIBringFirearmsPage navigateToFirearms() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToFirearms();
+	return tSAGOVWhatCanIBringPage.navigateToFirearms();
 		
 }
 
 @Step
 public boolean verifyFirearmsText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyFirearmsText();
+	return tSAGOVWhatCanIBringPage.verifyFirearmsText();
 }
 
 @Step
 public TSAGOVWhatCanIBringFoodPage navigateToFood() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToFood();
+	return tSAGOVWhatCanIBringPage.navigateToFood();
 }
 
 @Step
 public boolean verifyFoodText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyFoodText();
+	return tSAGOVWhatCanIBringPage.verifyFoodText();
 }
 	
 @Step
 public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToHouseholdTools();
+	return tSAGOVWhatCanIBringPage.navigateToHouseholdTools();
 		
 }
 
 @Step
 public boolean verifyHouseholdAndToolsText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyHouseholdAndToolsText();
+	return tSAGOVWhatCanIBringPage.verifyHouseholdAndToolsText();
 }
 
 @Step
 public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToMedical();
+	return tSAGOVWhatCanIBringPage.navigateToMedical();
 }
 
 @Step
 public boolean verifyMedicalText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyMedicalText();
+	return tSAGOVWhatCanIBringPage.verifyMedicalText();
 }
 
 @Step
 public TSAGOVWhatCanIBringSharpObjectsPage navigateToSharpObjects() {
 
-return TSAGOVWhatCanIBringPage.navigateToSharpObjects();
+return tSAGOVWhatCanIBringPage.navigateToSharpObjects();
 }
 
 
 @Step
 public boolean verifySharpObjectsText() {
 	
-	return TSAGOVWhatCanIBringPage.verifySharpObjectsText();
+	return tSAGOVWhatCanIBringPage.verifySharpObjectsText();
 }
 @Step
 public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToSportingCamping();
+	return tSAGOVWhatCanIBringPage.navigateToSportingCamping();
 			
 }
 
 @Step
 public boolean verifySportingCampingText() {
 	
-	return TSAGOVWhatCanIBringPage.verifySportingCampingText();
+	return tSAGOVWhatCanIBringPage.verifySportingCampingText();
 }
 	
 @Step
 public TSAGOVWhatCanIBringMiscellaneousPage navigateToMiscellaneous() {
 	
-	return TSAGOVWhatCanIBringPage.navigateToMiscellaneous();
+	return tSAGOVWhatCanIBringPage.navigateToMiscellaneous();
 	
 }
 
 @Step
 public boolean verifyMiscellaneousText() {
 	
-	return TSAGOVWhatCanIBringPage.verifyMiscellaneousText();
+	return tSAGOVWhatCanIBringPage.verifyMiscellaneousText();
 }
 
 
+/***********************************************
+ * Steps for TSAGOVTravelPage
+ ***********************************************/
+@Step
+
+public TSAGOVTSAPrePage navigateToTSAPre() {
+
+	return tSAGOVTravelPage.navigateToTSAPre();
+	}
 }

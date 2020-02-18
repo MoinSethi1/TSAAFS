@@ -30,6 +30,12 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy (xpath = "//a[@href ='/traveler-information/traveling-food-or-gifts\']")
 	private WebElementFacade whatCanIBringLink;
 	
+	@FindBy (xpath = "//button[@class='usa-accordion__button usa-nav__link']//span[text()='Travel']")
+	private WebElementFacade travelMenu;
+	
+	@FindBy (xpath ="//*[@href='/travel\']")
+	private WebElementFacade travelLink;	
+	
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
 	}
@@ -59,12 +65,23 @@ public class TSAGOVBasePage extends PageObject {
 		whatCanIBringLink.click();
 		Thread.sleep(1000);
 		return this.switchToPage(TSAGOVWhatCanIBringPage.class);
-	
+		
+			
 	}
 	
+	public TSAGOVTravelPage navigateToTSATravel() {
+		travelMenu.click();
+		travelLink.click();
+				
+		return this.switchToPage(TSAGOVTravelPage.class);
+	}
+	
+	
+
 	public WebElementFacade expectedText() {
 		return (memberText);
 	}
+	
 	public String actualUrl() {
 
 		WebDriver driver = getDriver();

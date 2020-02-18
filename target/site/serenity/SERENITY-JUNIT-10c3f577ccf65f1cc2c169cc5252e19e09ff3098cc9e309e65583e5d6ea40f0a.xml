@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="TSAPre section regression test" skipped="0" tests="1" time="0.27" timestamp="2020-02-18 02:25:18"><testcase name="As user I want to access all pages on TSAPre section"><error type="java.lang.StackOverflowError"/><system-err>null&#13;
+✽.user wants to access all pages on TSAPre section(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:6)&#13;
+</system-err></testcase></testsuite>
