@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"login into TSA.gov","As user I want to login to the TSA.gov application","SUCCESS","2020-02-18T14:49:35.598-05:00[America/New_York]","0.0","10.61"
-"TSAPre section regression test","As user I want to access all pages on TSAPre section","ERROR","2020-02-18T14:49:46.877-05:00[America/New_York]","0.0","10.76"
-"What can I Bring? section regression test","As user I want to access all pages on What Can I Bring? section","PENDING","2020-02-18T14:49:58.374-05:00[America/New_York]","0.0","0.01"
+"TSAPre section regression test","As user I want to access all pages on TSAPre section","SUCCESS","2020-02-19T13:54:30.81-05:00[America/New_York]","0.0","45.91"

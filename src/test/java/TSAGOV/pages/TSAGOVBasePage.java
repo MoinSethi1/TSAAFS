@@ -27,13 +27,14 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy(id="edit-submit")
 	private WebElementFacade loginBtn;
 	
-	@FindBy (xpath = "//a[@href ='/traveler-information/traveling-food-or-gifts\']")
+	@FindBy (xpath = "//a[@href ='/travel/security-screening/whatcanibring/all']")
 	private WebElementFacade whatCanIBringLink;
 	
-	@FindBy (xpath = "//button[@class='usa-accordion__button usa-nav__link']//span[text()='Travel']")
+	@FindBy (xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[1]/button/span")
 	private WebElementFacade travelMenu;
 	
-	@FindBy (xpath ="//a[@href='/travel\']")
+	@FindBy (xpath ="//*[@id=\"basic-nav-section-1\"]/a[1]/li/span")
+	
 	private WebElementFacade travelLink;	
 	
 	public void navigateToTSAGOV() {
@@ -70,8 +71,9 @@ public class TSAGOVBasePage extends PageObject {
 	}
 	
 	public TSAGOVTravelPage navigateToTSATravel() {
-		travelMenu.click();
-		travelLink.click();
+		
+		travelMenu.waitUntilClickable().click();
+		travelLink.waitUntilClickable().click();
 				
 		return this.switchToPage(TSAGOVTravelPage.class);
 	}

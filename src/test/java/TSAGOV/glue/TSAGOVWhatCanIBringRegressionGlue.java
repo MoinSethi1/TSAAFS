@@ -21,7 +21,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 	TSAGOVSteps user;
 	
 	
-	@Given("^user wants to access all pages on What Can I Bring? section$")
+	@Given("^user wants to access all pages on What Can I Bring section$")
 	public void user_wants_to_access_all_pages_on_WhatCanIBring_section() throws InterruptedException {
 		user.navigateToTSAGOV();
 		user.enterUsername("moinpreet.sethi@associates.tsa.dhs.gov");
@@ -40,7 +40,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 
 	@Then("^user is directed to What Can I Bring page$")
 	public void user_is_directed_to_correct_page() throws InterruptedException {
-		assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/traveler-information/traveling-food-or-gifts");
+		assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
 		assertion.assertThat(user.verifyWhatCanIBringText()).isTrue();
 		assertion.assertAll();
 		

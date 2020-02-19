@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="TSAPre section regression test" skipped="0" tests="1" time="10.76" timestamp="2020-02-18 02:49:46"><testcase name="As user I want to access all pages on TSAPre section"><error message="Timed out after 2 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 2 seconds. Element not available
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not available
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown&#13;
-TSAGOV.pages.TSAGOVBasePage.navigateToTSATravel(TSAGOVBasePage.java:73)&#13;
-TSAGOV.steps.TSAGOVSteps.navigateToTSATravel(TSAGOVSteps.java:70)&#13;
-TSAGOV.glue.TSAGOVTsaPreRegressionGlue.user_access_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:31)&#13;
-✽.user access TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="TSAPre section regression test" skipped="0" tests="1" time="45.91" timestamp="2020-02-19 01:54:30"><testcase name="As user I want to access all pages on TSAPre section"/></testsuite>
