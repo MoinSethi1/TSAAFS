@@ -47,7 +47,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 		   
 	}
 
-	@Then("^all sections on this page are accessible$")
+	@Then("^all pages on What can I bring section are accessible$")
 	public void all_sections_on_this_page_are_accessible() {
 	   user.navigateToAll();
 	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
