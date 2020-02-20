@@ -40,7 +40,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 
 	@Then("^user is directed to What Can I Bring page$")
 	public void user_is_directed_to_correct_page() throws InterruptedException {
-		assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+		assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/traveler-information/traveling-food-or-gifts");
 		assertion.assertThat(user.verifyWhatCanIBringText()).isTrue();
 		assertion.assertAll();
 		

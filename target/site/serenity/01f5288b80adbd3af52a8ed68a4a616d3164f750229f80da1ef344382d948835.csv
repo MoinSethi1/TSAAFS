@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"TSAPre section regression test","As user I want to access all pages on TSAPre section","SUCCESS","2020-02-19T13:54:30.81-05:00[America/New_York]","0.0","45.91"
+"login into TSA.gov","As user I want to login to the TSA.gov application","SUCCESS","2020-02-20T07:50:41.762-05:00[America/New_York]","0.0","13.91"
+"TSAPre section regression test","As user I want to access all pages on TSAPre section","SUCCESS","2020-02-20T07:50:56.358-05:00[America/New_York]","0.0","59.92"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="What can I Bring? section regression test" skipped="0" tests="1" time="17.15" timestamp="2020-02-20 07:51:56"><testcase name="As user I want to access all pages on What Can I Bring? section"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown&#13;
+TSAGOV.pages.TSAGOVBasePage.navigateToWhatCanIBring(TSAGOVBasePage.java:66)&#13;
+TSAGOV.steps.TSAGOVSteps.navigateToWhatCanIBring(TSAGOVSteps.java:83)&#13;
+TSAGOV.glue.TSAGOVWhatCanIBringRegressionGlue.user_access_What_Can_I_Bring_page(TSAGOVWhatCanIBringRegressionGlue.java:37)&#13;
+✽.user access What Can I Bring? page(src/test/resources/TSAGOVFeatures/TSAGOVWhatCanIBringRegression.feature:7)&#13;
+</system-err></testcase></testsuite>

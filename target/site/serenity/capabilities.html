@@ -167,7 +167,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-02-2020 13:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-02-2020 07:50</span>
     <br style="clear:left"/>
 </div>
 
@@ -218,10 +218,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = ['67%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '33%', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -262,8 +262,8 @@
                                                                         <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html"><i
                                                                                 class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">67%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -287,19 +287,19 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                             <td colspan="3"><a href="b964a040ccee2192880812cc5de2c4d0075e3288c1b298b7dda0839367bb26be.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
 
                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
-                                                                </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">33%</td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -317,7 +317,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">3</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -339,11 +339,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>45s</td>
-                                                        <td>45ms</td>
-                                                        <td>45s</td>
-                                                        <td>45s</td>
-                                                        <td>45s</td>
+                                                        <td> 1m 30s</td>
+                                                        <td> 1m 15s</td>
+                                                        <td>13s</td>
+                                                        <td>59s</td>
+                                                        <td>30s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -369,17 +369,47 @@
                                                 <tbody>
                                                 <tr class="scenario-result SUCCESS">
                                                     <td>
+                                                            <a href="b5ae313bd87667f757cf44d9a6164721da85d685230bfdd4f2405199c0608179.html">login into TSA.gov</a>
+                                                    </td>
+                                                    <td>
+                                                            <a href="a566e239f829e6d9a1315e02ab8886b80dd46978444ee3bc9252f8a8b06cca61.html">As user I want to login to the TSA.gov application</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>07:50:41</td>
+                                                    <td>00:13</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
                                                             <a href="d338b167cdc23ebfdac8048a5b76a034c79fdd8ba6cc78a321a3ecebcc107c2f.html">TSAPre section regression test</a>
                                                     </td>
                                                     <td>
                                                             <a href="10c3f577ccf65f1cc2c169cc5252e19e09ff3098cc9e309e65583e5d6ea40f0a.html">As user I want to access all pages on TSAPre section</a>
                                                     </td>
                                                     <td>4</td>
-                                                    <td>13:54:30</td>
-                                                    <td>00:45</td>
+                                                    <td>07:50:56</td>
+                                                    <td>00:59</td>
                                                     <td>
                                                             <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
                                                                 style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result FAILURE">
+                                                    <td>
+                                                            <a href="8737f67cb1839f25d3dbb7ec118f3627f4caee83dba04d501d68598ba6e4b27b.html">What can I Bring? section regression test</a>
+                                                    </td>
+                                                    <td>
+                                                            <a href="ee266d7b9c7bc1fc52433dd8ef7984e248dddb61e23443b347f24acba5e43242.html">As user I want to access all pages on What Can I Bring? section</a>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>07:51:56</td>
+                                                    <td>00:17</td>
+                                                    <td>
+                                                            <i class='fa fa-times-circle failure-icon ' title='FAILURE'></i> <span
+                                                                style="display:none">FAILURE</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>
