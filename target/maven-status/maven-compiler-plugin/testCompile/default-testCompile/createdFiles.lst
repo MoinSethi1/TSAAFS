@@ -1,6 +1,7 @@
 TSAGOV\pages\TSAGOVWhatCanIBringSportingCampingPage.class
 TSAGOV\pages\TSAGOVMemberPage.class
 serenity\CucumberTestSuite.class
+TSAGOV\glue\TSAGOVSpecialProceduresRegressionGlue.class
 TSAGOV\glue\TSAGOVWhatCanIBringRegressionGlue.class
 TSAGOV\pages\TSAGOVTSAPrePage.class
 TSAGOV\glue\TSAGOVBasePageGlue.class
@@ -12,10 +13,13 @@ TSAGOV\pages\TSAGOVTravelPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringMiscellaneousPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringFoodPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringAllItemsPage.class
+TSAGOV\pages\TSAGOVMilitaryPage.class
 TSAGOV\pages\TSAGovWhatCanIBringFlammablesPage.class
+TSAGOV\pages\TSAGOVDisabilitiesAndMedicalPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringPage.class
 TSAGOV\pages\TSAGOVWharCanIBringHouseholdToolsPage.class
 TSAGOV\pages\TSAGOVTrustedTravelerProgramPage.class
+TSAGOV\pages\TSAGOVSpecialProceduresPage.class
 TSAGOV\pages\TSAGOVSchedulePage.class
 TSAGOV\glue\TSAGOVTsaPreRegressionGlue.class
 TSAGOV\pages\TSAGOVWhatCanIBringMedicalPage.class

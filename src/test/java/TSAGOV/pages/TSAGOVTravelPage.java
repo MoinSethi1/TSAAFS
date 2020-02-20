@@ -15,7 +15,11 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	private WebElementFacade tsaPreLink;
 	
 	@FindBy (xpath ="//*[@id=\"block-mainpagecontent\"]/div/div[2]/div/div/div/div/p[1]/a/img")
-	private WebElementFacade tsaPreEnrolImage;
+	private WebElementFacade travelImage;
+	
+	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[2]/div/a")
+	private WebElementFacade specialProcedureLink;
+	
 	
 	public TSAGOVTSAPrePage navigateToTSAPre() {
 		tsaPreLink.click();
@@ -23,7 +27,11 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	}
 	
 	public boolean verifyTravelImage() {
-		return tsaPreEnrolImage.isPresent();
+		return travelImage.isPresent();
 	}
 	
+	public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
+		specialProcedureLink.click();
+		return this.switchToPage(TSAGOVSpecialProceduresPage.class);
+	}
 }

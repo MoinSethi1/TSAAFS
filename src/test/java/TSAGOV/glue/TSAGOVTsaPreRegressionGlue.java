@@ -30,6 +30,11 @@ public class TSAGOVTsaPreRegressionGlue {
 		user.enterPassword("password1");
 		user.login();
 		
+		user.navigateToTSATravel();	   
+		  
+		   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel");
+		   assert(user.verifyTravelImage());
+		
 	    
 	}
 	    
@@ -38,11 +43,7 @@ public class TSAGOVTsaPreRegressionGlue {
 	@When("^user access TSAPre page$")
 	public void user_access_TSAPre_page() {
 		
-	   user.navigateToTSATravel();	   
-		   
-	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel");
-	   assert(user.verifyTravelImage());
-	   
+	   	   
 		user.navigateToTSAPre();   
 	   
 	}

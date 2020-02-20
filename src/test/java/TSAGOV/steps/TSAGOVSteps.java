@@ -4,9 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import TSAGOV.pages.TSAGOVAirportAirlinesPage;
 import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.TSAGOVDisabilitiesAndMedicalPage;
 import TSAGOV.pages.TSAGOVFAQPage;
 import TSAGOV.pages.TSAGOVMemberPage;
 import TSAGOV.pages.TSAGOVSchedulePage;
+import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
 
 import TSAGOV.pages.TSAGOVTravelPage;
@@ -45,6 +47,8 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVSchedulePage tSAGOVSchedulePage;
 	TSAGOVFAQPage tSAGOVFAQPage;
 	TSAGOVTrustedTravelerProgramPage tSAGOVTrustedTravelerProgramPage;
+	TSAGOVSpecialProceduresPage tSAGOVSpecialProceduresPage;
+	TSAGOVDisabilitiesAndMedicalPage tSAGOVDisabilitiesAndMedicalPage;
 	
 	/***********************************************
 	 * Steps for TSAGOVBasePage
@@ -292,6 +296,11 @@ public boolean verifyTravelImage() {
 	return tSAGOVTravelPage.verifyTravelImage();
 }
 
+@Step
+public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
+	
+	return tSAGOVTravelPage.navigateToSpecialProcedures();
+}
 
 /***********************************************
  * Steps for TSAGOVTSAPrePage
@@ -369,5 +378,28 @@ public boolean verifyTrustedTravelerText() {
 	return tSAGOVTrustedTravelerProgramPage.verifyTrustedTravelerText();
 }
 
+/***********************************************
+ * Steps for TSAGOVTSpecialProcedurePage
+ ***********************************************/
+
+public boolean verifySpecialProcedureText() {
+	return tSAGOVSpecialProceduresPage.verifySpecialProcedureText();
+	
+}
+
+@Step
+public TSAGOVDisabilitiesAndMedicalPage navigateToDisabilitiesAndMedical() {
+	
+	return tSAGOVSpecialProceduresPage.navigateToDisabilitiesAndMedical();
+}
+
+/***********************************************
+ * Steps for TSAGOVTDisabilitiesAndMediaclPage
+ ***********************************************/
+@Step
+public boolean verifyDisabilitiesAndMedcalText() {
+	return tSAGOVDisabilitiesAndMedicalPage.verifyDisabilitiesAndMedcalText();
+	
+}
 
 }
