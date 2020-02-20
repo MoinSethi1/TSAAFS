@@ -20,50 +20,37 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVBasePage{
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/flammables']")
 	private WebElementFacade flammablesLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Flammables')]")
-	private WebElementFacade flammablesText;
-	
+		
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/firearms']")
 	private WebElementFacade firearmsLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Firearms')]")
-	private WebElementFacade firearmsText;
-	
+		
 	@FindBy (xpath = "//a[@href ='/travel/security-screening/whatcanibring/food']")
 	private WebElementFacade foodLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Food')]")
-	private WebElementFacade foodText;
-	
+		
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/household-and-tools']")
 	private WebElementFacade householdToolsLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Household and tools')]")
-	private WebElementFacade householdAndToolsText;
 	
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/medical']")
 	private WebElementFacade medicalLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Medical)]")
-	private WebElementFacade medicalText;
+	
 	
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/sharp-objects']")
 	private WebElementFacade sharpObjectsLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Sharp objects')]")
-	private WebElementFacade sharpObjectsText;
+	
 	
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/sporting-and-camping']")
 	private WebElementFacade sportingCampingLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Sporting and camping')]")
-	private WebElementFacade sportingAndCampingText;
+	
 	
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/miscellaneous']")
 	private WebElementFacade miscellaneousLink;
 	
-	@FindBy (xpath = "//*[contains(text(),'Miscellaneous')]")
-	private WebElementFacade miscellaneousText;
 	
 	
 	public boolean verifyWhatCanIBringText() {
@@ -91,10 +78,7 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVBasePage{
 		
 	}
 	
-public boolean verifyFlammablesText() {
-		
-		return flammablesText.isPresent();
-	}
+
 	
 	public TSAGOVWhatCanIBringFirearmsPage navigateToFirearms() {
 		firearmsLink.waitUntilClickable().click();
@@ -102,20 +86,14 @@ public boolean verifyFlammablesText() {
 			
 	}
 	
-public boolean verifyFirearmsText() {
-		
-		return firearmsText.isPresent();
-	}
+
 	
 	public TSAGOVWhatCanIBringFoodPage navigateToFood() {
 		foodLink.waitUntilClickable().click();
 		return this.switchToPage(TSAGOVWhatCanIBringFoodPage.class);
 	}
 	
-public boolean verifyFoodText() {
-		
-		return foodText.isPresent();
-	}
+
 		
 	public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
 		householdToolsLink.waitUntilClickable().click();
@@ -123,10 +101,7 @@ public boolean verifyFoodText() {
 			
 	}
 	
-public boolean verifyHouseholdAndToolsText() {
-		
-		return householdAndToolsText.isPresent();
-	}
+
 	
 	public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
 		medicalLink.waitUntilClickable().click();
@@ -134,10 +109,7 @@ public boolean verifyHouseholdAndToolsText() {
 	}
 	
 	
-public boolean verifyMedicalText() {
-		
-		return medicalText.isPresent();
-	}
+
 
 	public TSAGOVWhatCanIBringSharpObjectsPage navigateToSharpObjects() {
 	sharpObjectsLink.waitUntilClickable().click();
@@ -145,10 +117,7 @@ public boolean verifyMedicalText() {
 	}
 	
 	
-public boolean verifySharpObjectsText() {
-		
-		return sharpObjectsText.isPresent();
-	}
+
 
 	public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
 		sportingCampingLink.waitUntilClickable().click();
@@ -156,10 +125,7 @@ public boolean verifySharpObjectsText() {
 				
 	}
 	
-public boolean verifySportingCampingText() {
-		
-		return sportingAndCampingText.isPresent();
-	}
+
 		
 	public TSAGOVWhatCanIBringMiscellaneousPage navigateToMiscellaneous() {
 		miscellaneousLink.waitUntilClickable().click();
@@ -168,9 +134,6 @@ public boolean verifySportingCampingText() {
 	}
 	
 	
-public boolean verifyMiscellaneousText() {
-		
-		return miscellaneousText.isPresent();
-	}
+
 	
 }

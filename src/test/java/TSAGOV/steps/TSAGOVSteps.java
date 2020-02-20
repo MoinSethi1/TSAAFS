@@ -31,6 +31,14 @@ public class TSAGOVSteps extends ScenarioSteps {
 	
 	//TSAGOV.pages.
 	TSAGOVWhatCanIBringPage tSAGOVWhatCanIBringPage;
+	TSAGovWhatCanIBringFlammablesPage tSAGovWhatCanIBringFlammablesPage;
+	TSAGOVWhatCanIBringMiscellaneousPage tSAGOVWhatCanIBringMiscellaneousPage;
+	TSAGOVWhatCanIBringFirearmsPage  tSAGOVWhatCanIBringFirearmsPage;
+	TSAGOVWhatCanIBringFoodPage tSAGOVWhatCanIBringFoodPage;
+	TSAGOVWharCanIBringHouseholdToolsPage tSAGOVWharCanIBringHouseholdToolsPage;
+	TSAGOVWhatCanIBringMedicalPage tSAGOVWhatCanIBringMedicalPage;
+	TSAGOVWhatCanIBringSharpObjectsPage tSAGOVWhatCanIBringSharpObjectsPage;
+	TSAGOVWhatCanIBringSportingCampingPage tSAGOVWhatCanIBringSportingCampingPage;
 	TSAGOVTravelPage tSAGOVTravelPage;
 	TSAGOVTSAPrePage tSAGovTsaPrePage;
 	TSAGOVAirportAirlinesPage tSAGovAirportsAirlinesPage;
@@ -130,22 +138,10 @@ public TSAGovWhatCanIBringFlammablesPage navigateToFlammables() {
 }
 
 @Step
-public boolean verifyFlammablesText() {
-	
-	return tSAGOVWhatCanIBringPage.verifyFlammablesText();
-}
-
-@Step
 public TSAGOVWhatCanIBringFirearmsPage navigateToFirearms() {
 	
 	return tSAGOVWhatCanIBringPage.navigateToFirearms();
 		
-}
-
-@Step
-public boolean verifyFirearmsText() {
-	
-	return tSAGOVWhatCanIBringPage.verifyFirearmsText();
 }
 
 @Step
@@ -154,11 +150,7 @@ public TSAGOVWhatCanIBringFoodPage navigateToFood() {
 	return tSAGOVWhatCanIBringPage.navigateToFood();
 }
 
-@Step
-public boolean verifyFoodText() {
-	
-	return tSAGOVWhatCanIBringPage.verifyFoodText();
-}
+
 	
 @Step
 public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
@@ -167,11 +159,6 @@ public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
 		
 }
 
-@Step
-public boolean verifyHouseholdAndToolsText() {
-	
-	return tSAGOVWhatCanIBringPage.verifyHouseholdAndToolsText();
-}
 
 @Step
 public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
@@ -179,11 +166,6 @@ public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
 	return tSAGOVWhatCanIBringPage.navigateToMedical();
 }
 
-@Step
-public boolean verifyMedicalText() {
-	
-	return tSAGOVWhatCanIBringPage.verifyMedicalText();
-}
 
 @Step
 public TSAGOVWhatCanIBringSharpObjectsPage navigateToSharpObjects() {
@@ -193,11 +175,6 @@ return tSAGOVWhatCanIBringPage.navigateToSharpObjects();
 
 
 @Step
-public boolean verifySharpObjectsText() {
-	
-	return tSAGOVWhatCanIBringPage.verifySharpObjectsText();
-}
-@Step
 public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
 	
 	return tSAGOVWhatCanIBringPage.navigateToSportingCamping();
@@ -205,22 +182,97 @@ public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
 }
 
 @Step
-public boolean verifySportingCampingText() {
-	
-	return tSAGOVWhatCanIBringPage.verifySportingCampingText();
-}
-	
-@Step
 public TSAGOVWhatCanIBringMiscellaneousPage navigateToMiscellaneous() {
 	
 	return tSAGOVWhatCanIBringPage.navigateToMiscellaneous();
 	
 }
 
+/***********************************************
+ * Steps for TSAGOVWhatCanIBringPageFlammables
+ ***********************************************/
+
+
+@Step
+public boolean verifyFlammablesText() {
+	
+	return tSAGovWhatCanIBringFlammablesPage.verifyFlammablesText();
+}
+
+/***********************************************
+ * Steps for TSAGOVWhatCanIBringPageFirearms
+ ***********************************************/
+
+@Step
+public boolean verifyFirearmsText() {
+	
+	return tSAGOVWhatCanIBringFirearmsPage.verifyFirearmsText();
+}
+
+
+/***********************************************
+ * Steps for TSAGOVWhatCanIBringPageFood
+ ***********************************************/
+
+@Step
+public boolean verifyFoodText() {
+	
+	return tSAGOVWhatCanIBringFoodPage.verifyFoodText();
+}
+
+
+/**************************************************
+ * Steps for TSAGOVWhatCanIBringPageHouseholdAndTools
+ **************************************************/
+
+@Step
+public boolean verifyHouseholdAndToolsText() {
+	
+	return tSAGOVWharCanIBringHouseholdToolsPage.verifyHouseholdAndToolsText();
+}
+
+
+/**************************************************
+ * Steps for TSAGOVWhatCanIBringPageMedical
+ **************************************************/
+
+
+@Step
+public boolean verifyMedicalText() {
+	
+	return tSAGOVWhatCanIBringMedicalPage.verifyMedicalText();
+}
+
+/**************************************************
+ * Steps for TSAGOVWhatCanIBringPageSharpObjects
+ **************************************************/
+
+
+@Step
+public boolean verifySharpObjectsText() {
+	
+	return tSAGOVWhatCanIBringSharpObjectsPage.verifySharpObjectsText();
+}
+
+
+/***********************************************
+ * Steps for TSAGOVWhatCanIBringPageSportingCamping
+ ***********************************************/
+
+@Step
+public boolean verifySportingCampingText() {
+	
+	return tSAGOVWhatCanIBringSportingCampingPage.verifySportingCampingText();
+}
+
+/***********************************************
+ * Steps for TSAGOVWhatCanIBringPageMiscellaneous
+ ***********************************************/
+
 @Step
 public boolean verifyMiscellaneousText() {
 	
-	return tSAGOVWhatCanIBringPage.verifyMiscellaneousText();
+	return tSAGOVWhatCanIBringMiscellaneousPage.verifyMiscellaneousText();
 }
 
 

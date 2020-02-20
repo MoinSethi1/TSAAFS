@@ -27,7 +27,7 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy(id="edit-submit")
 	private WebElementFacade loginBtn;
 	
-	@FindBy (xpath = "//a[@href ='/travel/security-screening/whatcanibring/all']")
+	@FindBy (xpath = "//a[@href ='/traveler-information/traveling-food-or-gifts']")
 	private WebElementFacade whatCanIBringLink;
 	
 	@FindBy (xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[1]/button/span")
@@ -63,7 +63,7 @@ public class TSAGOVBasePage extends PageObject {
 	
 	
 	public TSAGOVWhatCanIBringPage navigateToWhatCanIBring() throws InterruptedException {
-		whatCanIBringLink.click();
+		whatCanIBringLink.waitUntilClickable().click();
 		Thread.sleep(1000);
 		return this.switchToPage(TSAGOVWhatCanIBringPage.class);
 		
