@@ -5,18 +5,22 @@ import java.util.concurrent.TimeUnit;
 import TSAGOV.pages.TSAGOVAirportAirlinesPage;
 import TSAGOV.pages.TSAGOVBasePage;
 import TSAGOV.pages.TSAGOVChildrenPage;
+import TSAGOV.pages.TSAGOVCivilRightsPage;
+import TSAGOV.pages.TSAGOVClaimsPage;
 import TSAGOV.pages.TSAGOVCulturalPage;
 import TSAGOV.pages.TSAGOVDisabilitiesAndMedicalPage;
 import TSAGOV.pages.TSAGOVFAQPage;
 import TSAGOV.pages.TSAGOVLawEnforcementPage;
 import TSAGOV.pages.TSAGOVMemberPage;
 import TSAGOV.pages.TSAGOVMilitaryPage;
+import TSAGOV.pages.TSAGOVPassengerSupportPage;
 import TSAGOV.pages.TSAGOVSchedulePage;
 import TSAGOV.pages.TSAGOVSeniorPage;
 import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
 
 import TSAGOV.pages.TSAGOVTravelPage;
+import TSAGOV.pages.TSAGOVTravelRedressPage;
 import TSAGOV.pages.TSAGOVTrustedTravelerProgramPage;
 import TSAGOV.pages.TSAGOVWharCanIBringHouseholdToolsPage;
 import TSAGOV.pages.TSAGOVWhatCanIBringAllItemsPage;
@@ -59,6 +63,10 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVSeniorPage tSAGOVSeniorPage;
 	TSAGOVLawEnforcementPage tSAGOVLawEnforcementPage;
 	TSAGOVCulturalPage tSAGOVCulturalPage;
+	TSAGOVPassengerSupportPage tSAGOVPassengerSupportPage;
+	TSAGOVCivilRightsPage tSAGOVCivilRightsPage;
+	TSAGOVTravelRedressPage tSAGOVTravelRedressPage;
+	TSAGOVClaimsPage tSAGOVClaimsPage;
 	
 	/***********************************************
 	 * Steps for TSAGOVBasePage
@@ -312,6 +320,10 @@ public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
 	return tSAGOVTravelPage.navigateToSpecialProcedures();
 }
 
+public TSAGOVPassengerSupportPage navigateToPassengerSupport() {
+	return tSAGOVTravelPage.navigateToPassengerSupport();
+}
+
 /***********************************************
  * Steps for TSAGOVTSAPrePage
  ***********************************************/
@@ -486,6 +498,57 @@ public boolean verifyCulturalText() {
 	return tSAGOVCulturalPage.verifyCulturalText();
 }
 
+/***********************************************
+ * Steps for TSAGOVPassengerSupportPage
+ ***********************************************/
+
+@Step
+public boolean verifyPassengerSupportText() {
+	return tSAGOVPassengerSupportPage.verifyPassengerSupportText();
+}
+
+@Step
+public TSAGOVCivilRightsPage navigateToCivilRights() {
+		return tSAGOVPassengerSupportPage.navigateToCivilRights();
+}
+
+@Step
+public TSAGOVTravelRedressPage navigateToTravelRedress() {
+	return tSAGOVPassengerSupportPage.navigateToTravelRedress();
+}
+
+@Step
+public TSAGOVClaimsPage navigateToClaims() {
+	return tSAGOVPassengerSupportPage.navigateToClaims();
+}
+
+/***********************************************
+ * Steps for TSAGOVCivilRightsPage
+ ***********************************************/
+
+@Step
+public boolean verifyCivilRightsText() {
+	return tSAGOVCivilRightsPage.verifyCivilRightsText();
+}
 
 
+/***********************************************
+ * Steps for TSAGOVTravelRedressPage
+ ***********************************************/
+
+
+@Step
+public boolean verifyTravelRedressText() {
+	return tSAGOVTravelRedressPage.verifyTravelRedressText();
+}
+
+/***********************************************
+ * Steps for TSAGOVClaimsPage
+ ***********************************************/
+
+@Step
+public boolean verifyClaimsText() {
+	return tSAGOVClaimsPage.verifyClaimsText();
+	
+}
 }
