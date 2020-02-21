@@ -6,7 +6,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
-@DefaultUrl("https://edit.staging.tsa.gov/traveler-information/traveling-food-or-gifts")
+@DefaultUrl("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all")
 
 public class TSAGOVWhatCanIBringPage extends TSAGOVBasePage{
 
@@ -14,7 +14,7 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVBasePage{
 	
 	private WebElementFacade whatCanIBringText;
 	
-	@FindBy (xpath = "//a[@href='/travel/security-screening/whatcanibring/all']")
+	@FindBy (xpath = "//*[@id=\"block-mainpagecontent\"]/div/div/div[2]/div/div/div[1]/div/div[1]/article/div/div/h3[2]/a")
 	private WebElementFacade allItemsLink;
 		
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/flammables']")

@@ -4,10 +4,15 @@ import java.util.concurrent.TimeUnit;
 
 import TSAGOV.pages.TSAGOVAirportAirlinesPage;
 import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.TSAGOVChildrenPage;
+import TSAGOV.pages.TSAGOVCulturalPage;
 import TSAGOV.pages.TSAGOVDisabilitiesAndMedicalPage;
 import TSAGOV.pages.TSAGOVFAQPage;
+import TSAGOV.pages.TSAGOVLawEnforcementPage;
 import TSAGOV.pages.TSAGOVMemberPage;
+import TSAGOV.pages.TSAGOVMilitaryPage;
 import TSAGOV.pages.TSAGOVSchedulePage;
+import TSAGOV.pages.TSAGOVSeniorPage;
 import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
 
@@ -49,6 +54,11 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVTrustedTravelerProgramPage tSAGOVTrustedTravelerProgramPage;
 	TSAGOVSpecialProceduresPage tSAGOVSpecialProceduresPage;
 	TSAGOVDisabilitiesAndMedicalPage tSAGOVDisabilitiesAndMedicalPage;
+	TSAGOVMilitaryPage tSAGOVMilitaryPage;
+	TSAGOVChildrenPage tSAGOVChildrenPage;
+	TSAGOVSeniorPage tSAGOVSeniorPage;
+	TSAGOVLawEnforcementPage tSAGOVLawEnforcementPage;
+	TSAGOVCulturalPage tSAGOVCulturalPage;
 	
 	/***********************************************
 	 * Steps for TSAGOVBasePage
@@ -393,6 +403,33 @@ public TSAGOVDisabilitiesAndMedicalPage navigateToDisabilitiesAndMedical() {
 	return tSAGOVSpecialProceduresPage.navigateToDisabilitiesAndMedical();
 }
 
+@Step
+public TSAGOVMilitaryPage navigateToMilitary() {
+	return tSAGOVSpecialProceduresPage.navigateToMilitary();
+}
+
+@Step
+public TSAGOVChildrenPage navigateToChildren() {
+	return tSAGOVSpecialProceduresPage.navigateToChildren();
+}
+
+@Step
+public TSAGOVSeniorPage navigateToSenior() {
+	return tSAGOVSpecialProceduresPage.navigateToSenior();
+}
+
+@Step
+public TSAGOVLawEnforcementPage navigateToLawEnforcement() {
+	return tSAGOVSpecialProceduresPage.navigateToLawEnforcement();
+
+}
+
+@Step
+public TSAGOVCulturalPage navigateToCultural() {
+	return tSAGOVSpecialProceduresPage.navigateToCultural();
+	
+}
+
 /***********************************************
  * Steps for TSAGOVTDisabilitiesAndMediaclPage
  ***********************************************/
@@ -401,5 +438,54 @@ public boolean verifyDisabilitiesAndMedcalText() {
 	return tSAGOVDisabilitiesAndMedicalPage.verifyDisabilitiesAndMedcalText();
 	
 }
+
+
+/***********************************************
+ * Steps for TSAGOVTMilitaryPage
+ ***********************************************/
+@Step
+public boolean verifyMilitaryText() {
+	return tSAGOVMilitaryPage.verifyMilitaryText();
+}
+
+/***********************************************
+ * Steps for TSAGOVTChildrenPage
+ ***********************************************/
+
+@Step
+public boolean verifyChildrenText() {
+	return tSAGOVChildrenPage.verifyChildrenText();
+}
+
+/***********************************************
+ * Steps for TSAGOVTSeniorPage
+ ***********************************************/
+
+@Step
+public boolean verifySeniorText() {
+	return tSAGOVSeniorPage.verifySeniorText();
+}
+
+/***********************************************
+ * Steps for TSAGOVLawEnforcementPage
+ ***********************************************/
+
+@Step
+public boolean verifyLawEnforcemenText() {
+	return tSAGOVLawEnforcementPage.verifyLawEnforcemenText();
+	
+}
+
+/***********************************************
+ * Steps for TSAGOVCulturalPage
+ ***********************************************/
+
+@Step
+
+public boolean verifyCulturalText() {
+	return tSAGOVCulturalPage.verifyCulturalText();
+}
+
+
 
 }

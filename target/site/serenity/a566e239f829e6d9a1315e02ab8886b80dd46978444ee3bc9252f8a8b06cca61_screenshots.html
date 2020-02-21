@@ -128,7 +128,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-02-2020 10:53</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-02-2020 10:06</span>
     <br style="clear:left"/>
 </div>
 
@@ -163,9 +163,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">As user I want to login to the TSA.gov application
+                                <span class="failing-color">As user I want to login to the TSA.gov application
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -182,23 +182,52 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>TSAGOV.pages.TSAGOVBasePage.enterUsername(TSAGOVBasePage.java:50)<br />TSAGOV.steps.TSAGOVSteps.enterUsername(TSAGOVSteps.java:80)<br />TSAGOV.glue.TSAGOVBasePageGlue.user_enters_credentials(TSAGOVBasePageGlue.java:38)<br />✽.user logs into application using credentials(src/test/resources/TSAGOVFeatures/TSAGOVBasePage.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6449402185880277147.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Given the user opens the TSA.gov application" width="1295"/>
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Navigate to TSAGOV" width="1295"/>
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Given the user opens the TSA.gov application (completed)" width="1295"/>
-                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" When user logs into application using credentials" width="1295"/>
-                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
-                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
-                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1" width="1295"/>
-                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
-                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" When user logs into application using credentials (completed)" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Then user would see the membership information" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Verify member text" width="1295"/>
-                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Then user would see the membership information (completed): <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="b7045f42dadd487a8c6652ec69c9db6bc5f21c5688d8aa0a2736f0053ea3d839.png" title=" Given the user opens the TSA.gov application" width="1295"/>
+                <img src="b7045f42dadd487a8c6652ec69c9db6bc5f21c5688d8aa0a2736f0053ea3d839.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="b7045f42dadd487a8c6652ec69c9db6bc5f21c5688d8aa0a2736f0053ea3d839.png" title=" Given the user opens the TSA.gov application (completed)" width="1295"/>
+                <img src="b7045f42dadd487a8c6652ec69c9db6bc5f21c5688d8aa0a2736f0053ea3d839.png" title=" When user logs into application using credentials" width="1295"/>
+                <img src="b7045f42dadd487a8c6652ec69c9db6bc5f21c5688d8aa0a2736f0053ea3d839.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov: <span class='failing-color'>FAILURE</span>" width="1295"/>
             </div>
         </div>
 
