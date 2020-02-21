@@ -128,7 +128,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-02-2020 10:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-02-2020 10:10</span>
     <br style="clear:left"/>
 </div>
 
@@ -163,9 +163,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">As user I want to access all pages under Special Procedure section
+                                <span class="error-color">As user I want to access all pages under Special Procedure section
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -179,43 +179,213 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given user wants to access all pages under Special Procedure section<br>When user access Special Procedure page<br>Then user is directed to Special Procedure page<br>And page &lt;pageName&gt; under Special Procesdure is accessible</div>
+    </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such window exception: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchWindowException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>TSAGOV.steps.TSAGOVSteps.actualUrl(TSAGOVSteps.java:118)<br />TSAGOV.glue.TSAGOVSpecialProceduresRegressionGlue.user_is_directed_to_Special_Procedure_page(TSAGOVSpecialProceduresRegressionGlue.java:41)<br />✽.user is directed to Special Procedure page(src/test/resources/TSAGOVFeatures/TSAGovSpecialProceduresRegression.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Navigate to TSAGOV" width="1295"/>
-                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
-                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Example: {pageName=Disabilities Medical Conditions}" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
                 <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov (completed)" width="1295"/>
                 <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
-                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1" width="1295"/>
                 <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
                 <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
                 <img src="eb38c34325bade086f84c6746b15ff8b2d6edb02ae3ffbcdd5fd4e04f9b46077.png" title=" Login" width="1295"/>
                 <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
                 <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Navigate to TSA travel" width="1295"/>
                 <img src="53194ab4dc9558db6edbd02f31e8ff164364f017cc309211421ba8203e4e09e5.png" title=" Navigate to TSA travel" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Navigate to TSA travel" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Navigate to TSA travel (completed)" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Actual url" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Actual url (completed)" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Verify travel image" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Verify travel image (completed)" width="1295"/>
-                <img src="835471ecabd2d2bcfb8183047341a5def92bbe79d45a66f329580ae588a4eea1.png" title=" Given user wants to access all pages under Special Procedure section (completed)" width="1295"/>
-                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Actual url" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to special procedures" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures (completed)" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" When user access Special Procedure page (completed)" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url (completed)" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page (completed)" width="1295"/>
-                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And all pages under Special Procesdure are accessible" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And page Disabilities Medical Conditions under Special Procesdure is accessible" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to disabilities and medical" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to disabilities and medical (completed)" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url (completed)" width="1295"/>
                 <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Verify disabilities and medcal text" width="1295"/>
-                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And all pages under Special Procesdure are accessible (completed): <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Verify disabilities and medcal text (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And page Disabilities Medical Conditions under Special Procesdure is accessible (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Example: {pageName=Disabilities Medical Conditions} (completed)" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Example: {pageName=Military}" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov (completed)" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
+                <img src="eb38c34325bade086f84c6746b15ff8b2d6edb02ae3ffbcdd5fd4e04f9b46077.png" title=" Login" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="53194ab4dc9558db6edbd02f31e8ff164364f017cc309211421ba8203e4e09e5.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Actual url" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to special procedures" width="1295"/>
+                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Example: {pageName=Seniors}" width="1295"/>
+                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="1b00ff929d06d6cceda16ed13538e814723e6b83751273e0bca53885ad2f503d.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov (completed)" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
+                <img src="eb38c34325bade086f84c6746b15ff8b2d6edb02ae3ffbcdd5fd4e04f9b46077.png" title=" Login" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="53194ab4dc9558db6edbd02f31e8ff164364f017cc309211421ba8203e4e09e5.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Actual url" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to special procedures" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" When user access Special Procedure page (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And page Seniors under Special Procesdure is accessible" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to senior" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Navigate to senior" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Navigate to senior (completed)" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Actual url" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Actual url (completed)" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Verify senior text" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Verify senior text (completed)" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" And page Seniors under Special Procesdure is accessible (completed)" width="1295"/>
+                <img src="e0a5e5d5ff4e2c062a53e37e6055f0dd9458b52702eee654e563e2301ef77e2e.png" title=" Example: {pageName=Seniors} (completed)" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Example: {pageName=Law Enforcement}" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov (completed)" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
+                <img src="eb38c34325bade086f84c6746b15ff8b2d6edb02ae3ffbcdd5fd4e04f9b46077.png" title=" Login" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="53194ab4dc9558db6edbd02f31e8ff164364f017cc309211421ba8203e4e09e5.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Actual url" width="1295"/>
+                <img src="11265ef20c62efc73463225182dfd9b2e04eb7b1627f0555095bee02f6ae0565.png" title=" Verify travel image" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Verify travel image (completed)" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Navigate to special procedures" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And page Law Enforcement under Special Procesdure is accessible" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to law enforcement" width="1295"/>
+                <img src="df2c3a5f570db9ed5e3a81588f425cdc2713fb301d7e417b98baa4b21ad5b889.png" title=" Navigate to law enforcement" width="1295"/>
+                <img src="df2c3a5f570db9ed5e3a81588f425cdc2713fb301d7e417b98baa4b21ad5b889.png" title=" Navigate to law enforcement (completed)" width="1295"/>
+                <img src="df2c3a5f570db9ed5e3a81588f425cdc2713fb301d7e417b98baa4b21ad5b889.png" title=" Actual url" width="1295"/>
+                <img src="df2c3a5f570db9ed5e3a81588f425cdc2713fb301d7e417b98baa4b21ad5b889.png" title=" Verify law enforcemen text" width="1295"/>
+                <img src="794038928ea75af213c32c95a1a66c192a40ee1770afae8552bab918d7ce375a.png" title=" Example: {pageName=Law Enforcement}" width="1295"/>
+                <img src="794038928ea75af213c32c95a1a66c192a40ee1770afae8552bab918d7ce375a.png" title=" And page Law Enforcement under Special Procesdure is accessible" width="1295"/>
+                <img src="794038928ea75af213c32c95a1a66c192a40ee1770afae8552bab918d7ce375a.png" title=" Verify law enforcemen text (completed)" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Example: {pageName=Cultural}" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="6fc28c28976f8af17f5859798d014f6eb991df4d37f2d82143ae93c8c19d77d1.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter username: moinpreet.sethi@associates.tsa.dhs.gov (completed)" width="1295"/>
+                <img src="1eaf59a386e62f3bdebe732f6745ed5c79ddbccb68d429fe0be7501f26d997c7.png" title=" Enter password: password1" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Enter password: password1 (completed)" width="1295"/>
+                <img src="c1503c734deeab615f5db0946ea3d20bfd459ec9818632da4e75c1539ded4d33.png" title=" Login" width="1295"/>
+                <img src="eb38c34325bade086f84c6746b15ff8b2d6edb02ae3ffbcdd5fd4e04f9b46077.png" title=" Login" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Login (completed)" width="1295"/>
+                <img src="d54413ed4991ec992848979d777f293ccd742dfcdf165f8622aa77af726e5c3d.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="bf2d15103269c1b2a9ceb2d7ac411a41226d75247d66ca56dd878879ae39daf3.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Actual url" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Verify travel image" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Given user wants to access all pages under Special Procedure section" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Verify travel image (completed)" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="c7d43ce75e89780a9e1e0a50cfdc081f34ce5580a35fa98dbb054e2047f9c979.png" title=" Navigate to special procedures" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" When user access Special Procedure page" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to special procedures (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Actual url" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Then user is directed to Special Procedure page (completed)" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" And page Cultural under Special Procesdure is accessible" width="1295"/>
+                <img src="1e035ac68e2d197c1123eb22734ca28a579e3928191c6eb067cc60aee51a19d5.png" title=" Navigate to cultural" width="1295"/>
+                <img src="e8fd81f6cddd411a1f10c360a61eeb7fc33c6ae6beca8aed1c94681d9f7bcd0e.png" title=" Navigate to cultural (completed)" width="1295"/>
+                <img src="e8fd81f6cddd411a1f10c360a61eeb7fc33c6ae6beca8aed1c94681d9f7bcd0e.png" title=" Actual url" width="1295"/>
+                <img src="e8fd81f6cddd411a1f10c360a61eeb7fc33c6ae6beca8aed1c94681d9f7bcd0e.png" title=" Verify cultural text" width="1295"/>
+                <img src="550c1cd42a0ee36880f576971d8173e4649639c3ee43a61335234d582cc45477.png" title=" Example: {pageName=Cultural}" width="1295"/>
+                <img src="550c1cd42a0ee36880f576971d8173e4649639c3ee43a61335234d582cc45477.png" title=" And page Cultural under Special Procesdure is accessible" width="1295"/>
+                <img src="550c1cd42a0ee36880f576971d8173e4649639c3ee43a61335234d582cc45477.png" title=" Verify cultural text (completed): <span class='error-color'>ERROR</span>" width="1295"/>
             </div>
         </div>
 

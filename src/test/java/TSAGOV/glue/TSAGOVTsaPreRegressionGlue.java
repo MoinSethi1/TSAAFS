@@ -57,25 +57,36 @@ public class TSAGOVTsaPreRegressionGlue {
 		assert(user.verifyTsaPreImage());
 	}
 
-	@Then("^all pages under TSAPre section are accessible$")
-	public void all_pages_under_TSAPre_are_accessible() {
+	@Then("^page (.*) under TSAPre section is accessible$")
+	public void all_pages_under_TSAPre_are_accessible(String pageName) {
 	    
+		switch(pageName) {
+		
+		case "Airport Airlines ":
 		user.navigateToAirportsAirlines();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/precheck/map");
 		assert(user.verifyAirportsAirlinesText());
+		break;
 		
+		case "Schedule":
 		user.navigateToScedule();
 		assert(user.actualUrl()).contentEquals("https://edit.staging.tsa.gov/precheck/schedule");
 		assert(user.verifyScheduleText());
+		break;
 		
+		case "FAQ":
 		user.navigateToFaq();
 		assert(user.actualUrl()).contentEquals("https://edit.staging.tsa.gov/precheck/faq");
 		assert(user.verifyFaqText());
+		break;
 		
+		case "Trusted Traveler Programs":
 		user.navigateToTrustedTravelerPrograms();
 		assert(user.actualUrl()).contentEquals("https://ttp.cbp.dhs.gov/");
 		assert(user.verifyTrustedTravelerText());
+		break;
 		
+		}
 	}
 	
 	

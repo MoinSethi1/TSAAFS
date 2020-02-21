@@ -14,8 +14,6 @@ import net.thucydides.core.annotations.Steps;
 public class TSAGOVWhatCanIBringRegressionGlue {
 	
 	
-
-	SoftAssertions assertion = new SoftAssertions();
 	
 	@Steps 
 	TSAGOVSteps user;
@@ -40,56 +38,74 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 
 	@Then("^user is directed to What Can I Bring page$")
 	public void user_is_directed_to_correct_page() throws InterruptedException {
-		assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/traveler-information/traveling-food-or-gifts");
-		assertion.assertThat(user.verifyWhatCanIBringText()).isTrue();
-		assertion.assertAll();
-		
+		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+		assert(user.verifyWhatCanIBringText());
+			
 		   
 	}
 
-	@Then("^all pages on What can I bring section are accessible$")
-	public void all_sections_on_this_page_are_accessible() {
+	@Then("^page (.*) on What can I bring section is accessible$")
+	public void all_sections_on_this_page_are_accessible(String pageName) {
+		
+		switch (pageName) {
+		
+		case "All":		
 	   user.navigateToAll();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
-	   assertion.assertThat(user.verifyWhatCanIBringText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+	   assert(user.verifyWhatCanIBringText());
+	   break;
 	   
-	   	   
+		case "Flammables":	
 	   user.navigateToFlammables();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/flammables");
-	   assertion.assertThat(user.verifyFlammablesText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/flammables");
+	   assert(user.verifyFlammablesText());
+	     break;
 	     
-	   
+	     
+		case "Firearms":
 	   user.navigateToFirearms();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/firearms");
-	   assertion.assertThat(user.verifyFirearmsText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/firearms");
+	   assert(user.verifyFirearmsText());
+	   break;
 	   
-	   
+	   case "Food":	   
 	   user.navigateToFood();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/food");
-	   assertion.assertThat(user.verifyFoodText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/food");
+	   assert(user.verifyFoodText());
+	   break;
 	   
+	   case "Household Tools":
 	   user.navigateToHouseholdTools();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/household-and-tools");
-	   //assertion.assertThat(user.verifyHouseholdAndToolsText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/household-and-tools");
+	   assert(user.verifyHouseholdAndToolsText());
+	   break;
 	   
+	   case "Medical":
 	   user.navigateToMedical();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/medical");
-	   assertion.assertThat(user.verifyMedicalText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/medical");
+	   assert(user.verifyMedicalText());
+	   break;
 	   
+	   case "Sharp Objects":
 	   user.navigateToSharpObjects();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sharp-objects");
-	   assertion.assertThat(user.verifySharpObjectsText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sharp-objects");
+	   assert(user.verifySharpObjectsText());
+	   break;
 	   
+	   case "Sporting Camping":
 	   user.navigateToSportingCamping();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sporting-and-camping");
-	   assertion.assertThat(user.verifySportingCampingText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sporting-and-camping");
+	   assert(user.verifySportingCampingText());
+	   break;
 	   
+	   case "Miscellaneous":   
 	   user.navigateToMiscellaneous();
-	   assertion.assertThat(user.actualUrl()).isEqualTo("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/miscellaneous");
-	   //assertion.assertThat(user.verifyMiscellaneousText()).isTrue();
+	   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/miscellaneous");
+	  assert(user.verifyMiscellaneousText());
+	  break;
 	   
-	   	   
-	  assertion.assertAll();
+		} 	   
+	 
 	}
 	
 }

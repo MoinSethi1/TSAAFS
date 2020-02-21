@@ -6,8 +6,12 @@ TSAGOV\glue\TSAGOVWhatCanIBringRegressionGlue.class
 TSAGOV\pages\TSAGOVTSAPrePage.class
 TSAGOV\glue\TSAGOVBasePageGlue.class
 TSAGOV\pages\TSAGOVBasePage.class
+TSAGOV\pages\TSAGOVChildrenPage.class
+TSAGOV\pages\TSAGOVLawEnforcementPage.class
+TSAGOV\pages\TSAGOVSeniorPage.class
 TSAGOV\pages\TSAGOVAirportAirlinesPage.class
 TSAGOV\pages\TSAGOVFAQPage.class
+TSAGOV\pages\TSAGOVCulturalPage.class
 TSAGOV\steps\TSAGOVSteps.class
 TSAGOV\pages\TSAGOVTravelPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringMiscellaneousPage.class
