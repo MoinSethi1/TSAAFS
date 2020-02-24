@@ -20,6 +20,9 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[2]/div/a")
 	private WebElementFacade specialProcedureLink;
 	
+	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[4]/div/a")
+	private WebElementFacade passangerSupportLink;
+	
 	
 	public TSAGOVTSAPrePage navigateToTSAPre() {
 		tsaPreLink.click();
@@ -34,4 +37,10 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 		specialProcedureLink.click();
 		return this.switchToPage(TSAGOVSpecialProceduresPage.class);
 	}
+	
+	public TSAGOVPassengerSupportPage navigateToPassengerSupport() {
+		passangerSupportLink.click();
+		return this.switchToPage(TSAGOVPassengerSupportPage.class);
+	}
+	
 }
