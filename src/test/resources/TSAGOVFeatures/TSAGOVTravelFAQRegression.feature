@@ -1,5 +1,5 @@
 #Author:moinpreet.sethi
-Feature: What can I Bring? section regression test
+Feature: Travel FAQ section regression test
 	
   Scenario: As user I want to access FAQsection
     Given user wants to access FAQ section

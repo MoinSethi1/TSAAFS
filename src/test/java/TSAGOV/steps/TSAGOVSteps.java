@@ -23,9 +23,11 @@ import TSAGOV.pages.TSAGOVSecurityScreeningPage;
 import TSAGOV.pages.TSAGOVSeniorPage;
 import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
+import TSAGOV.pages.TSAGOVTravelChecklistPage;
 import TSAGOV.pages.TSAGOVTravelFAQPage;
 import TSAGOV.pages.TSAGOVTravelPage;
 import TSAGOV.pages.TSAGOVTravelRedressPage;
+import TSAGOV.pages.TSAGOVTravelTipsPage;
 import TSAGOV.pages.TSAGOVTrustedTravelerProgramPage;
 import TSAGOV.pages.TSAGOVWharCanIBringHouseholdToolsPage;
 import TSAGOV.pages.TSAGOVWhatCanIBringAllItemsPage;
@@ -79,6 +81,8 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVEmergingTechnologyPage  tSAGOVEmergingTechnologyPage;
 	TSAGOVRealIDPage tSAGOVRealIDPage;
 	TSAGOVTravelFAQPage tSAGOVTravelFAQPage;
+	TSAGOVTravelTipsPage tSAGOVTravelTipsPage;
+	TSAGOVTravelChecklistPage tSAGOVTravelChecklistPage;
 	
 	
 	
@@ -350,6 +354,12 @@ public TSAGOVSecurityScreeningPage navigateToSecurityScreening() {
 public TSAGOVTravelFAQPage navigateToTravelFAQ() {
 		return tSAGOVTravelPage.navigateToTravelFAQ();
 		}
+
+@Step
+public TSAGOVTravelTipsPage navigateToTravelTips() {
+		return tSAGOVTravelPage.navigateToTravelTips();
+}
+
 /***********************************************
  * Steps for TSAGOVTSAPrePage
  ***********************************************/
@@ -653,7 +663,27 @@ public boolean verifyTravelFAQText() {
 	return tSAGOVTravelFAQPage.verifyTravelFAQText();
 }
 
+/***********************************************
+ * Steps for TSAGOVTravelTipsPage
+ ***********************************************/
+@Step
+public boolean verifyTravelTipsText() {
+	return tSAGOVTravelTipsPage.verifyTravelTipsText();
+}
 
+@Step
+public TSAGOVTravelChecklistPage navigateToTravelChecklist() {
+	return tSAGOVTravelTipsPage.navigateToTravelChecklist();
+}
+
+/***********************************************
+ * Steps for TSAGOVTravelChecklistPage
+ ***********************************************/
+
+@Step
+public boolean verifyTravelChecklistText() {
+	return tSAGOVTravelChecklistPage.verifyTravelChecklistText();
+}
 }
 
 
