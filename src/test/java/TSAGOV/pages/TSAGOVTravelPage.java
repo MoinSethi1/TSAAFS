@@ -30,6 +30,8 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[6]/a")
 	private WebElementFacade travelFAQLink;
 	
+	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[5]/div/a")
+	private WebElementFacade travelTipsLink;
 	
 	
 	public TSAGOVTSAPrePage navigateToTSAPre() {
@@ -60,4 +62,9 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 		travelFAQLink.click();
 		return this.switchToPage(TSAGOVTravelFAQPage.class);
 			}
+	
+	public TSAGOVTravelTipsPage navigateToTravelTips() {
+		travelTipsLink.click();
+		return this.switchToPage(TSAGOVTravelTipsPage.class);
+	}
 }

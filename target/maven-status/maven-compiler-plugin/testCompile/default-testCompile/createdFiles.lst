@@ -25,6 +25,7 @@ TSAGOV\pages\TSAGOVWhatCanIBringSharpObjectsPage.class
 TSAGOV\pages\TSAGOVTravelRedressPage.class
 TSAGOV\glue\TSAGOVSecurityScreeningRegressionGlue.class
 TSAGOV\pages\TSAGOVLiquidsRulePage.class
+TSAGOV\glue\TSAGOVTravelTipsRegressionGlue.class
 serenity\CucumberTestSuite.class
 TSAGOV\glue\TSAGOVWhatCanIBringRegressionGlue.class
 TSAGOV\glue\TSAGOVBasePageGlue.class
@@ -36,9 +37,11 @@ TSAGOV\steps\TSAGOVSteps.class
 TSAGOV\pages\TSAGOVWhatCanIBringMiscellaneousPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringAllItemsPage.class
 TSAGOV\pages\TSAGovWhatCanIBringFlammablesPage.class
+TSAGOV\pages\TSAGOVTravelChecklistPage.class
 TSAGOV\pages\TSAGOVWharCanIBringHouseholdToolsPage.class
 TSAGOV\glue\TSAGOVTravelFAQRegressionGlue.class
 TSAGOV\pages\TSAGOVSpecialProceduresPage.class
 TSAGOV\glue\TSAGOVPassengerSupportRegressionGlue.class
+TSAGOV\pages\TSAGOVTravelTipsPage.class
 TSAGOV\pages\TSAGOVSecurityScreeningPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringFirearmsPage.class
