@@ -36,8 +36,7 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy (xpath ="//*[@id=\"basic-nav-section-1\"]/a[1]/li/span")
 	private WebElementFacade travelLink;	
 	
-	
-	
+		
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
 	}

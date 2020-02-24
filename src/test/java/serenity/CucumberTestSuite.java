@@ -7,7 +7,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features= "src/test/resources/TSAGOVFeatures",
+		features= "src/test/resources/TSAGOVFeatures/TSAGOVSecurityScreening.feature",
 		glue= {"TSAGOV.glue"},
 		dryRun=false,
 		monochrome=true		

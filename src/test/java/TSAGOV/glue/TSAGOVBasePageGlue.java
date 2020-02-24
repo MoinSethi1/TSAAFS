@@ -18,7 +18,7 @@ import net.thucydides.core.annotations.Steps;
 
 public class TSAGOVBasePageGlue {
 	
-	SoftAssertions assertion = new SoftAssertions();
+	
 	
 	@Steps
 	TSAGOVSteps user;
@@ -53,9 +53,8 @@ public class TSAGOVBasePageGlue {
 			
 		**/
 								
-				assertion.assertThat(user.verifyMemberText()).isTrue();
-				assertion.assertAll();		
-	  
+				assert(user.verifyMemberText());
+				
 	}
 
 }
