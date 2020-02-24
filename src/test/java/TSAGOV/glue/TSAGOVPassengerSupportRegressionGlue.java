@@ -39,7 +39,7 @@ public class TSAGOVPassengerSupportRegressionGlue {
 	    assert(user.verifyPassengerSupportText());
 	}
 
-	@Then("^page (.*) under Passenger Support is accessible using locator (.*)$")
+	@Then("^page (.*) under Passenger Support is accessible$")
 	public void page_Civil_Rights_under_Passenger_Support_is_accessible_using_locator(String pageName) {
 		
 		switch(pageName) {

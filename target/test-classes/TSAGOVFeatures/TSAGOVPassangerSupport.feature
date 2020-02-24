@@ -4,7 +4,7 @@ Feature: Passenger Support section regression test
     Given user logged into the application
     When user access Passenger Support page
     Then user is directed to Passenger Support page
-    And page <pageName> under Passenger Support is accessible using locator <locatorValue>
+    And page <pageName> under Passenger Support is accessible
 
     Examples: 
       |pageName				|  
