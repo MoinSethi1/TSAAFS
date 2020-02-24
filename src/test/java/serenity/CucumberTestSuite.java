@@ -7,7 +7,9 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features= "src/test/resources/TSAGOVFeatures/TSAGOVTravelTipsRegression.feature",
+
+		features= "src/test/resources/TSAGOVFeatures",
+
 		glue= {"TSAGOV.glue"},
 		dryRun=false,
 		monochrome=true		
