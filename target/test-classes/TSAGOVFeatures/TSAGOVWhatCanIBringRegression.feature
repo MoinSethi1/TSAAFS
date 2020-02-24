@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author:moinpreet.sethi
 
 Feature: What can I Bring? section regression test
 	

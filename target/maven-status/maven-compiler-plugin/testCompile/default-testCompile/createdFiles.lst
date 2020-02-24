@@ -14,6 +14,7 @@ TSAGOV\pages\TSAGOVMilitaryPage.class
 TSAGOV\pages\TSAGOVEmergingTechnologyPage.class
 TSAGOV\pages\TSAGOVDisabilitiesAndMedicalPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringPage.class
+TSAGOV\pages\TSAGOVTravelFAQPage.class
 TSAGOV\pages\TSAGOVCivilRightsPage.class
 TSAGOV\pages\TSAGOVRealIDPage.class
 TSAGOV\pages\TSAGOVTrustedTravelerProgramPage.class
@@ -36,6 +37,7 @@ TSAGOV\pages\TSAGOVWhatCanIBringMiscellaneousPage.class
 TSAGOV\pages\TSAGOVWhatCanIBringAllItemsPage.class
 TSAGOV\pages\TSAGovWhatCanIBringFlammablesPage.class
 TSAGOV\pages\TSAGOVWharCanIBringHouseholdToolsPage.class
+TSAGOV\glue\TSAGOVTravelFAQRegressionGlue.class
 TSAGOV\pages\TSAGOVSpecialProceduresPage.class
 TSAGOV\glue\TSAGOVPassengerSupportRegressionGlue.class
 TSAGOV\pages\TSAGOVSecurityScreeningPage.class
