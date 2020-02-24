@@ -11,7 +11,7 @@ public class TSAGOVPassengerSupportRegressionGlue {
 	@Steps
 	TSAGOVSteps user;
 	
-	@Given("^user logged into the application$")
+	@Given("^user wants to access all pages on Passenger Support section$")
 	public void user_logged_into_the_application() throws InterruptedException {
 		
 		user.navigateToTSAGOV();

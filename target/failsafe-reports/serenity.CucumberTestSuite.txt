@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: serenity.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 690.893 sec - in serenity.CucumberTestSuite
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 148.867 sec - in serenity.CucumberTestSuite

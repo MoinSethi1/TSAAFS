@@ -9,12 +9,17 @@ import TSAGOV.pages.TSAGOVCivilRightsPage;
 import TSAGOV.pages.TSAGOVClaimsPage;
 import TSAGOV.pages.TSAGOVCulturalPage;
 import TSAGOV.pages.TSAGOVDisabilitiesAndMedicalPage;
+import TSAGOV.pages.TSAGOVEmergingTechnologyPage;
 import TSAGOV.pages.TSAGOVFAQPage;
+import TSAGOV.pages.TSAGOVIdentificationPage;
 import TSAGOV.pages.TSAGOVLawEnforcementPage;
+import TSAGOV.pages.TSAGOVLiquidsRulePage;
 import TSAGOV.pages.TSAGOVMemberPage;
 import TSAGOV.pages.TSAGOVMilitaryPage;
 import TSAGOV.pages.TSAGOVPassengerSupportPage;
+import TSAGOV.pages.TSAGOVRealIDPage;
 import TSAGOV.pages.TSAGOVSchedulePage;
+import TSAGOV.pages.TSAGOVSecurityScreeningPage;
 import TSAGOV.pages.TSAGOVSeniorPage;
 import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
@@ -35,6 +40,7 @@ import TSAGOV.pages.TSAGovWhatCanIBringFlammablesPage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
+
 
 public class TSAGOVSteps extends ScenarioSteps {
 
@@ -67,6 +73,14 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVCivilRightsPage tSAGOVCivilRightsPage;
 	TSAGOVTravelRedressPage tSAGOVTravelRedressPage;
 	TSAGOVClaimsPage tSAGOVClaimsPage;
+	TSAGOVSecurityScreeningPage tSAGOVSecurityScreeningPage;
+	TSAGOVIdentificationPage tSAGOVIdentificationPage;
+	TSAGOVLiquidsRulePage tSAGOVLiquidsRulePage;
+	TSAGOVEmergingTechnologyPage  tSAGOVEmergingTechnologyPage;
+	TSAGOVRealIDPage tSAGOVRealIDPage;
+	
+	
+	
 	
 	/***********************************************
 	 * Steps for TSAGOVBasePage
@@ -323,6 +337,11 @@ public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
 public TSAGOVPassengerSupportPage navigateToPassengerSupport() {
 	return tSAGOVTravelPage.navigateToPassengerSupport();
 }
+@Step
+
+public TSAGOVSecurityScreeningPage navigateToSecurityScreening() {
+	return tSAGOVTravelPage.navigateToSecurityScreening();
+}
 
 /***********************************************
  * Steps for TSAGOVTSAPrePage
@@ -549,6 +568,73 @@ public boolean verifyTravelRedressText() {
 @Step
 public boolean verifyClaimsText() {
 	return tSAGOVClaimsPage.verifyClaimsText();
-	
 }
+
+/***********************************************
+ * Steps for TSAGOVSecurityScreeningPage
+ ***********************************************/
+@Step
+public boolean verifySecurityScreeningText() {
+	return tSAGOVSecurityScreeningPage.verifySecurityScreeningText();
+}
+
+@Step
+public TSAGOVIdentificationPage navigateToIdentification() {
+	return tSAGOVSecurityScreeningPage.navigateToIdentification();
+}
+
+@Step
+
+public TSAGOVLiquidsRulePage navigateToLiquidsRule() {
+	return tSAGOVSecurityScreeningPage.navigateToLiquidsRule();
+}
+
+
+@Step
+public TSAGOVEmergingTechnologyPage naviagteToEmergingTechnology() {
+	return tSAGOVSecurityScreeningPage.naviagteToEmergingTechnology();
+}
+
+@Step 
+public TSAGOVRealIDPage navigateToRealID() {
+	return tSAGOVSecurityScreeningPage.navigateToRealID();
+}
+
+/***********************************************
+ * Steps for TSAGOVIdentificationPage
+ ***********************************************/
+
+@Step
+public boolean verifyIdentificationText() {
+	return tSAGOVIdentificationPage.verifyIdentificationText();
+}
+
+/***********************************************
+ * Steps for TSAGOVLiquidsRulePage
+ ***********************************************/
+
+@Step
+public boolean verifyLiquidsRuleText() {
+	return tSAGOVLiquidsRulePage.verifyLiquidsRuleText();
+}
+
+/***********************************************
+ * Steps for TSAGOVEmergingTechnologyPage
+ ***********************************************/
+
+@Step
+
+public boolean verifyEmergingTechnologyText() {
+		return tSAGOVEmergingTechnologyPage.verifyEmergingTechnologyText();
+}
+
+/***********************************************
+ * Steps for TSAGOVRealIDPage
+ ***********************************************/
+
+@Step
+public boolean verifyRealIDText() {
+	return tSAGOVRealIDPage.verifyRealIDText();
+}
+
 }

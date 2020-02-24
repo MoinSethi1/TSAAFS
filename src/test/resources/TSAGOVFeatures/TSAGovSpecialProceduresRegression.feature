@@ -1,4 +1,4 @@
-Feature: What can I Bring? section regression test
+Feature: Special Procedures section regression test
 	
   Scenario Outline: As user I want to access all pages under Special Procedure section
     Given user wants to access all pages under Special Procedure section
