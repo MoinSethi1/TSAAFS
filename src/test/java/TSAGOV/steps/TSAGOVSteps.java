@@ -23,7 +23,7 @@ import TSAGOV.pages.TSAGOVSecurityScreeningPage;
 import TSAGOV.pages.TSAGOVSeniorPage;
 import TSAGOV.pages.TSAGOVSpecialProceduresPage;
 import TSAGOV.pages.TSAGOVTSAPrePage;
-
+import TSAGOV.pages.TSAGOVTravelFAQPage;
 import TSAGOV.pages.TSAGOVTravelPage;
 import TSAGOV.pages.TSAGOVTravelRedressPage;
 import TSAGOV.pages.TSAGOVTrustedTravelerProgramPage;
@@ -78,6 +78,8 @@ public class TSAGOVSteps extends ScenarioSteps {
 	TSAGOVLiquidsRulePage tSAGOVLiquidsRulePage;
 	TSAGOVEmergingTechnologyPage  tSAGOVEmergingTechnologyPage;
 	TSAGOVRealIDPage tSAGOVRealIDPage;
+	TSAGOVTravelFAQPage tSAGOVTravelFAQPage;
+	
 	
 	
 	
@@ -343,6 +345,11 @@ public TSAGOVSecurityScreeningPage navigateToSecurityScreening() {
 	return tSAGOVTravelPage.navigateToSecurityScreening();
 }
 
+
+@Step
+public TSAGOVTravelFAQPage navigateToTravelFAQ() {
+		return tSAGOVTravelPage.navigateToTravelFAQ();
+		}
 /***********************************************
  * Steps for TSAGOVTSAPrePage
  ***********************************************/
@@ -637,4 +644,16 @@ public boolean verifyRealIDText() {
 	return tSAGOVRealIDPage.verifyRealIDText();
 }
 
+
+/***********************************************
+ * Steps for TSAGOVTravelFAQPage
+ ***********************************************/
+@Step
+public boolean verifyTravelFAQText() {
+	return tSAGOVTravelFAQPage.verifyTravelFAQText();
 }
+
+
+}
+
+
