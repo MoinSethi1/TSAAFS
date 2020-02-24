@@ -14,9 +14,9 @@ public class TSAGOVTravelTipsRegressionGlue {
 	@Given("^user wants to access all pages on Travel Tips section$")
 	public void user_wants_to_access_all_pages_on_Travel_Tips_section() throws InterruptedException {
 		user.navigateToTSAGOV();
-		user.enterUsername("moinpreet.sethi@associates.tsa.dhs.gov");
-		user.enterPassword("password1");
-		user.login();
+		//user.enterUsername("moinpreet.sethi@associates.tsa.dhs.gov");
+		//user.enterPassword("password1");
+		//user.login();
 		
 		user.navigateToTSATravel();	   
 		  
