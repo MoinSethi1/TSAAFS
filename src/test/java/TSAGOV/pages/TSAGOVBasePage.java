@@ -5,6 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import TSAGOV.pages.about.TSAGOVAboutPage;
+import TSAGOV.pages.travel.TSAGOVTravelPage;
+import TSAGOV.pages.travel.TSAGOVWhatCanIBringPage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -36,6 +39,11 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy (xpath ="//*[@id=\"basic-nav-section-1\"]/a[1]/li/span")
 	private WebElementFacade travelLink;	
 	
+	@FindBy (xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[3]/button/span")
+	private WebElementFacade aboutMenu;
+	
+	@FindBy (xpath = "//*[@id=\"basic-nav-section-3\"]/a[1]/li")
+	private WebElementFacade aboutLink;
 		
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
@@ -88,16 +96,23 @@ public class TSAGOVBasePage extends PageObject {
 
 		WebDriver driver = getDriver();
 		return (driver.getCurrentUrl());
-		
 	}
-	
-		
+			
 	public void waitForPageload() throws InterruptedException {
 		
 		getDriver().manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 	}
+	
+	public TSAGOVAboutPage navigateToAbout() {
+		aboutMenu.click();
+		aboutLink.click();
+		return this.switchToPage(TSAGOVAboutPage.class);
+		
+	}
 
+	
 }
 	
 	
 
+;
