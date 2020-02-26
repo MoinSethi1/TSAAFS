@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import TSAGOV.pages.about.TSAGOVAboutPage;
+import TSAGOV.pages.media.TSAGOVMediaPage;
+import TSAGOV.pages.media.TSAGOVMediaRoomPage;
 import TSAGOV.pages.travel.TSAGOVTravelPage;
 import TSAGOV.pages.travel.TSAGOVWhatCanIBringPage;
 import net.serenitybdd.core.annotations.findby.FindBy;
@@ -44,6 +46,15 @@ public class TSAGOVBasePage extends PageObject {
 	
 	@FindBy (xpath = "//*[@id=\"basic-nav-section-3\"]/a[1]/li")
 	private WebElementFacade aboutLink;
+	
+	@FindBy (xpath ="/html/body/div/div/header/nav/div/nav/ul[2]/li[2]/button/span")
+	private WebElementFacade mediaMenu;
+	
+	@FindBy (xpath ="//*[@id=\"basic-nav-section-2\"]/a[1]/li/span")
+	private WebElementFacade mediaLink;
+	
+	@FindBy (xpath ="//*[@id=\"basic-nav-section-2\"]/a[2]/li/span")
+	private WebElementFacade mediaRoomLink;
 		
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
@@ -86,7 +97,17 @@ public class TSAGOVBasePage extends PageObject {
 		return this.switchToPage(TSAGOVTravelPage.class);
 	}
 	
+	public TSAGOVMediaPage navigateToMedia() {
+		mediaMenu.click();
+		mediaLink.click();
+		return this.switchToPage(TSAGOVMediaPage.class);
+	}
 	
+	public TSAGOVMediaRoomPage navigateToMediaRoom() {
+		mediaMenu.click();
+		mediaRoomLink.click();
+		return this.switchToPage(TSAGOVMediaRoomPage.class);
+	}
 
 	public WebElementFacade expectedText() {
 		return (memberText);

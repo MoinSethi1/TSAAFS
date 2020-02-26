@@ -15,11 +15,14 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[3]/div/a")
 	private WebElementFacade tsaPreLink;
 	
+	
 	@FindBy (xpath ="//*[@id=\"block-mainpagecontent\"]/div/div[2]/div/div/div/div/p[1]/a/img")
 	private WebElementFacade travelImage;
 	
+	
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[2]/div/a")
 	private WebElementFacade specialProcedureLink;
+	
 	
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[4]/div/a")
 	private WebElementFacade passangerSupportLink;
@@ -33,6 +36,8 @@ public class TSAGOVTravelPage extends TSAGOVBasePage {
 	
 	@FindBy (xpath ="//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[5]/div/a")
 	private WebElementFacade travelTipsLink;
+	
+	
 	
 	
 	public TSAGOVTSAPrePage navigateToTSAPre() {

@@ -8,6 +8,8 @@ TSAGOV\pages\travel\TSAGovWhatCanIBringFlammablesPage.class
 TSAGOV\pages\TSAGOVBasePage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringPage.class
+TSAGOV\steps\TSAGOVMediaSteps.class
+TSAGOV\pages\media\TSAGOVStatementsPage.class
 TSAGOV\pages\travel\TSAGOVTSAPrePage.class
 TSAGOV\pages\travel\TSAGOVTrustedTravelerProgramPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringMiscellaneousPage.class
@@ -16,6 +18,7 @@ TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.class
 TSAGOV\pages\travel\TSAGOVLiquidsRulePage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSharpObjectsPage.class
 TSAGOV\glue\travel\TSAGOVTravelTipsRegressionGlue.class
+TSAGOV\pages\media\TSAGOVBlogPage.class
 TSAGOV\pages\travel\TSAGOVSpecialProceduresPage.class
 TSAGOV\pages\travel\TSAGOVEmergingTechnologyPage.class
 TSAGOV\glue\travel\TSAGOVTravelFAQRegressionGlue.class
@@ -26,9 +29,12 @@ TSAGOV\pages\travel\TSAGOVSeniorPage.class
 TSAGOV\pages\travel\TSAGOVTravelChecklistPage.class
 TSAGOV\pages\travel\TSAGOVSchedulePage.class
 TSAGOV\pages\travel\TSAGOVLawEnforcementPage.class
+TSAGOV\pages\media\TSAGOVPressReleasesPage.class
 TSAGOV\pages\travel\TSAGOVTravelTipsPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSportingCampingPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringMedicalPage.class
+TSAGOV\pages\media\TSAGOVFactsheetsPage.class
+TSAGOV\pages\media\TSAGOVMediaPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringFirearmsPage.class
 TSAGOV\pages\about\TSAGOVJobsAtTSAPage.class
 TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.class
@@ -54,3 +60,9 @@ TSAGOV\pages\travel\TSAGOVCivilRightsPage.class
 TSAGOV\steps\TSAGOVTravelSteps.class
 TSAGOV\pages\travel\TSAGOVTravelFAQPage.class
 TSAGOV\pages\travel\TSAGOVChildrenPage.class
+TSAGOV\pages\media\TSAGOVTestimonyPage.class
+TSAGOV\pages\media\TSAGOVSocialMediaPage.class
+TSAGOV\pages\media\TSAGOVSpeechesPage.class
+TSAGOV\glue\media\TSAGOVMediaRegressionGlue.class
+TSAGOV\pages\media\TSAGOVMediaRoomPage.class
+TSAGOV\pages\media\TSAGOVVideoPage.class

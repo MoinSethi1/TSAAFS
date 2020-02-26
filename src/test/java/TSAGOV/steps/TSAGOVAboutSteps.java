@@ -40,7 +40,7 @@ public TSAGOVAboutPage navigateToAbout() {
 
 @Step
 public String actualUrl() {
-	return (getDriver().getCurrentUrl());
+	return tSAGOVBasePage.actualUrl();
 	}
 
 /***********************************************
