@@ -13,7 +13,7 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVBasePage{
 	
 	private WebElementFacade whatCanIBringText;
 	
-	@FindBy (xpath = "//*[@id=\"block-mainpagecontent\"]/div/div/div[2]/div/div/div[1]/div/div[1]/article/div/div/h3[2]/a")
+	@FindBy (xpath = "//*[@id=\"block-mainpagecontent\"]/div/div/div[2]/div/div/div[1]/div/div[1]/article/div/div/h3/a")
 	private WebElementFacade allItemsLink;
 		
 	@FindBy (xpath = "//a[@href = '/travel/security-screening/whatcanibring/flammables']")
