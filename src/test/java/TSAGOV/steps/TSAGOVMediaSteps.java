@@ -44,11 +44,12 @@ public String actualUrl() {
 	return tSAGOVBasePage.actualUrl();
 	}
 
-	
+@Step	
 	public TSAGOVMediaPage navigateToMedia() {
 		return tSAGOVBasePage.navigateToMedia();
 	}
 	
+@Step
 	public TSAGOVMediaRoomPage navigateToMediaRoom() {
 		return tSAGOVBasePage.navigateToMediaRoom();
 	}
@@ -57,19 +58,19 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVMediaPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyMediaText() {
 		return tSAGOVMediaPage.verifyMediaText();
 		}
-	
+@Step
 	public TSAGOVSocialMediaPage navigateToSocialMedia() {
 		return tSAGOVMediaPage.navigateToSocialMedia();
 	}
-	
+@Step
 	public TSAGOVBlogPage navigateToBlog() {
 		return tSAGOVMediaPage.navigateToBlog();
 	}
-	
+@Step
 	public TSAGOVVideoPage navigateToVideo() {
 		return tSAGOVMediaPage.navigateToVideo();
 	}
@@ -77,28 +78,28 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVMediaRoomPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyMediaRoomText() {
 		return tSAGOVMediaRoomPage.verifyMediaRoomText();
 	}
-	
+@Step	
 	public TSAGOVPressReleasesPage navigateToPressReleases() {
 		return tSAGOVMediaRoomPage.navigateToPressReleases();
 	}
-	
+@Step
 	public TSAGOVTestimonyPage navigateToTestimony() {
 		return tSAGOVMediaRoomPage.navigateToTestimony();
 	}
-	
+@Step
 	public TSAGOVSpeechesPage navigateToSpeeches() {
 		return tSAGOVMediaRoomPage.navigateToSpeeches();
 	}
-	
+@Step	
 	public TSAGOVStatementsPage navigateTOStatements() {
 		return tSAGOVMediaRoomPage.navigateTOStatements();
 		
 	}
-	
+@Step	
 	public TSAGOVFactsheetsPage navigateToFactSheets() {
 		return tSAGOVMediaRoomPage.navigateToFactSheets();
 		
@@ -108,7 +109,7 @@ public String actualUrl() {
 	 * Steps for TSAGOVPressReleasesPage
 	 ***********************************************/
 	
-	
+@Step	
 	public boolean verifyPressReleasesText() {
 		return tSAGOVPressReleasesPage.verifyPressReleasesText();
 	}
@@ -116,7 +117,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVBlogPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyBlogText() {
 		return tSAGOVBlogPage.verifyBlogText();
 	}
@@ -125,7 +126,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVFactsheetsPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyFactsheetsText() {
 		return tSAGOVFactsheetsPage.verifyFactsheetsText();
 	}
@@ -133,7 +134,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVSocialMediaPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifySocialMediaText() {
 		return tSAGOVSocialMediaPage.verifySocialMediaText();
 		}
@@ -141,7 +142,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVSpeechesPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifySpeechesText() {
 		return tSAGOVSpeechesPage.verifySpeechesText();
 	}	
@@ -149,6 +150,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVStatementsPage
 	 ***********************************************/
+@Step
 	public boolean verifyStatementsText() {
 		return tSAGOVStatementsPage.verifyStatementsText();
 	}
@@ -156,7 +158,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVTestimonyPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyTestimonyText() {
 		
 		return tSAGOVTestimonyPage.verifyTestimonyText();
@@ -165,7 +167,7 @@ public String actualUrl() {
 	/***********************************************
 	 * Steps for TSAGOVVideoPage
 	 ***********************************************/
-	
+@Step
 	public boolean verifyVideoBanner() {
 		return tSAGOVVideoPage.verifyVideoBanner();
 	}
