@@ -34,17 +34,17 @@ public class TSAGOVTravelTipsRegressionGlue {
 	@Then("^user is directed to Travel Tips page$")
 	public void user_is_directed_to_Travel_Tips_page() {
 	    assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/travel-tips");
-	    assert user.verifyTravelChecklistText();
+	    assert user.verifyTravelTipsText();
 	}
 
 	@Then("^page (.*) on Travel Tips section is accessible$")
 	public void page_Travel_Checklist_on_Travel_Tips_section_is_accessible(String pageName) {
 	    switch(pageName) {
 	    
-	    case "Travel Tips":
-	    	user.navigateToTravelTips();
+	    case "Travel Checklist":
+	    	user.navigateToTravelChecklist();
 	    	assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/travel-tips/travel-checklist");
-	    	assert user.verifyTravelTipsText();
+	    	assert user.verifyTravelChecklistText();
 	    	break;
 	    	
 	    }

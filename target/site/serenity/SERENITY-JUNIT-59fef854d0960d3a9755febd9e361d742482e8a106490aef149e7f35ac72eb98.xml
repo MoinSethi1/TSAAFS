@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="TSAPre section regression test" skipped="0" tests="4" time="21.63" timestamp="2020-02-26 12:16:21"><testcase name="As user I want to access all pages under TSAPre section"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+TSAGOV.glue.travel.TSAGOVTsaPreRegressionGlue.user_is_directed_to_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:52)&#13;
+✽.user is directed to TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)&#13;
+</system-err></testcase></testsuite>

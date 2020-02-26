@@ -5,7 +5,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class TSAGOVTravelTipsPage extends TSAGOVTravelPage{
 
-	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1/span") 
+	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
+	
 	private WebElementFacade travelTipsText;
 	
 	@FindBy (xpath ="//*[@id=\"sidenav_sublist_5\"]/li/a")
