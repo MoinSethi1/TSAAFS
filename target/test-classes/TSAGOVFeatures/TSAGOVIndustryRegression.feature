@@ -7,13 +7,23 @@ Feature: Industry section regression test
 
 Examples:
 |pageName										|
-|Cargo Programs							|
-|ASAC												|
-|Baggage Screening					|
-|Business										|
-|Capability Acceptance Process	|
-|Cybersecurity Toolkit			|
-|First Observer Plus				|
-|General Aviation						|
+#|HAZMAT												|
+#|Cargo Programs							|
+#|ASAC												|
+#|Baggage Screening					|
+#|Business										|
+#|Capability Acceptance Process	|
+#|Cybersecurity Toolkit			|
+#|First Observer Plus				|
+#|General Aviation						|
+|IStep												|
+|Innovation Task Force				|
+|PASS													|
+|Reimbursable Screening				|
+|Screening Partnership				|
+|Security Fees								|
+|SSI													|
+|STSAC												|
+
 
 

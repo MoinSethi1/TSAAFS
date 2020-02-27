@@ -80,7 +80,68 @@ public class TSAGOVIndustryRegressionGlue {
 			assert user.verifyGeneralAviationText().equals("General Aviation");
 			break;
 			
+		case "HAZMAT":
+			user.navigateToCargoPrograms();
+			user.navigateToHAZMAT();
+			assert user.verifyHAZMATText().equals("HAZMAT Endorsement");
+			break;
+						
+		case "IStep":
+			user.navigateToCargoPrograms();
+			user.navigateToIStep();
+			assert user.verifyIStepText().equals("Intermodal Security Training and Exercise Program");
+			break;
+			
+		case "Innovation Task Force":
+			user.navigateToCargoPrograms();
+			user.navigateToInnovationTaskForce();
+			assert user.verifyInnovationTaskForceText().equals("Innovation Task Force");
+			break;
+			
+		case "PASS":
+			user.navigateToCargoPrograms();
+			user.navigateToPASS();
+			assert user.verifyPassText().equals("Public Area Security");
+			break;
+			
+		case "Reimbursable Screening":
+			user.navigateToCargoPrograms();
+			user.navigateToReimbursableScreening();
+			assert user.verifyReimbursableScreeningText().equals("Reimbursable Screening Services Program");
+			break;
+			
+		case "Screening Partnership":
+			user.navigateToCargoPrograms();
+			user.navigateToScreeningPartnership();
+			assert user.verifyScreeningPartnershipText().equals("Screening Partnership Program");		
+			break;
+			
+		case "Security Fess":
+			user.navigateToCargoPrograms();
+			user.navigateToSecurityFees();
+			assert user.verifySecurityFeesText().equals("Security Fees");
+			break;
+			
+		case "SSI":
+			user.navigateToCargoPrograms();
+			user.navigateToSSI();
+			assert user.verifySSIText().equals("Sensitive Security Information");
+			break;
+			
+		case "STSAC":
+			user.navigateToCargoPrograms();
+			user.navigateToSTSAC();
+			assert user.verifySTSACText().equals("Surface Transportation Security Advisory Committee");
+			break;
+			
+			
+			
+			
+			
 		}
+		
+		
+		
 	}
 
 	

@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: serenity.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 160.34 sec - in serenity.CucumberTestSuite
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 156.287 sec <<< FAILURE! - in serenity.CucumberTestSuite
+As user I want to access all pages under Industry section(Industry section regression test)  Time elapsed: 16.392 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:116)
+	at ?.page Screening Partnership under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)
+

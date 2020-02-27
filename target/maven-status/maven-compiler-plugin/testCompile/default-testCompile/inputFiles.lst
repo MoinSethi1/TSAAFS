@@ -24,8 +24,10 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\ind
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVTravelFAQRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVStrategyPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\TSAGOVBasePage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVScreeningPartnershipPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTSAPrePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVIndustryPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSTSACPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVSpecialProceduresRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\steps\TSAGOVAboutSteps.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVTsaPreRegressionGlue.java
@@ -37,9 +39,11 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\in
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVEmployeeStoriesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVRealIDPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\about\TSAGOVAboutRegressionGlue.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVIStepPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\TSAGOVBasePageGlue.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVInnovationTaskForcePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVCyberSecurityToolkitPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVOrganizationPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\media\TSAGOVFactsheetsPage.java
@@ -54,10 +58,14 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\tr
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVIdentificationPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVSecurityScreeningRegressionGlue.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVReimbursableScreeningPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSecurityFeesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVMissionPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\media\TSAGOVBlogPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVSchedulePage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVPASSPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\media\TSAGOVSpeechesPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSSIPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelFAQPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelChecklistPage.java
@@ -70,6 +78,7 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\tr
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVTimelinePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVCargoProgramsPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVLiquidsRulePage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVHAZMATPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVSpecialProceduresPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\steps\TSAGOVIndustrySteps.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWhatCanIBringSharpObjectsPage.java

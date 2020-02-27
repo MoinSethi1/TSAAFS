@@ -28,31 +28,31 @@ public class TSAGOVCargoProgramsPage extends TSAGOVIndustryPage {
 	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[8]/a")
 	private WebElementFacade generalAviationLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[9]/a")
+	@FindBy (xpath = "//a[@href='/for-industry/hazmat-endorsement']")
 	private WebElementFacade hAZMATLink;
-	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[10]/a")
+		
+	@FindBy (xpath ="//a[@href ='/for-industry/intermodal-security-training-and-exercise-program']")
 	private WebElementFacade iStepLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[11]/a")
-	private WebElementFacade innovationTaskForce;
+	@FindBy (xpath ="//a[@href='/itf']")
+	private WebElementFacade innovationTaskForceLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[12]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/public-area-security-summits']")
 	private WebElementFacade passLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[13]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/reimbursable-screening-services-program']")
 	private WebElementFacade reimbursableScreeningLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[14]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/screening-partnerships']")
 	private WebElementFacade screeningPartnershipLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[15]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/security-fees']")
 	private WebElementFacade securityFeesLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[16]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/sensitive-security-information']")
 	private WebElementFacade sSILink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[17]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/surface-transportation-security']")
 	private WebElementFacade sTSACLink;
 	
 	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[18]/a")
@@ -63,6 +63,8 @@ public class TSAGOVCargoProgramsPage extends TSAGOVIndustryPage {
 	
 	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[20]/a")
 	private WebElementFacade tWICLink;
+	
+	
 	
 	
 	public String verifyCargoProgramsTxet() {
@@ -108,6 +110,52 @@ public TSAGOVGeneralAviationPage navigateToGeneralAviation() {
 	return this.switchToPage(TSAGOVGeneralAviationPage.class);
 }
 
+public TSAGOVHAZMATPage navigateToHAZMAT() {
+	hAZMATLink.click();
+	return this.switchToPage(TSAGOVHAZMATPage.class);
+	
+}
+
+public TSAGOVIStepPage navigateToIStep() {
+	iStepLink.click();
+	return this.switchToPage(TSAGOVIStepPage.class);
+}
+
+public TSAGOVInnovationTaskForcePage navigateToInnovationTaskForce() {
+	innovationTaskForceLink.click();
+	return this.switchToPage(TSAGOVInnovationTaskForcePage.class);
+}
 
 
+public TSAGOVPASSPage navigateToPASS() {
+	passLink.click();
+	return this.switchToPage(TSAGOVPASSPage.class);
+
+}
+
+public TSAGOVReimbursableScreeningPage navigateToReimbursableScreening() {
+	reimbursableScreeningLink.click();
+	return this.switchToPage(TSAGOVReimbursableScreeningPage.class);
+}
+
+public TSAGOVScreeningPartnershipPage navigateToScreeningPartnership() {
+	screeningPartnershipLink.click();
+	return this.switchToPage(TSAGOVScreeningPartnershipPage.class);
+	
+}
+
+public TSAGOVSecurityFeesPage navigateToSecurityFees() {
+	securityFeesLink.click();
+	return this.switchToPage(TSAGOVSecurityFeesPage.class);
+}
+
+public TSAGOVSSIPage navigateToSSI() {
+	sSILink.click();
+	return this.switchToPage(TSAGOVSSIPage.class);
+}
+
+public TSAGOVSTSACPage navigateToSTSAC() {
+	sTSACLink.click();
+	return this.switchToPage(TSAGOVSTSACPage.class);
+}
 }
