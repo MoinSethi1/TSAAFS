@@ -19,6 +19,9 @@ import TSAGOV.pages.industry.TSAGOVSSIPage;
 import TSAGOV.pages.industry.TSAGOVSTSACPage;
 import TSAGOV.pages.industry.TSAGOVScreeningPartnershipPage;
 import TSAGOV.pages.industry.TSAGOVSecurityFeesPage;
+import TSAGOV.pages.industry.TSAGOVSurfaceTransportationPage;
+import TSAGOV.pages.industry.TSAGOVTWICPage;
+import TSAGOV.pages.industry.TSAGOVTrainingPage;
 import net.thucydides.core.annotations.Step;
 
 
@@ -43,6 +46,9 @@ public class TSAGOVIndustrySteps {
 	TSAGOVSecurityFeesPage tSAGOVSecurityFeesPage;
 	TSAGOVSSIPage tSAGOVSSIPage;
 	TSAGOVSTSACPage tSAGOVSTSACPage;
+	TSAGOVSurfaceTransportationPage tSAGOVSurfaceTransportationPage;
+	TSAGOVTrainingPage tSAGOVTrainingPage;
+	TSAGOVTWICPage tSAGOVTWICPage;
 	
 	
 	
@@ -170,6 +176,21 @@ public TSAGOVSSIPage navigateToSSI() {
 @Step
 public TSAGOVSTSACPage navigateToSTSAC() {
 	return tSAGOVCargoProgramsPage.navigateToSTSAC();
+}
+
+public TSAGOVSurfaceTransportationPage navigateToSurfaceTransportation() {
+	return tSAGOVCargoProgramsPage.navigateToSurfaceTransportation();
+}
+
+@Step
+public TSAGOVTrainingPage navigateToTraining() {
+	return tSAGOVCargoProgramsPage.navigateToTraining();
+	
+}
+
+@Step
+public TSAGOVTWICPage navigateToTWIC() {
+	return tSAGOVCargoProgramsPage.navigateToTWIC();
 }
 
 
@@ -304,6 +325,34 @@ public String verifySecurityFeesText() {
 @Step
 public String verifySTSACText() {
 	return tSAGOVSTSACPage.verifySTSACText();
+}
+
+
+/***********************************************
+ * Steps for TSAGOVSurfaceTransportationPage
+ ***********************************************/
+@Step
+public String verifySurfaceTransportationText() {
+	return tSAGOVSurfaceTransportationPage.verifySurfaceTransportationText();
+}
+
+
+/***********************************************
+ * Steps for TSAGOVTrainingPage
+ ***********************************************/
+
+@Step
+public String verifyTrainingText() {
+	return tSAGOVTrainingPage.verifyTrainingText();
+	
+}
+
+/***********************************************
+ * Steps for TSAGOVTWICPage
+ ***********************************************/
+@Step
+public String verifyTWICText() {
+	return tSAGOVTWICPage.verifyTWICText();
 }
 
 }

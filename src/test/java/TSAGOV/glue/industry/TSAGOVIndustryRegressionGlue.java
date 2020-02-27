@@ -134,9 +134,23 @@ public class TSAGOVIndustryRegressionGlue {
 			assert user.verifySTSACText().equals("Surface Transportation Security Advisory Committee");
 			break;
 			
+		case "Surface Transportation":
+			user.navigateToCargoPrograms();
+			user.navigateToSurfaceTransportation();
+			assert user.verifySurfaceTransportationText().equals("Surface Transportation");
+			break;
 			
+		case "Training":
+			user.navigateToCargoPrograms();
+			user.navigateToTraining();
+			assert user.verifyTrainingText().equals("Training");
+			break;
 			
-			
+		case "TWIC":
+			user.navigateToCargoPrograms();
+			user.navigateToTWIC();
+			assert user.verifyTWICText().equals("TWIC®");
+			break;
 			
 		}
 		

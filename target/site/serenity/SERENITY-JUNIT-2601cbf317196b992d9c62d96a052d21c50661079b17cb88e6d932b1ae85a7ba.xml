@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Industry section regression test" skipped="0" tests="8" time="144.4" timestamp="2020-02-27 02:26:51"><testcase name="As user I want to access all pages under Industry section"><failure type="java.lang.AssertionError"/><system-err>null&#13;
-TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:116)&#13;
-✽.page Screening Partnership under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Industry section regression test" skipped="0" tests="20" time="473.97" timestamp="2020-02-27 04:13:07"><testcase name="As user I want to access all pages under Industry section"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:140)&#13;
+✽.page Surface Transportation under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)&#13;
 </system-err></testcase></testsuite>
