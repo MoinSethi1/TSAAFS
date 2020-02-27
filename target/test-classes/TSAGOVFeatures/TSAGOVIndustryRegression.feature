@@ -6,7 +6,14 @@ Feature: Industry section regression test
  		Then page <pageName> under Industry section is accessible
 
 Examples:
-|pageName								|
-|Industry			|
+|pageName										|
 |Cargo Programs							|
+|ASAC												|
+|Baggage Screening					|
+|Business										|
+|Capability Acceptance Process	|
+|Cybersecurity Toolkit			|
+|First Observer Plus				|
+|General Aviation						|
+
 

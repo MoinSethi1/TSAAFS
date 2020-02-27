@@ -57,7 +57,7 @@ public class TSAGOVBasePage extends PageObject {
 	@FindBy (xpath ="//*[@id=\"basic-nav-section-2\"]/a[2]/li/span")
 	private WebElementFacade mediaRoomLink;
 	
-	@FindBy (xpath = "/html/body/div[2]/footer/div[1]/div/div[1]/nav/div/div[2]/ul/li[3]/a")
+	@FindBy (xpath = "/html/body/div[2]/div/footer/div[1]/div/div[1]/nav/div/div[2]/ul/li[3]/a")
 	private WebElementFacade industryLink;
 		
 	public void navigateToTSAGOV() {
