@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="serenity.CucumberTestSuite" time="28.741" tests="8" errors="0" skipped="0" failures="1">
+<testsuite name="serenity.CucumberTestSuite" time="24.37" tests="20" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6476869502378063438.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7039340044039175748.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%JAVA_HOME%\bin;%M2_HOME%\bin;C:\Users\moinpreet.sethi\Application Browsers;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\moinpreet.sethi\AppData\Local\Microsoft\WindowsApps;C:\Users\moinpreet.sethi\gradle-6.1.1-all\gradle-6.1.1\bin;C:\Users\moinpreet.sethi\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\moinpreet.sethi\AppData\Local\GitHubDesktop\bin;C:\Users\moinpreet.sethi\AppData\Local\atom\bin;C:\Users\moinpreet.sethi\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,27 +60,40 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="28.741"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.833"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="18.521"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="17.866"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="16.392">
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="24.37"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="17.005"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="24.45"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="21.359"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="37.267"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.991"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="28.868"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.633"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="44.15"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.135"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="20.558"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="16.739"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="17.841"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="38.757"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.471"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="35.133"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.899"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="15.222">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:116)
-	at ✽.page Screening Partnership under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)
+	at TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:140)
+	at ✽.page Surface Transportation under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)
 </failure>
-    <system-err><![CDATA[Feb 27, 2020 2:28:16 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+    <system-err><![CDATA[Feb 27, 2020 4:20:12 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-86365 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-86365 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 35762
+426311 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+426311 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 43176
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582831698.014][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582831700.022][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 27, 2020 2:28:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1582838413.662][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1582838415.665][WARNING]: Timed out connecting to Chrome, retrying...
+Feb 27, 2020 4:20:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-102517 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+441230 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
  (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
@@ -90,11 +103,10 @@ INFO: Detected dialect: W3C
 
 TEST FAILED: As user I want to access all pages under Industry section
 --------------------------------------------------------------------------
-102567 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then page Screening Partnership under Industry section is accessible
-102567 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+441338 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then page Surface Transportation under Industry section is accessible
+441338 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
 ]]></system-err>
   </testcase>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="11.139"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="15.72"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="23.098"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="16.261"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="50.139"/>
 </testsuite>

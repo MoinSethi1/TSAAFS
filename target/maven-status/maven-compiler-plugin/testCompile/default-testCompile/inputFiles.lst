@@ -39,6 +39,7 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\in
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVEmployeeStoriesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVRealIDPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\about\TSAGOVAboutRegressionGlue.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVIStepPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.java
@@ -46,6 +47,7 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\TSA
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVInnovationTaskForcePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVCyberSecurityToolkitPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVOrganizationPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVTWICPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\media\TSAGOVFactsheetsPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWhatCanIBringSportingCampingPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVWhatCanIBringRegressionGlue.java
@@ -86,3 +88,4 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\tr
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVPassengerSupportRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\media\TSAGOVMediaRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVFAQPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVTrainingPage.java

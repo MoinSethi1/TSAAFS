@@ -55,13 +55,13 @@ public class TSAGOVCargoProgramsPage extends TSAGOVIndustryPage {
 	@FindBy (xpath ="//a[@href='/for-industry/surface-transportation-security']")
 	private WebElementFacade sTSACLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[18]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/surface-transportation']")
 	private WebElementFacade surfaceTransportationLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[19]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/training']")
 	private WebElementFacade trainingLink;
 	
-	@FindBy (xpath ="//*[@id=\"block-for-industry-sidebar\"]/nav[1]/ul/li[20]/a")
+	@FindBy (xpath ="//a[@href='/for-industry/twic']")
 	private WebElementFacade tWICLink;
 	
 	
@@ -158,4 +158,23 @@ public TSAGOVSTSACPage navigateToSTSAC() {
 	sTSACLink.click();
 	return this.switchToPage(TSAGOVSTSACPage.class);
 }
+
+public TSAGOVSurfaceTransportationPage navigateToSurfaceTransportation() {
+	surfaceTransportationLink.click();
+	
+	return this.switchToPage(TSAGOVSurfaceTransportationPage.class);
+}
+
+public TSAGOVTrainingPage navigateToTraining() {
+	trainingLink.click();
+	
+	return this.switchToPage(TSAGOVTrainingPage.class);
+	
+}
+
+public TSAGOVTWICPage navigateToTWIC() {
+	tWICLink.click();
+	return this.switchToPage(TSAGOVTWICPage.class);
+}
+
 }

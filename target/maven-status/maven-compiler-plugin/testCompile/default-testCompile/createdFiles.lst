@@ -53,6 +53,7 @@ TSAGOV\pages\industry\TSAGOVPASSPage.class
 TSAGOV\glue\about\TSAGOVAboutRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVIdentificationPage.class
 TSAGOV\pages\travel\TSAGOVTravelRedressPage.class
+TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.class
 TSAGOV\pages\TSAGOVBasePage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
 TSAGOV\pages\industry\TSAGOVIndustryPage.class
@@ -74,6 +75,7 @@ TSAGOV\pages\travel\TSAGOVTravelTipsPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSportingCampingPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringMedicalPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringFirearmsPage.class
+TSAGOV\pages\industry\TSAGOVTrainingPage.class
 TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.class
 serenity\CucumberTestSuite.class
 TSAGOV\pages\industry\TSAGOVSTSACPage.class
@@ -81,6 +83,7 @@ TSAGOV\pages\industry\TSAGOVFirstObserverPlusPage.class
 TSAGOV\pages\travel\TSAGOVTravelPage.class
 TSAGOV\pages\travel\TSAGOVPassengerSupportPage.class
 TSAGOV\pages\travel\TSAGOVFAQPage.class
+TSAGOV\pages\industry\TSAGOVTWICPage.class
 TSAGOV\glue\travel\TSAGOVSpecialProceduresRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVTravelFAQPage.class
 TSAGOV\pages\media\TSAGOVSocialMediaPage.class
