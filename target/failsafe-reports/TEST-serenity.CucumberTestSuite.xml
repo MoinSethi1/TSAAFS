@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="serenity.CucumberTestSuite" time="203.65" tests="44" errors="1" skipped="0" failures="5">
+<testsuite name="serenity.CucumberTestSuite" time="28.741" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2039022114286849673.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6476869502378063438.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%JAVA_HOME%\bin;%M2_HOME%\bin;C:\Users\moinpreet.sethi\Application Browsers;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\moinpreet.sethi\AppData\Local\Microsoft\WindowsApps;C:\Users\moinpreet.sethi\gradle-6.1.1-all\gradle-6.1.1\bin;C:\Users\moinpreet.sethi\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\moinpreet.sethi\AppData\Local\GitHubDesktop\bin;C:\Users\moinpreet.sethi\AppData\Local\atom\bin;C:\Users\moinpreet.sethi\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,57 +60,27 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="20.719"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="16.366"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="18.689"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="15.68"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="18.578"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="20.022"/>
-  <testcase name="As user I want to login to the TSA.gov application" classname="login into TSA.gov" time="12.464"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="13.636"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.274"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.984"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="27.947"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="31.487"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="15.66"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.913"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="14.79"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="24.225"/>
-  <testcase name="As user I want to access  pages under Passenger Support section" classname="Passenger Support section regression test" time="20.648"/>
-  <testcase name="As user I want to access  pages under Passenger Support section" classname="Passenger Support section regression test" time="21.89"/>
-  <testcase name="As user I want to access  pages under Passenger Support section" classname="Passenger Support section regression test" time="23.864"/>
-  <testcase name="As user I want to access pages under Security Screening section" classname="Security Screening section regression test" time="17.709"/>
-  <testcase name="As user I want to access pages under Security Screening section" classname="Security Screening section regression test" time="18.996"/>
-  <testcase name="As user I want to access pages under Security Screening section" classname="Security Screening section regression test" time="17.844"/>
-  <testcase name="As user I want to access pages under Security Screening section" classname="Security Screening section regression test" time="24.13"/>
-  <testcase name="As user I want to access FAQsection" classname="Travel FAQ section regression test" time="23.664"/>
-  <testcase name="As user I want to access all pages on Travel Tips section" classname="Travel Tips section regression test" time="26.612">
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="28.741"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.833"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="18.521"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="17.866"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="16.392">
     <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.travel.TSAGOVTravelTipsRegressionGlue.user_is_directed_to_Travel_Tips_page(TSAGOVTravelTipsRegressionGlue.java:37)
-	at ✽.user is directed to Travel Tips page(src/test/resources/TSAGOVFeatures/TSAGOVTravelTipsRegression.feature:8)
+	at TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:116)
+	at ✽.page Screening Partnership under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)
 </failure>
-    <system-err><![CDATA[476915 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: As user I want to access all pages on Travel Tips section
--------------------------------------------------------------------(travel-tips-section-regression-test;as-user-i-want-to-access-all-pages-on-travel-tips-section)
-Feb 26, 2020 12:15:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+    <system-err><![CDATA[Feb 27, 2020 2:28:16 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-477079 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-477079 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 40916
+86365 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+86365 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 35762
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737355.881][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737357.889][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:15:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1582831698.014][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+[1582831700.022][WARNING]: Timed out connecting to Chrome, retrying...
+Feb 27, 2020 2:28:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-498685 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+102517 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
  (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
@@ -118,307 +88,13 @@ INFO: Detected dialect: W3C
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: As user I want to access all pages on Travel Tips section
+TEST FAILED: As user I want to access all pages under Industry section
 --------------------------------------------------------------------------
-498744 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user is directed to Travel Tips page
-498744 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+102567 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then page Screening Partnership under Industry section is accessible
+102567 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
 ]]></system-err>
   </testcase>
-  <testcase name="As user I want to access all pages under TSAPre section" classname="TSAPre section regression test" time="22.292">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.travel.TSAGOVTsaPreRegressionGlue.user_is_directed_to_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:52)
-	at ✽.user is directed to TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)
-</failure>
-    <system-err><![CDATA[503530 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: As user I want to access all pages under TSAPre section
--------------------------------------------------------------------(tsapre-section-regression-test;as-user-i-want-to-access-all-pages-under-tsapre-section)
-Feb 26, 2020 12:16:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-503698 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-503698 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 25438
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737382.485][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737384.488][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:16:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-525815 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: As user I want to access all pages under TSAPre section
---------------------------------------------------------------------------
-525815 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user is directed to TSAPre page
-525815 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-]]></system-err>
-  </testcase>
-  <testcase name="As user I want to access all pages under TSAPre section" classname="TSAPre section regression test" time="18.602">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.travel.TSAGOVTsaPreRegressionGlue.user_is_directed_to_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:52)
-	at ✽.user is directed to TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)
-</failure>
-    <system-err><![CDATA[Feb 26, 2020 12:16:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-525992 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-525992 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 28177
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737404.794][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737406.801][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:16:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="As user I want to access all pages under TSAPre section" classname="TSAPre section regression test" time="17.662">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.travel.TSAGOVTsaPreRegressionGlue.user_is_directed_to_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:52)
-	at ✽.user is directed to TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)
-</failure>
-    <system-err><![CDATA[Feb 26, 2020 12:17:02 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-544590 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-544590 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 10174
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737423.396][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737425.405][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:17:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="As user I want to access all pages under TSAPre section" classname="TSAPre section regression test" time="23.176">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at TSAGOV.glue.travel.TSAGOVTsaPreRegressionGlue.user_is_directed_to_TSAPre_page(TSAGOVTsaPreRegressionGlue.java:52)
-	at ✽.user is directed to TSAPre page(src/test/resources/TSAGOVFeatures/TSAGOVTsaPreRegression.feature:7)
-</failure>
-    <system-err><![CDATA[Feb 26, 2020 12:17:19 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-562256 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-562256 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 6477
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737441.060][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737443.068][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:17:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="27.569">
-    <error message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException"><![CDATA[net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1157)
-	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
-	at com.sun.proxy.$Proxy27.waitUntilClickable(Unknown Source)
-	at TSAGOV.pages.travel.TSAGOVWhatCanIBringPage.navigateToAll(TSAGOVWhatCanIBringPage.java:65)
-	at TSAGOV.steps.TSAGOVTravelSteps.navigateToAll(TSAGOVTravelSteps.java:169)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.CGLIB$navigateToAll$67(<generated>)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec$$FastClassByCGLIB$$2c60ee02.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.navigateToAll(<generated>)
-	at TSAGOV.glue.travel.TSAGOVWhatCanIBringRegressionGlue.all_sections_on_this_page_are_accessible(TSAGOVWhatCanIBringRegressionGlue.java:50)
-	at ✽.page All on What can I bring section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVWhatCanIBringRegression.feature:9)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for TSAGOVWhatCanIBringPage.allItemsLink to be clickable (tried for 5 second(s) with 100 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1154)
-	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
-	at com.sun.proxy.$Proxy27.waitUntilClickable(Unknown Source)
-	at TSAGOV.pages.travel.TSAGOVWhatCanIBringPage.navigateToAll(TSAGOVWhatCanIBringPage.java:65)
-	at TSAGOV.steps.TSAGOVTravelSteps.navigateToAll(TSAGOVTravelSteps.java:169)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.CGLIB$navigateToAll$67(<generated>)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec$$FastClassByCGLIB$$2c60ee02.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.navigateToAll(<generated>)
-	at TSAGOV.glue.travel.TSAGOVWhatCanIBringRegressionGlue.all_sections_on_this_page_are_accessible(TSAGOVWhatCanIBringRegressionGlue.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Timed out after 2 seconds. Element not found
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:166)
-	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:118)
-	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:30)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:217)
-	at net.serenitybdd.core.pages.WebElementExpectations$5.apply(WebElementExpectations.java:106)
-	at net.serenitybdd.core.pages.WebElementExpectations$5.apply(WebElementExpectations.java:98)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1154)
-	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
-	at com.sun.proxy.$Proxy27.waitUntilClickable(Unknown Source)
-	at TSAGOV.pages.travel.TSAGOVWhatCanIBringPage.navigateToAll(TSAGOVWhatCanIBringPage.java:65)
-	at TSAGOV.steps.TSAGOVTravelSteps.navigateToAll(TSAGOVTravelSteps.java:169)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.CGLIB$navigateToAll$67(<generated>)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec$$FastClassByCGLIB$$2c60ee02.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
-	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.navigateToAll(<generated>)
-	at TSAGOV.glue.travel.TSAGOVWhatCanIBringRegressionGlue.all_sections_on_this_page_are_accessible(TSAGOVWhatCanIBringRegressionGlue.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></error>
-    <system-err><![CDATA[585275 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: As user I want to access all pages on What Can I Bring? section
--------------------------------------------------------------------(what-can-i-bring?-section-regression-test;as-user-i-want-to-access-all-pages-on-what-can-i-bring?-section)
-Feb 26, 2020 12:17:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-585439 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-585439 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 47723
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1582737464.240][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
-[1582737466.245][WARNING]: Timed out connecting to Chrome, retrying...
-Feb 26, 2020 12:17:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-612841 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: As user I want to access all pages on What Can I Bring? section
---------------------------------------------------------------------------
-612841 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Navigate to all
-612842 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabledBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'Driver info: driver.version: unknown
-]]></system-err>
-  </testcase>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="21.589"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="23.528"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="24.472"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="21.515"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="28.144"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="22.257"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="21.167"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="33.029"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="18.337"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="16.422"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="16.923"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="15.101"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="18.598"/>
-  <testcase name="As user I want to access all pages under Special Procedure section" classname="Special Procedures section regression test" time="27.121"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="11.139"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="15.72"/>
+  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="23.098"/>
 </testsuite>

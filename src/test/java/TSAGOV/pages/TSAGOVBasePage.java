@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import TSAGOV.pages.about.TSAGOVAboutPage;
+import TSAGOV.pages.industry.TSAGOVIndustryPage;
 import TSAGOV.pages.media.TSAGOVMediaPage;
 import TSAGOV.pages.media.TSAGOVMediaRoomPage;
 import TSAGOV.pages.travel.TSAGOVTravelPage;
@@ -55,6 +56,9 @@ public class TSAGOVBasePage extends PageObject {
 	
 	@FindBy (xpath ="//*[@id=\"basic-nav-section-2\"]/a[2]/li/span")
 	private WebElementFacade mediaRoomLink;
+	
+	@FindBy (xpath = "/html/body/div[2]/div/footer/div[1]/div/div[1]/nav/div/div[2]/ul/li[3]/a")
+	private WebElementFacade industryLink;
 		
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
@@ -129,6 +133,11 @@ public class TSAGOVBasePage extends PageObject {
 		aboutLink.click();
 		return this.switchToPage(TSAGOVAboutPage.class);
 		
+	}
+	
+	public TSAGOVIndustryPage navigateToIndustry() {
+		industryLink.click();
+		return this.switchToPage(TSAGOVIndustryPage.class);
 	}
 
 	

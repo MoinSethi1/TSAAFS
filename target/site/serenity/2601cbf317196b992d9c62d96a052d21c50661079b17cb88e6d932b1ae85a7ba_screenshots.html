@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">TSA.gov</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ba9f57ddba5456620e6c9b39b25b6aceccef4eb633ee828472256240d39b3e5f.html">Industry Section Regression Test</a></span>
+                > <span class="truncate-60"><a
+                    href="2601cbf317196b992d9c62d96a052d21c50661079b17cb88e6d932b1ae85a7ba.html">As user I want to access all pages under Industry section </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-02-2020 14:26</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Industry Section Regression Test</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">As user I want to access all pages under Industry section
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given user wants to access all pages on Industry section<br>When user access Industry pages<br>Then page &lt;pageName&gt; under Industry section is accessible</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>TSAGOV.glue.industry.TSAGOVIndustryRegressionGlue.page_Industry_under_Industry_section_is_accessible(TSAGOVIndustryRegressionGlue.java:116)<br />✽.page Screening Partnership under Industry section is accessible(src/test/resources/TSAGOVFeatures/TSAGOVIndustryRegression.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource7137053750639588113.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=IStep}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Then page IStep under Industry section is accessible" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to i step" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Navigate to i step" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Navigate to i step (completed)" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Verify i step text" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Verify i step text (completed)" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Then page IStep under Industry section is accessible (completed)" width="1295"/>
+                <img src="893214a2c9e4e1b11d572497f664d0fcf0e0e19d3c3c050fb639b5505d0c37ff.png" title=" Example: {pageName=IStep} (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=Innovation Task Force}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Then page Innovation Task Force under Industry section is accessible" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to innovation task force" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Navigate to innovation task force" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Navigate to innovation task force (completed)" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Verify innovation task force text" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Verify innovation task force text (completed)" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Then page Innovation Task Force under Industry section is accessible (completed)" width="1295"/>
+                <img src="f55c358594ba2d715e3165fbfb0a7990e549a64ee9125b3efa408497db2023b6.png" title=" Example: {pageName=Innovation Task Force} (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=PASS}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Then page PASS under Industry section is accessible" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to PASS" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Navigate to PASS" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Navigate to PASS (completed)" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Verify pass text" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Verify pass text (completed)" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Then page PASS under Industry section is accessible (completed)" width="1295"/>
+                <img src="dce950516b187d2b458075f55a24161ad911087d06832dd145b29751fe696ffd.png" title=" Example: {pageName=PASS} (completed)" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" Example: {pageName=Reimbursable Screening}" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" When user access Industry pages" width="1295"/>
+                <img src="a36bfbcb7ef410033cbcdf440a43c259c6b1e76583a629fcf09182e7376975bd.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Then page Reimbursable Screening under Industry section is accessible" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to reimbursable screening" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Navigate to reimbursable screening" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Navigate to reimbursable screening (completed)" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Verify reimbursable screening text" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Verify reimbursable screening text (completed)" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Example: {pageName=Reimbursable Screening}" width="1295"/>
+                <img src="44a47e708628fba50f780624225e3e72b8d0ad1ce32e61f2f7db47f5e192bf9f.png" title=" Then page Reimbursable Screening under Industry section is accessible (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=Screening Partnership}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Then page Screening Partnership under Industry section is accessible" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to screening partnership" width="1295"/>
+                <img src="2cd824a4bbcf478340b1a085c7a1a93d4a39c723bb40523ca9bbca7ca0c78b8c.png" title=" Navigate to screening partnership" width="1295"/>
+                <img src="2cd824a4bbcf478340b1a085c7a1a93d4a39c723bb40523ca9bbca7ca0c78b8c.png" title=" Navigate to screening partnership (completed)" width="1295"/>
+                <img src="2cd824a4bbcf478340b1a085c7a1a93d4a39c723bb40523ca9bbca7ca0c78b8c.png" title=" Verify screening partnership text" width="1295"/>
+                <img src="2cd824a4bbcf478340b1a085c7a1a93d4a39c723bb40523ca9bbca7ca0c78b8c.png" title=" Verify screening partnership text (completed)" width="1295"/>
+                <img src="cf7aea173a7314651734fd4773b03270045dc97a7ebcb8bcb9a6b8a0bb4e35c4.png" title=" Then page Screening Partnership under Industry section is accessible (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=Security Fees}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Then page Security Fees under Industry section is accessible" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Example: {pageName=Security Fees}" width="1295"/>
+                <img src="5eb294001914581fc8d8b50ed2b5ddf29a9e2ef36cfcedb1354428acc7d60894.png" title=" Then page Security Fees under Industry section is accessible (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Example: {pageName=SSI}" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" When user access Industry pages" width="1295"/>
+                <img src="e76f07f3f2c0876af7c8f0988ce6e0cf603ac3898b4aeadf5c75bc2827a34630.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Then page SSI under Industry section is accessible" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="51c0e61c7758fd88a9b521cfe88b27265473adf5ec6529bad1f65a0bfd344753.png" title=" Navigate to SSI" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Navigate to SSI" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Navigate to SSI (completed)" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Verify SSI text" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Verify SSI text (completed)" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Example: {pageName=SSI}" width="1295"/>
+                <img src="fb3ae315cba61df71f3a7f2695fbc508cf35f80665aea40464569c42d83ba858.png" title=" Then page SSI under Industry section is accessible (completed)" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" Example: {pageName=STSAC}" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" Given user wants to access all pages on Industry section" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" Navigate to TSAGOV" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" Given user wants to access all pages on Industry section (completed)" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" When user access Industry pages" width="1295"/>
+                <img src="fca691a6d832e36284f99aa5df830a3ebec986fe713925a477315fe0821d0f00.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to industry (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Verify industry text (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" When user access Industry pages (completed)" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Then page STSAC under Industry section is accessible" width="1295"/>
+                <img src="edd85f78e8f418f051eb6185f32a6e70a781f4b4de5846328801d364bd9ef3fa.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="a7691b081ef62873e34bf11df16bbffaf165207c8aa2020d98f883a19772d908.png" title=" Navigate to cargo programs" width="1295"/>
+                <img src="a7691b081ef62873e34bf11df16bbffaf165207c8aa2020d98f883a19772d908.png" title=" Navigate to cargo programs (completed)" width="1295"/>
+                <img src="a7691b081ef62873e34bf11df16bbffaf165207c8aa2020d98f883a19772d908.png" title=" Navigate to STSAC" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Navigate to STSAC" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Navigate to STSAC (completed)" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Verify STSAC text" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Verify STSAC text (completed)" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Then page STSAC under Industry section is accessible (completed)" width="1295"/>
+                <img src="188f59b0d3c79abc1a7081b4ea45a18f1f7e7442cf01ecac25135cca44b544f2.png" title=" Example: {pageName=STSAC} (completed): <span class='failing-color'>FAILURE</span>" width="1295"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.69</span>
+</div>
+</body>
+</html>

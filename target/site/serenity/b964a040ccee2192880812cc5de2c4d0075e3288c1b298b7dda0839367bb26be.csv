@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Travel Tips section regression test","As user I want to access all pages on Travel Tips section","FAILURE","2020-02-26T12:15:54.713-05:00[America/New_York]","0.0","21.12"
-"TSAPre section regression test","As user I want to access all pages under TSAPre section","FAILURE","2020-02-26T12:16:21.328-05:00[America/New_York]","0.0","21.63"
-"What can I Bring? section regression test","As user I want to access all pages on What Can I Bring? section","FAILURE","2020-02-26T12:17:43.073-05:00[America/New_York]","0.0","213.67"
+"Industry section regression test","As user I want to access all pages under Industry section","FAILURE","2020-02-27T14:26:51.817-05:00[America/New_York]","0.0","144.4"

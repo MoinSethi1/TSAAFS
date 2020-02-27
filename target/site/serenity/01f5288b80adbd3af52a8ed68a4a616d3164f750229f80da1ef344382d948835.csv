@@ -1,8 +1,1 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"About section regression test","As user I want to access all pages under About section","SUCCESS","2020-02-26T12:07:59.415-05:00[America/New_York]","0.0","103.39"
-"login into TSA.gov","As user I want to login to the TSA.gov application","SUCCESS","2020-02-26T12:09:49.552-05:00[America/New_York]","0.0","11.8"
-"Media section regression test","As user I want to access all pages under Media section","SUCCESS","2020-02-26T12:10:02.02-05:00[America/New_York]","0.0","178.56"
-"Passenger Support section regression test","As user I want to access  pages under Passenger Support section","SUCCESS","2020-02-26T12:13:05.951-05:00[America/New_York]","0.0","60.79"
-"Security Screening section regression test","As user I want to access pages under Security Screening section","SUCCESS","2020-02-26T12:14:12.359-05:00[America/New_York]","0.0","73.28"
-"Travel FAQ section regression test","As user I want to access FAQsection","SUCCESS","2020-02-26T12:15:31.046-05:00[America/New_York]","0.0","23.01"
-"Special Procedures section regression test","As user I want to access all pages under Special Procedure section","SUCCESS","2020-02-26T12:21:26.361-05:00[America/New_York]","0.0","102.47"
