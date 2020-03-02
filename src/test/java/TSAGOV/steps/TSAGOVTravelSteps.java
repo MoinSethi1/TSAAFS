@@ -22,7 +22,7 @@ import TSAGOV.pages.travel.TSAGOVSchedulePage;
 import TSAGOV.pages.travel.TSAGOVSecurityScreeningPage;
 import TSAGOV.pages.travel.TSAGOVSeniorPage;
 import TSAGOV.pages.travel.TSAGOVSpecialProceduresPage;
-import TSAGOV.pages.travel.TSAGOVTSAPrePage;
+import TSAGOV.pages.travel.TSAGOVTSAPrecheckPage;
 import TSAGOV.pages.travel.TSAGOVTravelChecklistPage;
 import TSAGOV.pages.travel.TSAGOVTravelFAQPage;
 import TSAGOV.pages.travel.TSAGOVTravelPage;
@@ -59,7 +59,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	TSAGOVWhatCanIBringSharpObjectsPage tSAGOVWhatCanIBringSharpObjectsPage;
 	TSAGOVWhatCanIBringSportingCampingPage tSAGOVWhatCanIBringSportingCampingPage;
 	TSAGOVTravelPage tSAGOVTravelPage;
-	TSAGOVTSAPrePage tSAGovTsaPrePage;
+	TSAGOVTSAPrecheckPage tSAGovTsaPrePage;
 	TSAGOVAirportAirlinesPage tSAGovAirportsAirlinesPage;
 	TSAGOVSchedulePage tSAGOVSchedulePage;
 	TSAGOVFAQPage tSAGOVFAQPage;
@@ -321,9 +321,9 @@ public boolean verifyMiscellaneousText() {
  ***********************************************/
 @Step
 
-public TSAGOVTSAPrePage navigateToTSAPre() {
+public TSAGOVTSAPrecheckPage navigateToTSAPrecheck() {
 
-	return tSAGOVTravelPage.navigateToTSAPre();
+	return tSAGOVTravelPage.navigateToTSAPrecheck();
 	}
 
 @Step
@@ -359,12 +359,12 @@ public TSAGOVTravelTipsPage navigateToTravelTips() {
 }
 
 /***********************************************
- * Steps for TSAGOVTSAPrePage
+ * Steps for TSAGOVTSAPreCheckPage
  ***********************************************/
 
 @Step
-public boolean verifyTsaPreImage() {
-	return tSAGovTsaPrePage.verifyTsaPreImage();
+public String verifyTsaPrecheckText() {
+	return tSAGovTsaPrePage.verifyTsaPrecheckText();
 	
 	}
 
@@ -390,6 +390,11 @@ public TSAGOVFAQPage navigateToFaq() {
 @Step
 public TSAGOVTrustedTravelerProgramPage navigateToTrustedTravelerPrograms() {
 	return tSAGovTsaPrePage.navigateToTrustedTravelerPrograms();
+}
+
+@Step
+public void tsaPreCheckExpand() {
+	tSAGovTsaPrePage.tsaPreCheckExpand();
 }
 
 /***********************************************
@@ -476,6 +481,11 @@ public TSAGOVCulturalPage navigateToCultural() {
 	
 }
 
+@Step
+public void specialProceduresExpand() {
+	tSAGOVSpecialProceduresPage.specialProceduresExpand();
+}
+
 /***********************************************
  * Steps for TSAGOVTDisabilitiesAndMediaclPage
  ***********************************************/
@@ -556,6 +566,11 @@ public TSAGOVClaimsPage navigateToClaims() {
 	return tSAGOVPassengerSupportPage.navigateToClaims();
 }
 
+@Step
+public void passengerSupportExpand() {
+	tSAGOVPassengerSupportPage.passengerSupportExpand();
+}
+
 /***********************************************
  * Steps for TSAGOVCivilRightsPage
  ***********************************************/
@@ -615,6 +630,16 @@ public TSAGOVRealIDPage navigateToRealID() {
 	return tSAGOVSecurityScreeningPage.navigateToRealID();
 }
 
+@Step
+public void securityScreeningExpand() {
+	tSAGOVSecurityScreeningPage.securityScreeningExpand();
+}
+
+@Step
+public TSAGOVWhatCanIBringPage navigateToWCIB() {
+	return tSAGOVSecurityScreeningPage.navigateToWCIB();
+}
+
 /***********************************************
  * Steps for TSAGOVIdentificationPage
  ***********************************************/
@@ -672,6 +697,11 @@ public boolean verifyTravelTipsText() {
 @Step
 public TSAGOVTravelChecklistPage navigateToTravelChecklist() {
 	return tSAGOVTravelTipsPage.navigateToTravelChecklist();
+}
+
+@Step
+public void travelTipsExpand() {
+	tSAGOVTravelTipsPage.travelTipsExpand();
 }
 
 /***********************************************

@@ -3,12 +3,12 @@ package TSAGOV.pages.travel;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVTSAPrePage extends TSAGOVTravelPage{
+public class TSAGOVTSAPrecheckPage extends TSAGOVTravelPage{
 	
-@FindBy (xpath ="//*[@id=\"block-mainpagecontent\"]/div/div/div[1]/div/div/div/article/div/div/div[1]")
-private WebElementFacade tsaPreImage;
+@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
+private WebElementFacade tsaPrecheckText;
 
-@FindBy (xpath ="//*[@id=\"sidenav_sublist_3\"]/li[1]/a")
+@FindBy (xpath ="//a[@href='/precheck/map']")
 private WebElementFacade airportsAirlinesLink;
 
 @FindBy (xpath ="//*[@id=\"sidenav_sublist_3\"]/li[2]/a")
@@ -20,10 +20,12 @@ private WebElementFacade faqLink;
 @FindBy (xpath ="//*[@id=\"sidenav_sublist_3\"]/li[4]/a")
 private WebElementFacade trustedTravelerProgramsPage;
 
+@FindBy (css ="#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(3) > div > button")
+private WebElementFacade tsaPreCheckExpand;
 
 
-	public boolean verifyTsaPreImage() {
-	return tsaPreImage.isPresent();
+	public String verifyTsaPrecheckText() {
+	return tsaPrecheckText.getText();
 	
 	}
 	
@@ -48,6 +50,10 @@ private WebElementFacade trustedTravelerProgramsPage;
 	public TSAGOVTrustedTravelerProgramPage navigateToTrustedTravelerPrograms() {
 		trustedTravelerProgramsPage.click();
 		return this.switchToPage(TSAGOVTrustedTravelerProgramPage.class);
+	}
+	
+	public void tsaPreCheckExpand() {
+		tsaPreCheckExpand.click();
 	}
 	
 	}

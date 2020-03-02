@@ -26,6 +26,8 @@ public class TSAGOVSpecialProceduresPage extends TSAGOVTravelPage {
 	@FindBy (xpath = "//*[@id=\"sidenav_sublist_2\"]/li[6]/a")
 	private WebElementFacade culturalLink;
 	
+	@FindBy (css = "#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(2) > div > button")
+	private WebElementFacade specialProceduresExpand;
 
 	public boolean verifySpecialProcedureText() {
 		return specialProcedureText.isPresent();
@@ -64,5 +66,9 @@ public class TSAGOVSpecialProceduresPage extends TSAGOVTravelPage {
 		culturalLink.click();
 		return this.switchToPage(TSAGOVCulturalPage.class);
 		
+	}
+	
+	public void specialProceduresExpand() {
+		specialProceduresExpand.click();
 	}
 }

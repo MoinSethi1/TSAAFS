@@ -6,6 +6,8 @@ TSAGOV\pages\industry\TSAGOVScreeningPartnershipPage.class
 TSAGOV\pages\media\TSAGOVStatementsPage.class
 TSAGOV\pages\travel\TSAGOVTrustedTravelerProgramPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringMiscellaneousPage.class
+TSAGOV\pages\travel\TSAGOVTSAPrecheckPage.class
+TSAGOV\glue\travel\TSAGOVTravelRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.class
 TSAGOV\pages\travel\TSAGOVLiquidsRulePage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSharpObjectsPage.class
@@ -57,7 +59,6 @@ TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.class
 TSAGOV\pages\TSAGOVBasePage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
 TSAGOV\pages\industry\TSAGOVIndustryPage.class
-TSAGOV\pages\travel\TSAGOVTSAPrePage.class
 TSAGOV\pages\travel\TSAGOVMilitaryPage.class
 TSAGOV\pages\industry\TSAGOVReimbursableScreeningPage.class
 TSAGOV\glue\travel\TSAGOVTravelTipsRegressionGlue.class
