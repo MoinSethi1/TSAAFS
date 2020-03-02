@@ -116,7 +116,7 @@ public class TSAGOVIndustryRegressionGlue {
 			assert user.verifyScreeningPartnershipText().equals("Screening Partnership Program");		
 			break;
 			
-		case "Security Fess":
+		case "Security Fees":
 			user.navigateToCargoPrograms();
 			user.navigateToSecurityFees();
 			assert user.verifySecurityFeesText().equals("Security Fees");

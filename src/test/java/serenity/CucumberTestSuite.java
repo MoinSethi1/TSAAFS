@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
 
 
-		features= "src/test/resources/TSAGOVFeatures",
+		features= "src/test/resources/TSAGOVFeatures/TSAGOVAboutRegression.feature",
 
 
 		glue= {"TSAGOV.glue"},

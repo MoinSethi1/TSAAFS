@@ -6,27 +6,27 @@ Feature: Travel section regression test
     Then page <pageName> under Travel section is accessible
 
     Examples: 
-      | pageName                       |
-      | Travel                         |
-      | Security Screening             |
-      | What Can I Bring               |
-      | Identification                 |
-      | Liquids Rule                   |
-      | Emerging Technology            |
-      | REAL ID                        |
-      | Special Procedures             |
-      | Disabilities Medical Condition |
-      | Military                       |
-      | Children                       |
-      | Seniors                        |
-      | Law Enforcement                |
-      | Cultural                       |
-      | FAQ                            |
-      | Trusted Traveler Programs      |
-      | Passenger Support              |
-      | Civil Rights                   |
-      | Travel Redress                 |
-      | Claims                         |
-      | Travel Tips                    |
-      | Travel Checklist               |
-      | Travel FAQ                     |
+      | pageName                        |
+      | Travel                          |
+      | Security Screening              |
+      | What Can I Bring                |
+      | Identification                  |
+      | Liquids Rule                    |
+      | Emerging Technology             |
+      | REAL ID                         |
+      | Special Procedures              |
+      | Disabilities Medical Conditions |
+      | Military                        |
+      | Children                        |
+      | Seniors                         |
+      | Law Enforcement                 |
+      | Cultural                        |
+      | FAQ                             |
+      | Trusted Traveler Programs       |
+      | Passenger Support               |
+      | Civil Rights                    |
+      | Travel Redress                  |
+      | Claims                          |
+      | Travel Tips                     |
+      | Travel Checklist                |
+      | Travel FAQ                      |

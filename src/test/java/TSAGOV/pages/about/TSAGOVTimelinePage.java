@@ -11,8 +11,8 @@ public class TSAGOVTimelinePage extends TSAGOVAboutPage {
 	
 	
 	
-	public boolean verifyTimelineText() {
-		return timelineText.isPresent();
+	public String verifyTimelineText() {
+		return timelineText.getText();
 	}
 	
 }

@@ -29,7 +29,7 @@ public void user_access_About_page() {
 @Then("^user is directed to About page$")
 public void user_is_directed_to_About_page() {
 	assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about");
-    assert(user.verifyAboutText());
+    assert user.verifyAboutText().equals("About");
 }
 
 @Then("^page (.*) under About section is accessible$")
@@ -40,37 +40,37 @@ public void page_Strategy_under_About_section_is_accessible(String pageName) {
 	case "Strategy":
 		user.navigateToStratregy();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about/strategy");
-	    assert(user.verifyAboutText());
+	    assert user.verifyStrategyText().equals("TSA Strategy");
 	    break;
 	    
 	case "Mission":
 		user.navogateToMission();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about/tsa-mission");
-	    assert(user.verifyMissionText());
+	    assert(user.verifyMissionText().equals("Mission"));
 	    break;
 	    
 	case "Organization":
 		user.navigateToOrganization();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about/tsa-leadership");
-	    assert(user.verifyOrganizationText());
+	    assert(user.verifyOrganizationText().equals("Leadership and Organization"));
 	    break;
 	    
 	case "Timeline":
 		user.navigateToTimeline();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/timeline");
-	    assert(user.verifyTimelineText());
+	    assert(user.verifyTimelineText().equals("Transportation Security Timeline"));
 	    break;
 	    
 	case "Employee Stories":
 		user.navigateToEmployeeStories();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about/employee-stories");
-	    assert(user.verifyEmployeeStoriesText());
+	    assert(user.verifyEmployeeStoriesText().equals("Employee Stories"));
 	    break;
 	    
 	case "Jobs At TSA":
 		user.navigateToJobsAtTSA();
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/about/jobs-at-tsa");
-	    assert(user.verifyJobsAtTSAText());
+	    assert(user.verifyJobsAtTSAText().equals("Jobs at TSA"));
 	    break;
 	    
 	}
