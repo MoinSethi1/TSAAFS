@@ -9,7 +9,7 @@ public class TSAGOVSecurityScreeningPage extends TSAGOVTravelPage{
 	private WebElementFacade securityScreeningText;
 	
 	@FindBy (xpath = "//*[@id=\"sidenav_sublist_1\"]/li[2]/a")
-	private WebElementFacade identificationLink;
+		private WebElementFacade identificationLink;
 	
 	@FindBy (xpath = "//*[@id=\"sidenav_sublist_1\"]/li[3]/a")
 	private WebElementFacade liquidsRuleLink;
@@ -19,6 +19,12 @@ public class TSAGOVSecurityScreeningPage extends TSAGOVTravelPage{
 	
 	@FindBy (xpath ="//*[@id=\"sidenav_sublist_1\"]/li[5]/a")
 	private WebElementFacade realIDLink;
+	
+	@FindBy (xpath ="//*[@id=\"sidenav_sublist_1\"]/li[1]/a")
+	private WebElementFacade whatCanIBringLeftMenuLink;
+	
+	@FindBy (css ="#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(1) > div > button")
+	private WebElementFacade securityScreeningExpand;
 	
 	public boolean verifySecurityScreeningText() {
 		return securityScreeningText.isPresent();
@@ -43,6 +49,15 @@ public class TSAGOVSecurityScreeningPage extends TSAGOVTravelPage{
 		public TSAGOVRealIDPage navigateToRealID() {
 			realIDLink.click();
 			return this.switchToPage(TSAGOVRealIDPage.class);
+		}
+		
+		public void securityScreeningExpand() {
+			securityScreeningExpand.click();
+		}
+		
+		public TSAGOVWhatCanIBringPage navigateToWCIB() {
+			whatCanIBringLeftMenuLink.click();
+			return this.switchToPage(TSAGOVWhatCanIBringPage.class);
 		}
 	}
 

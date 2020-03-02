@@ -39,7 +39,7 @@ public class TSAGOVTsaPreRegressionGlue {
 	public void user_access_TSAPre_page() {
 		
 	   	   
-		user.navigateToTSAPre();   
+		user.navigateToTSAPrecheck();   
 	   
 	}
 	
@@ -49,7 +49,7 @@ public class TSAGOVTsaPreRegressionGlue {
 	public void user_is_directed_to_TSAPre_page() {
 	    
 		assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/precheck");
-		assert(user.verifyTsaPreImage());
+		assert user.verifyTsaPrecheckText().equals("TSA PreCheck™");
 	}
 
 	@Then("^page (.*) under TSAPre section is accessible$")

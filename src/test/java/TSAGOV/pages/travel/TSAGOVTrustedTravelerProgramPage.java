@@ -3,7 +3,7 @@ package TSAGOV.pages.travel;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVTrustedTravelerProgramPage extends TSAGOVTSAPrePage {
+public class TSAGOVTrustedTravelerProgramPage extends TSAGOVTSAPrecheckPage {
 
 	
 	@FindBy (xpath = "/html/body/go-app/header/go-toolbar/div[2]/div/div/div[2]/a")

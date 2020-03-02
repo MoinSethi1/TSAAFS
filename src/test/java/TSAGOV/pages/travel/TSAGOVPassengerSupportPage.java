@@ -20,6 +20,9 @@ private WebElementFacade travelRedressLink;
 @FindBy (xpath ="//*[@id=\"sidenav_sublist_4\"]/li[3]/a")
 private WebElementFacade claimsLink;
 
+@FindBy (css ="#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(4) > div > button")
+private WebElementFacade passangerSupportExpand;
+
 	
 	public boolean verifyPassengerSupportText() {
 		return passengerSupportText.isPresent();
@@ -38,5 +41,9 @@ private WebElementFacade claimsLink;
 	public TSAGOVClaimsPage navigateToClaims() {
 		claimsLink.click();
 		return this.switchToPage(TSAGOVClaimsPage.class);
+	}
+	
+	public void passengerSupportExpand() {
+		passangerSupportExpand.click();
 	}
 }

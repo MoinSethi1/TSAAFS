@@ -12,6 +12,10 @@ public class TSAGOVTravelTipsPage extends TSAGOVTravelPage{
 	@FindBy (xpath ="//*[@id=\"sidenav_sublist_5\"]/li/a")
 	private WebElementFacade travelChecklistLink;
 	
+	@FindBy (css ="#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(5) > div > button")
+	private WebElementFacade travelTipsExpand;
+	
+	
 	public boolean verifyTravelTipsText() {
 		return travelTipsText.isPresent();
 	}
@@ -21,4 +25,7 @@ public class TSAGOVTravelTipsPage extends TSAGOVTravelPage{
 		return this.switchToPage(TSAGOVTravelChecklistPage.class);
 	}
 	
+	public void travelTipsExpand() {
+		travelTipsExpand.click();
+	}
 }
