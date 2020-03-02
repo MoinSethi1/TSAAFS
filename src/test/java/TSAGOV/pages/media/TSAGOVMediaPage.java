@@ -1,10 +1,10 @@
 package TSAGOV.pages.media;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVMediaPage extends TSAGOVBasePage{
+public class TSAGOVMediaPage extends TSAGOVHomePage{
 
 	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade mediaText;

@@ -1,10 +1,10 @@
 package TSAGOV.pages.industry;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVIndustryPage extends TSAGOVBasePage {
+public class TSAGOVIndustryPage extends TSAGOVHomePage {
 
 	@FindBy (css ="#block-tsa-gov-pagetitle > h1")
 	private WebElementFacade industryText;

@@ -1,4 +1,3 @@
-TSAGOV\pages\TSAGOVMemberPage.class
 TSAGOV\pages\travel\TSAGovWhatCanIBringFlammablesPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringPage.class
 TSAGOV\steps\TSAGOVMediaSteps.class
@@ -25,7 +24,6 @@ TSAGOV\pages\media\TSAGOVFactsheetsPage.class
 TSAGOV\pages\media\TSAGOVMediaPage.class
 TSAGOV\pages\about\TSAGOVJobsAtTSAPage.class
 TSAGOV\pages\travel\TSAGOVRealIDPage.class
-TSAGOV\glue\TSAGOVBasePageGlue.class
 TSAGOV\glue\travel\TSAGOVSecurityScreeningRegressionGlue.class
 TSAGOV\pages\about\TSAGOVStrategyPage.class
 TSAGOV\pages\industry\TSAGOVCyberSecurityToolkitPage.class
@@ -34,12 +32,14 @@ TSAGOV\steps\TSAGOVAboutSteps.class
 TSAGOV\glue\travel\TSAGOVWhatCanIBringRegressionGlue.class
 TSAGOV\pages\industry\TSAGOVInnovationTaskForcePage.class
 TSAGOV\pages\travel\TSAGOVClaimsPage.class
+TSAGOV\steps\TSAGOVHomeSteps.class
 TSAGOV\glue\travel\TSAGOVPassengerSupportRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringAllItemsPage.class
 TSAGOV\pages\about\TSAGOVAboutPage.class
 TSAGOV\pages\about\TSAGOVOrganizationPage.class
 TSAGOV\pages\industry\TSAGOVSecurityFeesPage.class
 TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.class
+TSAGOV\pages\TSAGOVHomePage.class
 TSAGOV\pages\travel\TSAGOVCivilRightsPage.class
 TSAGOV\steps\TSAGOVTravelSteps.class
 TSAGOV\pages\travel\TSAGOVChildrenPage.class
@@ -56,12 +56,12 @@ TSAGOV\glue\about\TSAGOVAboutRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVIdentificationPage.class
 TSAGOV\pages\travel\TSAGOVTravelRedressPage.class
 TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.class
-TSAGOV\pages\TSAGOVBasePage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
 TSAGOV\pages\industry\TSAGOVIndustryPage.class
 TSAGOV\pages\travel\TSAGOVMilitaryPage.class
 TSAGOV\pages\industry\TSAGOVReimbursableScreeningPage.class
 TSAGOV\glue\travel\TSAGOVTravelTipsRegressionGlue.class
+TSAGOV\glue\TSAGOVHomePageRegressionGlue.class
 TSAGOV\pages\industry\TSAGOVBaggageScreeningPage.class
 TSAGOV\pages\media\TSAGOVBlogPage.class
 TSAGOV\pages\travel\TSAGOVSpecialProceduresPage.class

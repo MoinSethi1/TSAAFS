@@ -1,6 +1,6 @@
 package TSAGOV.steps;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import TSAGOV.pages.industry.TSAGOVASACPage;
 import TSAGOV.pages.industry.TSAGOVBaggageScreeningPage;
 import TSAGOV.pages.industry.TSAGOVBusinessPage;
@@ -27,7 +27,7 @@ import net.thucydides.core.annotations.Step;
 
 public class TSAGOVIndustrySteps {
 
-	TSAGOVBasePage tSAGOVBasePage;
+	TSAGOVHomePage tSAGOVHomePage;
 	TSAGOVIndustryPage tSAGOVIndustryPage;
 	TSAGOVCargoProgramsPage tSAGOVCargoProgramsPage;
 	TSAGOVASACPage tSAGOVASACPage;
@@ -53,24 +53,31 @@ public class TSAGOVIndustrySteps {
 	
 	
 	/***********************************************
-	 * Steps for TSAGOVBasePage
+	 * Steps for TSAGOVHomePage
 	 ***********************************************/
 	
 @Step
 	public void navigateToTSAGOV() {
-		tSAGOVBasePage.navigateToTSAGOV();
+		tSAGOVHomePage.navigateToTSAGOV();
 	}
 	
 @Step
 public TSAGOVIndustryPage navigateToIndustry() {
-		return tSAGOVBasePage.navigateToIndustry();
+		return tSAGOVHomePage.navigateToIndustry();
 }
 
 @Step
 public String actualUrl() {
-	return tSAGOVBasePage.actualUrl();
+	return tSAGOVHomePage.actualUrl();
 	}
 
+public boolean verifySearchButton() {
+	return tSAGOVHomePage.verifySearchButton();
+}
+
+public boolean verifyTravelMenuLink() {
+	return tSAGOVHomePage.verifyTravelMenuLink();
+}
 
 
 /***********************************************

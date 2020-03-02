@@ -1,6 +1,6 @@
 package TSAGOV.steps;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import TSAGOV.pages.about.TSAGOVAboutPage;
 import TSAGOV.pages.about.TSAGOVEmployeeStoriesPage;
 import TSAGOV.pages.about.TSAGOVJobsAtTSAPage;
@@ -15,7 +15,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class TSAGOVAboutSteps extends ScenarioSteps {
 	
 	
-	TSAGOVBasePage tSAGOVBasePage;
+	TSAGOVHomePage tSAGOVHomePage;
 	TSAGOVAboutPage tSAGOVAboutPage;
 	TSAGOVJobsAtTSAPage tSAGOVJobsAtTSAPage;
 	TSAGOVEmployeeStoriesPage tSAGOVEmployeeStoriesPage;
@@ -25,22 +25,22 @@ public class TSAGOVAboutSteps extends ScenarioSteps {
 	TSAGOVTimelinePage tSAGOVTimelinePage;
 
 	/***********************************************
-	 * Steps for TSAGOVBasePage
+	 * Steps for TSAGOVHomePage
 	 ***********************************************/
 	
 @Step
 	public void navigateToTSAGOV() {
-		tSAGOVBasePage.navigateToTSAGOV();
+		tSAGOVHomePage.navigateToTSAGOV();
 	}
 
 @Step
 public TSAGOVAboutPage navigateToAbout() {
-		return tSAGOVBasePage.navigateToAbout();
+		return tSAGOVHomePage.navigateToAbout();
 	}
 
 @Step
 public String actualUrl() {
-	return tSAGOVBasePage.actualUrl();
+	return tSAGOVHomePage.actualUrl();
 	}
 
 /***********************************************

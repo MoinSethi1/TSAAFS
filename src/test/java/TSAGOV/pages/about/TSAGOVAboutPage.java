@@ -1,10 +1,10 @@
 package TSAGOV.pages.about;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVAboutPage extends TSAGOVBasePage {
+public class TSAGOVAboutPage extends TSAGOVHomePage {
 
 	@FindBy (xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade aboutText;

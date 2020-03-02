@@ -22,9 +22,9 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\me
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\media\TSAGOVStatementsPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWhatCanIBringFoodPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\industry\TSAGOVIndustryRegressionGlue.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\TSAGOVHomePageRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVTravelFAQRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVStrategyPage.java
-C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\TSAGOVBasePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVScreeningPartnershipPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVIndustryPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSTSACPage.java
@@ -33,17 +33,16 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\steps\TS
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\travel\TSAGOVTsaPreRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVASACPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelRedressPage.java
-C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\TSAGOVMemberPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelTipsPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVCapabilityAcceptanceProcessPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVEmployeeStoriesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVRealIDPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\TSAGOVHomePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\about\TSAGOVAboutRegressionGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVIStepPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.java
-C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\glue\TSAGOVBasePageGlue.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVInnovationTaskForcePage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVCyberSecurityToolkitPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\about\TSAGOVOrganizationPage.java
@@ -71,6 +70,7 @@ C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\me
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\industry\TSAGOVSSIPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelFAQPage.java
+C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\steps\TSAGOVHomeSteps.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTravelChecklistPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVSecurityScreeningPage.java
 C:\Users\moinpreet.sethi\eclipse-workspace\TSA.gov\src\test\java\TSAGOV\pages\travel\TSAGOVTrustedTravelerProgramPage.java

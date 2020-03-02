@@ -1,10 +1,10 @@
 package TSAGOV.pages.travel;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVWhatCanIBringMiscellaneousPage extends TSAGOVBasePage{
+public class TSAGOVWhatCanIBringMiscellaneousPage extends TSAGOVHomePage{
 
 	
 	@FindBy (xpath = "//*[contains(text(),'Miscellaneous')]")
