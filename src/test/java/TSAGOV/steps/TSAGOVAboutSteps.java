@@ -48,7 +48,7 @@ public String actualUrl() {
  ***********************************************/
 
 @Step
-public boolean verifyAboutText() {
+public String verifyAboutText() {
 	return tSAGOVAboutPage.verifyAboutText();
 }
 
@@ -89,7 +89,7 @@ public TSAGOVJobsAtTSAPage navigateToJobsAtTSA() {
 
 
 @Step
-public boolean verifyJobsAtTSAText(){
+public String verifyJobsAtTSAText(){
 	return tSAGOVJobsAtTSAPage.verifyJobsAtTSAText();
 }
 
@@ -98,7 +98,7 @@ public boolean verifyJobsAtTSAText(){
  * Steps for TSAGOVEmployeeStoriesPage
  ***********************************************/
 @Step
-public boolean verifyEmployeeStoriesText() {
+public String verifyEmployeeStoriesText() {
 	return tSAGOVEmployeeStoriesPage.verifyEmployeeStoriesText();
 }
 
@@ -109,7 +109,7 @@ public boolean verifyEmployeeStoriesText() {
  ***********************************************/
 
 @Step
-public boolean verifyMissionText() {
+public String verifyMissionText() {
 	return tSAGOVMissionPage.verifyMissionText();
 }
 
@@ -119,7 +119,7 @@ public boolean verifyMissionText() {
  ***********************************************/
 
 @Step
-public boolean verifyStrategyText() {
+public String verifyStrategyText() {
 	return tSAGOVStrategyPage.verifyStrategyText();
 }
 
@@ -128,7 +128,7 @@ public boolean verifyStrategyText() {
  ***********************************************/
 
 @Step
-public boolean verifyOrganizationText() {
+public String verifyOrganizationText() {
 	return tSAGOVOrganizationPage.verifyOrganizationText();
 		}
 
@@ -138,7 +138,7 @@ public boolean verifyOrganizationText() {
 
 @Step
 
-public boolean verifyTimelineText() {
+public String verifyTimelineText() {
 	return tSAGOVTimelinePage.verifyTimelineText();
 }
 

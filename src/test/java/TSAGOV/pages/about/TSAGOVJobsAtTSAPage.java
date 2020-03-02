@@ -9,8 +9,8 @@ public class TSAGOVJobsAtTSAPage extends TSAGOVAboutPage{
 	@FindBy (xpath ="//*[@id='block-tsa-gov-pagetitle']/h1/span")
 	private WebElementFacade jobsAtTSAText;
 	
-	public boolean verifyJobsAtTSAText(){
-		return jobsAtTSAText.isPresent();
+	public String verifyJobsAtTSAText(){
+		return jobsAtTSAText.getText();
 	}
 	
 }

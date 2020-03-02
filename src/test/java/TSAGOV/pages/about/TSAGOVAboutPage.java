@@ -27,8 +27,8 @@ public class TSAGOVAboutPage extends TSAGOVBasePage {
 	@FindBy (xpath ="//*[@id=\"block-about-sidebar\"]/nav[1]/ul/li[6]/a")
 	private WebElementFacade jobsAtTSALink;
 	
-	public boolean verifyAboutText() {
-		return aboutText.isPresent();
+	public String verifyAboutText() {
+		return aboutText.getText();
 	}
 	
 	public TSAGOVStrategyPage navigateToStratregy() {

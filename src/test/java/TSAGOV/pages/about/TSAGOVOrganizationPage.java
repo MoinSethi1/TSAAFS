@@ -10,8 +10,8 @@ public class TSAGOVOrganizationPage extends TSAGOVAboutPage {
 	private WebElementFacade organizationText;
 	
 	
-	public boolean verifyOrganizationText() {
-		return organizationText.isPresent();
+	public String verifyOrganizationText() {
+		return organizationText.getText();
 			}
 	
 }

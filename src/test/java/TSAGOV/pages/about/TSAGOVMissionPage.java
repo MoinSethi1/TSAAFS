@@ -10,7 +10,7 @@ public class TSAGOVMissionPage extends TSAGOVAboutPage{
 	private WebElementFacade missionText;
 	
 	
-	public boolean verifyMissionText() {
-		return missionText.isPresent();
+	public String verifyMissionText() {
+		return missionText.getText();
 	}
 }

@@ -9,7 +9,7 @@ public class TSAGOVEmployeeStoriesPage extends TSAGOVAboutPage{
 	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade employeeStoriesText;
 	
-	public boolean verifyEmployeeStoriesText() {
-		return employeeStoriesText.isPresent();
+	public String verifyEmployeeStoriesText() {
+		return employeeStoriesText.getText();
 	}
 }

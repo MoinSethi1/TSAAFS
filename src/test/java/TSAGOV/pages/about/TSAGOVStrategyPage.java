@@ -8,8 +8,8 @@ public class TSAGOVStrategyPage extends TSAGOVAboutPage{
 	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade strategyText;
 	
-	public boolean verifyStrategyText() {
-		return strategyText.isPresent();
+	public String verifyStrategyText() {
+		return strategyText.getText();
 	}
 	
 }

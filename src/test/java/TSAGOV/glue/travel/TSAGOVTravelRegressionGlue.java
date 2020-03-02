@@ -78,7 +78,7 @@ public class TSAGOVTravelRegressionGlue {
 		   assert user.verifyRealIDText();
 		   break;
 		   
-		   case "Special Pocedures":
+		   case "Special Procedures":
 			   user.navigateToSpecialProcedures();
 			   assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/special-procedures");
 				assert(user.verifySpecialProcedureText());
