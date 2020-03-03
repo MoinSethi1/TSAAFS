@@ -18,6 +18,12 @@ import net.thucydides.core.annotations.Step;
 public class TSAGOVHomeSteps {
 
 	TSAGOVHomePage tSAGOVHomePage;
+	TSAGOVAToZPage tSAGOVAToZPage;
+	TSAGOVFOIAPage tSAGOVFOIAPage;
+	TSAGOVIndustryPage tSAGOVIndustryPage;
+	TSAGOVWebMetricsPage tSAGOVWebMetricsPage;
+	TSAGOVNoFEARPage tSAGOVNoFEARPage;
+	TSAGOVPrivacyPage tSAGOVPrivacyPage;
 
 	/***********************************************
 	 * Steps for TSAGOVHomePage
@@ -225,6 +231,58 @@ public class TSAGOVHomeSteps {
 	@Step
 	public TSAGOVSubscribePage NavigateToSubscribe() {
 		return tSAGOVHomePage.NavigateToSubscribe();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVAToZPage
+	 ***********************************************/
+
+	@Step
+	public String aToZText() {
+		return tSAGOVAToZPage.aToZText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVFOIAPage
+	 ***********************************************/
+	@Step
+	public String verifyFOIAText() {
+		return tSAGOVFOIAPage.verifyFOIAText();
+	}
+
+	/**********************************************
+	 * * Steps for TSAGOVIndustryPage
+	 *************************************************/
+
+	@Step
+	public String verifyIndustryText() {
+		return tSAGOVIndustryPage.verifyIndustryText();
+	}
+
+	/**********************************************
+	 * * Steps for TSAGOVWebMetricsPage
+	 *************************************************/
+	@Step
+	public String verifyMetricsText() {
+		return tSAGOVWebMetricsPage.verifyMetricsText();
+	}
+
+	/**********************************************
+	 * * Steps for TSAGOVNoFEARPage
+	 *************************************************/
+	@Step
+	public String verifyNoFearText() {
+		return tSAGOVNoFEARPage.verifyNoFearText();
+	}
+
+	/**********************************************
+	 * * Steps for TSAGOVPrivacyPage
+	 *************************************************/
+
+	@Step
+
+	public String verifyPrivacyText() {
+		return tSAGOVPrivacyPage.verifyPrivacyText();
 	}
 
 }

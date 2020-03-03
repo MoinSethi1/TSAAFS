@@ -87,6 +87,7 @@ TSAGOV\pages\industry\TSAGOVTrainingPage.class
 TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.class
 serenity\CucumberTestSuite.class
 TSAGOV\pages\industry\TSAGOVSTSACPage.class
+TSAGOV\glue\TSAGOVFooterRegressionGlue.class
 TSAGOV\pages\Home\TSAGOVPrivacyPage.class
 TSAGOV\pages\industry\TSAGOVFirstObserverPlusPage.class
 TSAGOV\pages\travel\TSAGOVTravelPage.class

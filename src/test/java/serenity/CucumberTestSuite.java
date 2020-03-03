@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 
-		features = "src/test/resources/TSAGOVFeatures/TSAGOVHomePageSmoke.feature",
+		features = "src/test/resources/TSAGOVFeatures/TSAGOVFooterRegression.feature",
 
 		glue = { "TSAGOV.glue" }, dryRun = false, monochrome = true)
 
