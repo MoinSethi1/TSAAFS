@@ -109,7 +109,7 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//a[@href='/privacy-policy']")
 	private WebElementFacade privacyLink;
 
-	@FindBy(xpath = "//a[@href= 'https://www.oig.dhs.gov']")
+	@FindBy(xpath = "//a[@href= 'https://www.oig.dhs.gov/']")
 	private WebElementFacade reportFWALink;
 
 	@FindBy(xpath = "//a[@href='https://www.usa.gov/']")
@@ -313,7 +313,7 @@ public class TSAGOVHomePage extends PageObject {
 	}
 
 	public TSAGOVReportFraudWasteAbusePage navigateToReportFWALink() {
-		privacyLink.click();
+		reportFWALink.click();
 		return this.switchToPage(TSAGOVReportFraudWasteAbusePage.class);
 	}
 

@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Access TSA.gov","As user I want to access TSA.gov application","SUCCESS","2020-03-03T08:41:42.078-05:00[America/New_York]","0.0","38.18"
+"Footer Regression","As user I want to access all links in the footer","SUCCESS","2020-03-03T12:53:26.892-05:00[America/New_York]","0.0","145.38"
