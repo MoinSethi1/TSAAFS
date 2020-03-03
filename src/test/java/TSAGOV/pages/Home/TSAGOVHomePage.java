@@ -91,6 +91,33 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//a[@href='https://www.dhs.gov/']")
 	private WebElementFacade dhsLink;
 
+	@FindBy(xpath = "/html/body/div[2]/div/footer/div[1]/div/div[1]/nav/div/div[1]/ul/li[3]/a")
+	private WebElementFacade employeeFooterLink;
+
+	@FindBy(xpath = "//a[@href ='/foia']")
+	private WebElementFacade FOIALink;
+
+	@FindBy(xpath = "//a[@href='https://www.federalrelay.us/']")
+	private WebElementFacade federalRelayLink;
+
+	@FindBy(xpath = "//a[@href='/web-metrics']")
+	private WebElementFacade webMetricsLink;
+
+	@FindBy(xpath = "//a[@href='/no-fear-act']")
+	private WebElementFacade noFEARLink;
+
+	@FindBy(xpath = "//a[@href='/privacy-policy']")
+	private WebElementFacade privacyLink;
+
+	@FindBy(xpath = "//a[@href= 'https://www.oig.dhs.gov']")
+	private WebElementFacade reportFWALink;
+
+	@FindBy(xpath = "//a[@href='https://www.usa.gov/']")
+	private WebElementFacade usaGovLink;
+
+	@FindBy(xpath = "//a[@href='https://public.govdelivery.com/accounts/USDHSTSA/subscriber/new']")
+	private WebElementFacade subscribeButton;
+
 	public void navigateToTSAGOV() {
 		this.openAt("https://edit.staging.tsa.gov");
 	}
@@ -138,6 +165,10 @@ public class TSAGOVHomePage extends PageObject {
 		aboutLink.click();
 		return this.switchToPage(TSAGOVAboutPage.class);
 
+	}
+
+	public boolean verifyIndustryLink() {
+		return industryLink.isPresent();
 	}
 
 	public TSAGOVIndustryPage navigateToIndustry() {
@@ -210,8 +241,98 @@ public class TSAGOVHomePage extends PageObject {
 		return this.switchToPage(TSAGOVAToZPage.class);
 	}
 
+	public boolean verifyAToZFooterLink() {
+		return aToZFooterLink.isPresent();
+	}
+
 	public boolean verifyDHSLink() {
 		return dhsLink.isPresent();
 	}
 
+	public TSAGOVDHSPage navigateToDHS() {
+		dhsLink.click();
+		return this.switchToPage(TSAGOVDHSPage.class);
+	}
+
+	public boolean verifyEmployeeFooterLink() {
+		return employeeFooterLink.isPresent();
+	}
+
+	public TSAGOVEmployeePage navigateToEmployeeFooterLink() {
+		employeeFooterLink.click();
+		return this.switchToPage(TSAGOVEmployeePage.class);
+	}
+
+	public boolean verifyFOIALink() {
+		return FOIALink.isPresent();
+	}
+
+	public TSAGOVFOIAPage navigateToFOIALink() {
+		FOIALink.click();
+		return this.switchToPage(TSAGOVFOIAPage.class);
+	}
+
+	public boolean verifyFederalRelayLink() {
+		return federalRelayLink.isPresent();
+	}
+
+	public TSAGOVFederalRelayPage navigateToFederalRelayLink() {
+		federalRelayLink.click();
+		return this.switchToPage(TSAGOVFederalRelayPage.class);
+	}
+
+	public boolean verifyWebMetricsLink() {
+		return webMetricsLink.isPresent();
+	}
+
+	public TSAGOVWebMetricsPage navigateToWebMetricsLink() {
+		webMetricsLink.click();
+		return this.switchToPage(TSAGOVWebMetricsPage.class);
+	}
+
+	public boolean verifyNoFEARLink() {
+		return noFEARLink.isPresent();
+	}
+
+	public TSAGOVNoFEARPage navigateToNoFEARLink() {
+		noFEARLink.click();
+		return this.switchToPage(TSAGOVNoFEARPage.class);
+	}
+
+	public boolean verifyPrivacyLink() {
+		return privacyLink.isPresent();
+	}
+
+	public TSAGOVPrivacyPage navigateToPrivacyLink() {
+		privacyLink.click();
+		return this.switchToPage(TSAGOVPrivacyPage.class);
+	}
+
+	public boolean verifyReportFWALink() {
+		return privacyLink.isPresent();
+	}
+
+	public TSAGOVReportFraudWasteAbusePage navigateToReportFWALink() {
+		privacyLink.click();
+		return this.switchToPage(TSAGOVReportFraudWasteAbusePage.class);
+	}
+
+	public boolean verifyUSAGOVLink() {
+		return usaGovLink.isPresent();
+	}
+
+	public TSAGOVUSAGOVPage navigateToUSAGOVLink() {
+		usaGovLink.click();
+		return this.switchToPage(TSAGOVUSAGOVPage.class);
+	}
+
+	public boolean verifySubscribeButton() {
+		return subscribeButton.isPresent();
+
+	}
+
+	public TSAGOVSubscribePage NavigateToSubscribe() {
+		subscribeButton.click();
+		return this.switchToPage(TSAGOVSubscribePage.class);
+	}
 }

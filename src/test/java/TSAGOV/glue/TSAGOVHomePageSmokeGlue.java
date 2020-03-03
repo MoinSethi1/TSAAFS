@@ -5,7 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 
-public class TSAGOVHomePageRegressionGlue {
+public class TSAGOVHomePageSmokeGlue {
 
 	@Steps
 	TSAGOVHomeSteps user;
@@ -38,8 +38,18 @@ public class TSAGOVHomePageRegressionGlue {
 
 		case "Footer":
 			assert user.verifyFooter();
-			user.navigateToAToZFooterLink();
+			assert user.verifyAToZFooterLink();
 			assert user.verifyDHSLink();
+			assert user.verifyEmployeeFooterLink();
+			assert user.verifyFOIALink();
+			assert user.verifyFederalRelayLink();
+			assert user.verifyIndustryLink();
+			assert user.verifyWebMetricsLink();
+			assert user.verifyNoFEARLink();
+			assert user.verifyPrivacyLink();
+			assert user.verifyReportFWALink();
+			assert user.verifyUSAGOVLink();
+			assert user.verifySubscribeButton();
 			break;
 
 		}

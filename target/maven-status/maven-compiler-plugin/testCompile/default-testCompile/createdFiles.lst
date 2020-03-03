@@ -1,6 +1,8 @@
+TSAGOV\pages\Home\TSAGOVWebMetricsPage.class
 TSAGOV\pages\travel\TSAGovWhatCanIBringFlammablesPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringPage.class
 TSAGOV\steps\TSAGOVMediaSteps.class
+TSAGOV\pages\Home\TSAGOVHomePage.class
 TSAGOV\pages\industry\TSAGOVScreeningPartnershipPage.class
 TSAGOV\pages\media\TSAGOVStatementsPage.class
 TSAGOV\pages\travel\TSAGOVTrustedTravelerProgramPage.class
@@ -10,12 +12,14 @@ TSAGOV\glue\travel\TSAGOVTravelRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.class
 TSAGOV\pages\travel\TSAGOVLiquidsRulePage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSharpObjectsPage.class
+TSAGOV\pages\Home\TSAGOVReportFraudWasteAbusePage.class
 TSAGOV\steps\TSAGOVIndustrySteps.class
 TSAGOV\pages\travel\TSAGOVEmergingTechnologyPage.class
 TSAGOV\pages\about\TSAGOVTimelinePage.class
 TSAGOV\pages\travel\TSAGOVSecurityScreeningPage.class
 TSAGOV\pages\travel\TSAGOVSeniorPage.class
 TSAGOV\pages\travel\TSAGOVTravelChecklistPage.class
+TSAGOV\pages\Home\TSAGOVAToZPage.class
 TSAGOV\glue\industry\TSAGOVIndustryRegressionGlue.class
 TSAGOV\pages\industry\TSAGOVASACPage.class
 TSAGOV\pages\media\TSAGOVPressReleasesPage.class
@@ -26,6 +30,7 @@ TSAGOV\pages\about\TSAGOVJobsAtTSAPage.class
 TSAGOV\pages\travel\TSAGOVRealIDPage.class
 TSAGOV\glue\travel\TSAGOVSecurityScreeningRegressionGlue.class
 TSAGOV\pages\about\TSAGOVStrategyPage.class
+TSAGOV\pages\Home\TSAGOVNoFEARPage.class
 TSAGOV\pages\industry\TSAGOVCyberSecurityToolkitPage.class
 TSAGOV\pages\about\TSAGOVEmployeeStoriesPage.class
 TSAGOV\steps\TSAGOVAboutSteps.class
@@ -39,11 +44,11 @@ TSAGOV\pages\about\TSAGOVAboutPage.class
 TSAGOV\pages\about\TSAGOVOrganizationPage.class
 TSAGOV\pages\industry\TSAGOVSecurityFeesPage.class
 TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.class
-TSAGOV\pages\TSAGOVHomePage.class
 TSAGOV\pages\travel\TSAGOVCivilRightsPage.class
 TSAGOV\steps\TSAGOVTravelSteps.class
 TSAGOV\pages\travel\TSAGOVChildrenPage.class
 TSAGOV\pages\media\TSAGOVTestimonyPage.class
+TSAGOV\pages\Home\TSAGOVDHSPage.class
 TSAGOV\glue\media\TSAGOVMediaRegressionGlue.class
 TSAGOV\pages\industry\TSAGOVCargoProgramsPage.class
 TSAGOV\pages\industry\TSAGOVSSIPage.class
@@ -54,14 +59,15 @@ TSAGOV\pages\travel\TSAGOVWhatCanIBringFoodPage.class
 TSAGOV\pages\industry\TSAGOVPASSPage.class
 TSAGOV\glue\about\TSAGOVAboutRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVIdentificationPage.class
+TSAGOV\pages\Home\TSAGOVEmployeePage.class
 TSAGOV\pages\travel\TSAGOVTravelRedressPage.class
 TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
 TSAGOV\pages\industry\TSAGOVIndustryPage.class
 TSAGOV\pages\travel\TSAGOVMilitaryPage.class
 TSAGOV\pages\industry\TSAGOVReimbursableScreeningPage.class
+TSAGOV\pages\Home\TSAGOVUSAGOVPage.class
 TSAGOV\glue\travel\TSAGOVTravelTipsRegressionGlue.class
-TSAGOV\glue\TSAGOVHomePageRegressionGlue.class
 TSAGOV\pages\industry\TSAGOVBaggageScreeningPage.class
 TSAGOV\pages\media\TSAGOVBlogPage.class
 TSAGOV\pages\travel\TSAGOVSpecialProceduresPage.class
@@ -72,6 +78,7 @@ TSAGOV\pages\travel\TSAGOVCulturalPage.class
 TSAGOV\pages\industry\TSAGOVBusinessPage.class
 TSAGOV\pages\travel\TSAGOVSchedulePage.class
 TSAGOV\pages\travel\TSAGOVLawEnforcementPage.class
+TSAGOV\glue\TSAGOVHomePageSmokeGlue.class
 TSAGOV\pages\travel\TSAGOVTravelTipsPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSportingCampingPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringMedicalPage.class
@@ -80,6 +87,7 @@ TSAGOV\pages\industry\TSAGOVTrainingPage.class
 TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.class
 serenity\CucumberTestSuite.class
 TSAGOV\pages\industry\TSAGOVSTSACPage.class
+TSAGOV\pages\Home\TSAGOVPrivacyPage.class
 TSAGOV\pages\industry\TSAGOVFirstObserverPlusPage.class
 TSAGOV\pages\travel\TSAGOVTravelPage.class
 TSAGOV\pages\travel\TSAGOVPassengerSupportPage.class
@@ -87,6 +95,9 @@ TSAGOV\pages\travel\TSAGOVFAQPage.class
 TSAGOV\pages\industry\TSAGOVTWICPage.class
 TSAGOV\glue\travel\TSAGOVSpecialProceduresRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVTravelFAQPage.class
+TSAGOV\pages\Home\TSAGOVSubscribePage.class
+TSAGOV\pages\Home\TSAGOVFOIAPage.class
 TSAGOV\pages\media\TSAGOVSocialMediaPage.class
 TSAGOV\pages\media\TSAGOVSpeechesPage.class
 TSAGOV\pages\media\TSAGOVMediaRoomPage.class
+TSAGOV\pages\Home\TSAGOVFederalRelayPage.class
