@@ -1,6 +1,6 @@
 package TSAGOV.steps;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import TSAGOV.pages.about.TSAGOVAboutPage;
 import TSAGOV.pages.media.TSAGOVBlogPage;
 import TSAGOV.pages.media.TSAGOVFactsheetsPage;
@@ -17,7 +17,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 
 public class TSAGOVMediaSteps extends ScenarioSteps {
 	
-	TSAGOVBasePage tSAGOVBasePage;
+	TSAGOVHomePage tSAGOVHomePage;
 	TSAGOVMediaPage tSAGOVMediaPage;
 	TSAGOVMediaRoomPage tSAGOVMediaRoomPage;
 	TSAGOVPressReleasesPage tSAGOVPressReleasesPage;
@@ -30,28 +30,28 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	TSAGOVVideoPage tSAGOVVideoPage;
 	
 	/***********************************************
-	 * Steps for TSAGOVBasePage
+	 * Steps for TSAGOVHomePage
 	 ***********************************************/
 	
 @Step
 	public void navigateToTSAGOV() {
-		tSAGOVBasePage.navigateToTSAGOV();
+		tSAGOVHomePage.navigateToTSAGOV();
 	}
 
 
 @Step
 public String actualUrl() {
-	return tSAGOVBasePage.actualUrl();
+	return tSAGOVHomePage.actualUrl();
 	}
 
 @Step	
 	public TSAGOVMediaPage navigateToMedia() {
-		return tSAGOVBasePage.navigateToMedia();
+		return tSAGOVHomePage.navigateToMedia();
 	}
 	
 @Step
 	public TSAGOVMediaRoomPage navigateToMediaRoom() {
-		return tSAGOVBasePage.navigateToMediaRoom();
+		return tSAGOVHomePage.navigateToMediaRoom();
 	}
 	
 

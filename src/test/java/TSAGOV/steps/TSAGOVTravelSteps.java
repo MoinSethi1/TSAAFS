@@ -2,8 +2,7 @@ package TSAGOV.steps;
 
 import java.util.concurrent.TimeUnit;
 
-import TSAGOV.pages.TSAGOVBasePage;
-import TSAGOV.pages.TSAGOVMemberPage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import TSAGOV.pages.travel.TSAGOVAirportAirlinesPage;
 import TSAGOV.pages.travel.TSAGOVChildrenPage;
 import TSAGOV.pages.travel.TSAGOVCivilRightsPage;
@@ -43,16 +42,13 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
-
 public class TSAGOVTravelSteps extends ScenarioSteps {
 
-	
-
-	TSAGOVBasePage tSAGOVBasePage;
+	TSAGOVHomePage tSAGOVHomePage;
 	TSAGOVWhatCanIBringPage tSAGOVWhatCanIBringPage;
 	TSAGovWhatCanIBringFlammablesPage tSAGovWhatCanIBringFlammablesPage;
 	TSAGOVWhatCanIBringMiscellaneousPage tSAGOVWhatCanIBringMiscellaneousPage;
-	TSAGOVWhatCanIBringFirearmsPage  tSAGOVWhatCanIBringFirearmsPage;
+	TSAGOVWhatCanIBringFirearmsPage tSAGOVWhatCanIBringFirearmsPage;
 	TSAGOVWhatCanIBringFoodPage tSAGOVWhatCanIBringFoodPage;
 	TSAGOVWharCanIBringHouseholdToolsPage tSAGOVWharCanIBringHouseholdToolsPage;
 	TSAGOVWhatCanIBringMedicalPage tSAGOVWhatCanIBringMedicalPage;
@@ -78,640 +74,586 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	TSAGOVSecurityScreeningPage tSAGOVSecurityScreeningPage;
 	TSAGOVIdentificationPage tSAGOVIdentificationPage;
 	TSAGOVLiquidsRulePage tSAGOVLiquidsRulePage;
-	TSAGOVEmergingTechnologyPage  tSAGOVEmergingTechnologyPage;
+	TSAGOVEmergingTechnologyPage tSAGOVEmergingTechnologyPage;
 	TSAGOVRealIDPage tSAGOVRealIDPage;
 	TSAGOVTravelFAQPage tSAGOVTravelFAQPage;
 	TSAGOVTravelTipsPage tSAGOVTravelTipsPage;
 	TSAGOVTravelChecklistPage tSAGOVTravelChecklistPage;
-	
-	
-	
-	
-	
+
 	/***********************************************
-	 * Steps for TSAGOVBasePage
+	 * Steps for TSAGOVHomePage
 	 ***********************************************/
-	
-@Step
+
+	@Step
 	public void navigateToTSAGOV() {
-		tSAGOVBasePage.navigateToTSAGOV();
+		tSAGOVHomePage.navigateToTSAGOV();
 	}
 
-@Step
-	public boolean verifyMemberText() {
-		
-		return tSAGOVBasePage.verifyMemberText();
-		}
-
-@Step
-	public void enterUsername(String username) {
-		tSAGOVBasePage.enterUsername(username);
-	}
-	
-@Step
-	public void enterPassword(String password)  {
-		tSAGOVBasePage.enterPassword(password);
-		
-	}
-
-@Step
-public TSAGOVMemberPage login() throws InterruptedException {
-	
-	return tSAGOVBasePage.login();
-}
-
-@Step
+	@Step
 	public void navigateToWhatCanIBring() throws InterruptedException {
-		 tSAGOVBasePage.navigateToWhatCanIBring();
-}
-
-@Step
-public TSAGOVTravelPage navigateToTSATravel() {
-	
-	return tSAGOVBasePage.navigateToTSATravel();
-			
-	
-}
-
-@Step
-public boolean verifyExpectedText(WebElementFacade expectedText) {
-	return expectedText.isPresent();
-}
-
-
-@Step
-public String actualUrl() {
-	
-		return tSAGOVBasePage.actualUrl();
+		tSAGOVHomePage.navigateToWhatCanIBring();
 	}
 
+	@Step
+	public TSAGOVTravelPage navigateToTSATravel() {
 
-@Step
-public void waitForPageload() throws InterruptedException {
-	
-	getDriver().manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
-}
+		return tSAGOVHomePage.navigateToTSATravel();
 
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPage
- ***********************************************/
-
-@Step
-public boolean verifyWhatCanIBringText() {
-	return tSAGOVWhatCanIBringPage.verifyWhatCanIBringText();
-
-}
-
-@Step
-public TSAGOVWhatCanIBringAllItemsPage navigateToAll() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToAll();
-	
-}
-
-@Step
-public TSAGovWhatCanIBringFlammablesPage navigateToFlammables() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToFlammables();
-	
-}
-
-@Step
-public TSAGOVWhatCanIBringFirearmsPage navigateToFirearms() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToFirearms();
-		
-}
-
-@Step
-public TSAGOVWhatCanIBringFoodPage navigateToFood() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToFood();
-}
-
-
-	
-@Step
-public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToHouseholdTools();
-		
-}
-
-
-@Step
-public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToMedical();
-}
-
-
-@Step
-public TSAGOVWhatCanIBringSharpObjectsPage navigateToSharpObjects() {
-
-return tSAGOVWhatCanIBringPage.navigateToSharpObjects();
-}
-
-
-@Step
-public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToSportingCamping();
-			
-}
-
-@Step
-public TSAGOVWhatCanIBringMiscellaneousPage navigateToMiscellaneous() {
-	
-	return tSAGOVWhatCanIBringPage.navigateToMiscellaneous();
-	
-}
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPageFlammables
- ***********************************************/
-
-
-@Step
-public boolean verifyFlammablesText() {
-	
-	return tSAGovWhatCanIBringFlammablesPage.verifyFlammablesText();
-}
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPageFirearms
- ***********************************************/
-
-@Step
-public boolean verifyFirearmsText() {
-	
-	return tSAGOVWhatCanIBringFirearmsPage.verifyFirearmsText();
-}
-
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPageFood
- ***********************************************/
-
-@Step
-public boolean verifyFoodText() {
-	
-	return tSAGOVWhatCanIBringFoodPage.verifyFoodText();
-}
-
-
-/**************************************************
- * Steps for TSAGOVWhatCanIBringPageHouseholdAndTools
- **************************************************/
-
-@Step
-public boolean verifyHouseholdAndToolsText() {
-	
-	return tSAGOVWharCanIBringHouseholdToolsPage.verifyHouseholdAndToolsText();
-}
-
-
-/**************************************************
- * Steps for TSAGOVWhatCanIBringPageMedical
- **************************************************/
-
-
-@Step
-public boolean verifyMedicalText() {
-	
-	return tSAGOVWhatCanIBringMedicalPage.verifyMedicalText();
-}
-
-/**************************************************
- * Steps for TSAGOVWhatCanIBringPageSharpObjects
- **************************************************/
-
-
-@Step
-public boolean verifySharpObjectsText() {
-	
-	return tSAGOVWhatCanIBringSharpObjectsPage.verifySharpObjectsText();
-}
-
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPageSportingCamping
- ***********************************************/
-
-@Step
-public boolean verifySportingCampingText() {
-	
-	return tSAGOVWhatCanIBringSportingCampingPage.verifySportingCampingText();
-}
-
-/***********************************************
- * Steps for TSAGOVWhatCanIBringPageMiscellaneous
- ***********************************************/
-
-@Step
-public boolean verifyMiscellaneousText() {
-	
-	return tSAGOVWhatCanIBringMiscellaneousPage.verifyMiscellaneousText();
-}
-
-
-/***********************************************
- * Steps for TSAGOVTravelPage
- ***********************************************/
-@Step
-
-public TSAGOVTSAPrecheckPage navigateToTSAPrecheck() {
-
-	return tSAGOVTravelPage.navigateToTSAPrecheck();
 	}
 
-@Step
+	@Step
+	public boolean verifyExpectedText(WebElementFacade expectedText) {
+		return expectedText.isPresent();
+	}
 
-public boolean verifyTravelImage() {
-	return tSAGOVTravelPage.verifyTravelImage();
-}
+	@Step
+	public String actualUrl() {
 
-@Step
-public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
-	
-	return tSAGOVTravelPage.navigateToSpecialProcedures();
-}
+		return tSAGOVHomePage.actualUrl();
+	}
 
-public TSAGOVPassengerSupportPage navigateToPassengerSupport() {
-	return tSAGOVTravelPage.navigateToPassengerSupport();
-}
-@Step
+	@Step
+	public void waitForPageload() throws InterruptedException {
 
-public TSAGOVSecurityScreeningPage navigateToSecurityScreening() {
-	return tSAGOVTravelPage.navigateToSecurityScreening();
-}
+		getDriver().manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
+	}
 
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPage
+	 ***********************************************/
 
-@Step
-public TSAGOVTravelFAQPage navigateToTravelFAQ() {
+	@Step
+	public boolean verifyWhatCanIBringText() {
+		return tSAGOVWhatCanIBringPage.verifyWhatCanIBringText();
+
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringAllItemsPage navigateToAll() {
+
+		return tSAGOVWhatCanIBringPage.navigateToAll();
+
+	}
+
+	@Step
+	public TSAGovWhatCanIBringFlammablesPage navigateToFlammables() {
+
+		return tSAGOVWhatCanIBringPage.navigateToFlammables();
+
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringFirearmsPage navigateToFirearms() {
+
+		return tSAGOVWhatCanIBringPage.navigateToFirearms();
+
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringFoodPage navigateToFood() {
+
+		return tSAGOVWhatCanIBringPage.navigateToFood();
+	}
+
+	@Step
+	public TSAGOVWharCanIBringHouseholdToolsPage navigateToHouseholdTools() {
+
+		return tSAGOVWhatCanIBringPage.navigateToHouseholdTools();
+
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringMedicalPage navigateToMedical() {
+
+		return tSAGOVWhatCanIBringPage.navigateToMedical();
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringSharpObjectsPage navigateToSharpObjects() {
+
+		return tSAGOVWhatCanIBringPage.navigateToSharpObjects();
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringSportingCampingPage navigateToSportingCamping() {
+
+		return tSAGOVWhatCanIBringPage.navigateToSportingCamping();
+
+	}
+
+	@Step
+	public TSAGOVWhatCanIBringMiscellaneousPage navigateToMiscellaneous() {
+
+		return tSAGOVWhatCanIBringPage.navigateToMiscellaneous();
+
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPageFlammables
+	 ***********************************************/
+
+	@Step
+	public boolean verifyFlammablesText() {
+
+		return tSAGovWhatCanIBringFlammablesPage.verifyFlammablesText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPageFirearms
+	 ***********************************************/
+
+	@Step
+	public boolean verifyFirearmsText() {
+
+		return tSAGOVWhatCanIBringFirearmsPage.verifyFirearmsText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPageFood
+	 ***********************************************/
+
+	@Step
+	public boolean verifyFoodText() {
+
+		return tSAGOVWhatCanIBringFoodPage.verifyFoodText();
+	}
+
+	/**************************************************
+	 * Steps for TSAGOVWhatCanIBringPageHouseholdAndTools
+	 **************************************************/
+
+	@Step
+	public boolean verifyHouseholdAndToolsText() {
+
+		return tSAGOVWharCanIBringHouseholdToolsPage.verifyHouseholdAndToolsText();
+	}
+
+	/**************************************************
+	 * Steps for TSAGOVWhatCanIBringPageMedical
+	 **************************************************/
+
+	@Step
+	public boolean verifyMedicalText() {
+
+		return tSAGOVWhatCanIBringMedicalPage.verifyMedicalText();
+	}
+
+	/**************************************************
+	 * Steps for TSAGOVWhatCanIBringPageSharpObjects
+	 **************************************************/
+
+	@Step
+	public boolean verifySharpObjectsText() {
+
+		return tSAGOVWhatCanIBringSharpObjectsPage.verifySharpObjectsText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPageSportingCamping
+	 ***********************************************/
+
+	@Step
+	public boolean verifySportingCampingText() {
+
+		return tSAGOVWhatCanIBringSportingCampingPage.verifySportingCampingText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVWhatCanIBringPageMiscellaneous
+	 ***********************************************/
+
+	@Step
+	public boolean verifyMiscellaneousText() {
+
+		return tSAGOVWhatCanIBringMiscellaneousPage.verifyMiscellaneousText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVTravelPage
+	 ***********************************************/
+	@Step
+
+	public TSAGOVTSAPrecheckPage navigateToTSAPrecheck() {
+
+		return tSAGOVTravelPage.navigateToTSAPrecheck();
+	}
+
+	@Step
+
+	public boolean verifyTravelImage() {
+		return tSAGOVTravelPage.verifyTravelImage();
+	}
+
+	@Step
+	public TSAGOVSpecialProceduresPage navigateToSpecialProcedures() {
+
+		return tSAGOVTravelPage.navigateToSpecialProcedures();
+	}
+
+	public TSAGOVPassengerSupportPage navigateToPassengerSupport() {
+		return tSAGOVTravelPage.navigateToPassengerSupport();
+	}
+
+	@Step
+
+	public TSAGOVSecurityScreeningPage navigateToSecurityScreening() {
+		return tSAGOVTravelPage.navigateToSecurityScreening();
+	}
+
+	@Step
+	public TSAGOVTravelFAQPage navigateToTravelFAQ() {
 		return tSAGOVTravelPage.navigateToTravelFAQ();
-		}
-
-@Step
-public TSAGOVTravelTipsPage navigateToTravelTips() {
-		return tSAGOVTravelPage.navigateToTravelTips();
-}
-
-/***********************************************
- * Steps for TSAGOVTSAPreCheckPage
- ***********************************************/
-
-@Step
-public String verifyTsaPrecheckText() {
-	return tSAGovTsaPrePage.verifyTsaPrecheckText();
-	
 	}
 
-@Step
-public TSAGOVAirportAirlinesPage navigateToAirportsAirlines() {
-	 return tSAGovTsaPrePage.navigateToAirportsAirlines();
-	
-}
+	@Step
+	public TSAGOVTravelTipsPage navigateToTravelTips() {
+		return tSAGOVTravelPage.navigateToTravelTips();
+	}
 
-@Step
+	/***********************************************
+	 * Steps for TSAGOVTSAPreCheckPage
+	 ***********************************************/
 
-public TSAGOVSchedulePage navigateToScedule() {
-	return tSAGovTsaPrePage.navigateToScedule();
-		
-}
+	@Step
+	public String verifyTsaPrecheckText() {
+		return tSAGovTsaPrePage.verifyTsaPrecheckText();
 
-@Step
-public TSAGOVFAQPage navigateToFaq() {
-	
-	return tSAGovTsaPrePage.navigateToFaq();
-}
+	}
 
-@Step
-public TSAGOVTrustedTravelerProgramPage navigateToTrustedTravelerPrograms() {
-	return tSAGovTsaPrePage.navigateToTrustedTravelerPrograms();
-}
+	@Step
+	public TSAGOVAirportAirlinesPage navigateToAirportsAirlines() {
+		return tSAGovTsaPrePage.navigateToAirportsAirlines();
 
-@Step
-public void tsaPreCheckExpand() {
-	tSAGovTsaPrePage.tsaPreCheckExpand();
-}
+	}
 
-/***********************************************
- * Steps for TSAGOVAirportsAirlinesPage
- ***********************************************/
+	@Step
 
-@Step
-public boolean verifyAirportsAirlinesText() {
-	
-	return tSAGovAirportsAirlinesPage.verifyAirportsAirlinesText();
-}
+	public TSAGOVSchedulePage navigateToScedule() {
+		return tSAGovTsaPrePage.navigateToScedule();
 
-/***********************************************
- * Steps for TSAGOVASchedulePage
- ***********************************************/
+	}
 
+	@Step
+	public TSAGOVFAQPage navigateToFaq() {
 
-@Step
-public boolean verifyScheduleText() {
-	return tSAGOVSchedulePage.verifyScheduleText();
-	
-}
+		return tSAGovTsaPrePage.navigateToFaq();
+	}
 
+	@Step
+	public TSAGOVTrustedTravelerProgramPage navigateToTrustedTravelerPrograms() {
+		return tSAGovTsaPrePage.navigateToTrustedTravelerPrograms();
+	}
 
-/***********************************************
- * Steps for TSAGOVAFAQPage
- ***********************************************/
+	@Step
+	public void tsaPreCheckExpand() {
+		tSAGovTsaPrePage.tsaPreCheckExpand();
+	}
 
-@Step
-public boolean verifyFaqText() {
-	return tSAGOVFAQPage.verifyFaqText();
-}
+	/***********************************************
+	 * Steps for TSAGOVAirportsAirlinesPage
+	 ***********************************************/
 
+	@Step
+	public boolean verifyAirportsAirlinesText() {
 
-/***********************************************
- * Steps for TSAGOVATrustedTravelerProgramsPage
- ***********************************************/
+		return tSAGovAirportsAirlinesPage.verifyAirportsAirlinesText();
+	}
 
-@Step
+	/***********************************************
+	 * Steps for TSAGOVASchedulePage
+	 ***********************************************/
 
-public boolean verifyTrustedTravelerText() {
-	return tSAGOVTrustedTravelerProgramPage.verifyTrustedTravelerText();
-}
+	@Step
+	public boolean verifyScheduleText() {
+		return tSAGOVSchedulePage.verifyScheduleText();
 
-/***********************************************
- * Steps for TSAGOVTSpecialProcedurePage
- ***********************************************/
+	}
 
-public boolean verifySpecialProcedureText() {
-	return tSAGOVSpecialProceduresPage.verifySpecialProcedureText();
-	
-}
+	/***********************************************
+	 * Steps for TSAGOVAFAQPage
+	 ***********************************************/
 
-@Step
-public TSAGOVDisabilitiesAndMedicalPage navigateToDisabilitiesAndMedical() {
-	
-	return tSAGOVSpecialProceduresPage.navigateToDisabilitiesAndMedical();
-}
+	@Step
+	public boolean verifyFaqText() {
+		return tSAGOVFAQPage.verifyFaqText();
+	}
 
-@Step
-public TSAGOVMilitaryPage navigateToMilitary() {
-	return tSAGOVSpecialProceduresPage.navigateToMilitary();
-}
+	/***********************************************
+	 * Steps for TSAGOVATrustedTravelerProgramsPage
+	 ***********************************************/
 
-@Step
-public TSAGOVChildrenPage navigateToChildren() {
-	return tSAGOVSpecialProceduresPage.navigateToChildren();
-}
+	@Step
 
-@Step
-public TSAGOVSeniorPage navigateToSenior() {
-	return tSAGOVSpecialProceduresPage.navigateToSenior();
-}
+	public boolean verifyTrustedTravelerText() {
+		return tSAGOVTrustedTravelerProgramPage.verifyTrustedTravelerText();
+	}
 
-@Step
-public TSAGOVLawEnforcementPage navigateToLawEnforcement() {
-	return tSAGOVSpecialProceduresPage.navigateToLawEnforcement();
+	/***********************************************
+	 * Steps for TSAGOVTSpecialProcedurePage
+	 ***********************************************/
 
-}
+	public boolean verifySpecialProcedureText() {
+		return tSAGOVSpecialProceduresPage.verifySpecialProcedureText();
 
-@Step
-public TSAGOVCulturalPage navigateToCultural() {
-	return tSAGOVSpecialProceduresPage.navigateToCultural();
-	
-}
+	}
 
-@Step
-public void specialProceduresExpand() {
-	tSAGOVSpecialProceduresPage.specialProceduresExpand();
-}
+	@Step
+	public TSAGOVDisabilitiesAndMedicalPage navigateToDisabilitiesAndMedical() {
 
-/***********************************************
- * Steps for TSAGOVTDisabilitiesAndMediaclPage
- ***********************************************/
-@Step
-public boolean verifyDisabilitiesAndMedcalText() {
-	return tSAGOVDisabilitiesAndMedicalPage.verifyDisabilitiesAndMedcalText();
-	
-}
+		return tSAGOVSpecialProceduresPage.navigateToDisabilitiesAndMedical();
+	}
 
+	@Step
+	public TSAGOVMilitaryPage navigateToMilitary() {
+		return tSAGOVSpecialProceduresPage.navigateToMilitary();
+	}
 
-/***********************************************
- * Steps for TSAGOVTMilitaryPage
- ***********************************************/
-@Step
-public boolean verifyMilitaryText() {
-	return tSAGOVMilitaryPage.verifyMilitaryText();
-}
+	@Step
+	public TSAGOVChildrenPage navigateToChildren() {
+		return tSAGOVSpecialProceduresPage.navigateToChildren();
+	}
 
-/***********************************************
- * Steps for TSAGOVTChildrenPage
- ***********************************************/
+	@Step
+	public TSAGOVSeniorPage navigateToSenior() {
+		return tSAGOVSpecialProceduresPage.navigateToSenior();
+	}
 
-@Step
-public boolean verifyChildrenText() {
-	return tSAGOVChildrenPage.verifyChildrenText();
-}
+	@Step
+	public TSAGOVLawEnforcementPage navigateToLawEnforcement() {
+		return tSAGOVSpecialProceduresPage.navigateToLawEnforcement();
 
-/***********************************************
- * Steps for TSAGOVTSeniorPage
- ***********************************************/
+	}
 
-@Step
-public boolean verifySeniorText() {
-	return tSAGOVSeniorPage.verifySeniorText();
-}
+	@Step
+	public TSAGOVCulturalPage navigateToCultural() {
+		return tSAGOVSpecialProceduresPage.navigateToCultural();
 
-/***********************************************
- * Steps for TSAGOVLawEnforcementPage
- ***********************************************/
+	}
 
-@Step
-public boolean verifyLawEnforcemenText() {
-	return tSAGOVLawEnforcementPage.verifyLawEnforcemenText();
-	
-}
+	@Step
+	public void specialProceduresExpand() {
+		tSAGOVSpecialProceduresPage.specialProceduresExpand();
+	}
 
-/***********************************************
- * Steps for TSAGOVCulturalPage
- ***********************************************/
+	/***********************************************
+	 * Steps for TSAGOVTDisabilitiesAndMediaclPage
+	 ***********************************************/
+	@Step
+	public boolean verifyDisabilitiesAndMedcalText() {
+		return tSAGOVDisabilitiesAndMedicalPage.verifyDisabilitiesAndMedcalText();
 
-@Step
+	}
 
-public boolean verifyCulturalText() {
-	return tSAGOVCulturalPage.verifyCulturalText();
-}
+	/***********************************************
+	 * Steps for TSAGOVTMilitaryPage
+	 ***********************************************/
+	@Step
+	public boolean verifyMilitaryText() {
+		return tSAGOVMilitaryPage.verifyMilitaryText();
+	}
 
-/***********************************************
- * Steps for TSAGOVPassengerSupportPage
- ***********************************************/
+	/***********************************************
+	 * Steps for TSAGOVTChildrenPage
+	 ***********************************************/
 
-@Step
-public boolean verifyPassengerSupportText() {
-	return tSAGOVPassengerSupportPage.verifyPassengerSupportText();
-}
+	@Step
+	public boolean verifyChildrenText() {
+		return tSAGOVChildrenPage.verifyChildrenText();
+	}
 
-@Step
-public TSAGOVCivilRightsPage navigateToCivilRights() {
+	/***********************************************
+	 * Steps for TSAGOVTSeniorPage
+	 ***********************************************/
+
+	@Step
+	public boolean verifySeniorText() {
+		return tSAGOVSeniorPage.verifySeniorText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVLawEnforcementPage
+	 ***********************************************/
+
+	@Step
+	public boolean verifyLawEnforcemenText() {
+		return tSAGOVLawEnforcementPage.verifyLawEnforcemenText();
+
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVCulturalPage
+	 ***********************************************/
+
+	@Step
+
+	public boolean verifyCulturalText() {
+		return tSAGOVCulturalPage.verifyCulturalText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVPassengerSupportPage
+	 ***********************************************/
+
+	@Step
+	public boolean verifyPassengerSupportText() {
+		return tSAGOVPassengerSupportPage.verifyPassengerSupportText();
+	}
+
+	@Step
+	public TSAGOVCivilRightsPage navigateToCivilRights() {
 		return tSAGOVPassengerSupportPage.navigateToCivilRights();
-}
+	}
 
-@Step
-public TSAGOVTravelRedressPage navigateToTravelRedress() {
-	return tSAGOVPassengerSupportPage.navigateToTravelRedress();
-}
+	@Step
+	public TSAGOVTravelRedressPage navigateToTravelRedress() {
+		return tSAGOVPassengerSupportPage.navigateToTravelRedress();
+	}
 
-@Step
-public TSAGOVClaimsPage navigateToClaims() {
-	return tSAGOVPassengerSupportPage.navigateToClaims();
-}
+	@Step
+	public TSAGOVClaimsPage navigateToClaims() {
+		return tSAGOVPassengerSupportPage.navigateToClaims();
+	}
 
-@Step
-public void passengerSupportExpand() {
-	tSAGOVPassengerSupportPage.passengerSupportExpand();
-}
+	@Step
+	public void passengerSupportExpand() {
+		tSAGOVPassengerSupportPage.passengerSupportExpand();
+	}
 
-/***********************************************
- * Steps for TSAGOVCivilRightsPage
- ***********************************************/
+	/***********************************************
+	 * Steps for TSAGOVCivilRightsPage
+	 ***********************************************/
 
-@Step
-public boolean verifyCivilRightsText() {
-	return tSAGOVCivilRightsPage.verifyCivilRightsText();
-}
+	@Step
+	public boolean verifyCivilRightsText() {
+		return tSAGOVCivilRightsPage.verifyCivilRightsText();
+	}
 
+	/***********************************************
+	 * Steps for TSAGOVTravelRedressPage
+	 ***********************************************/
 
-/***********************************************
- * Steps for TSAGOVTravelRedressPage
- ***********************************************/
+	@Step
+	public boolean verifyTravelRedressText() {
+		return tSAGOVTravelRedressPage.verifyTravelRedressText();
+	}
 
+	/***********************************************
+	 * Steps for TSAGOVClaimsPage
+	 ***********************************************/
 
-@Step
-public boolean verifyTravelRedressText() {
-	return tSAGOVTravelRedressPage.verifyTravelRedressText();
-}
+	@Step
+	public boolean verifyClaimsText() {
+		return tSAGOVClaimsPage.verifyClaimsText();
+	}
 
-/***********************************************
- * Steps for TSAGOVClaimsPage
- ***********************************************/
+	/***********************************************
+	 * Steps for TSAGOVSecurityScreeningPage
+	 ***********************************************/
+	@Step
+	public boolean verifySecurityScreeningText() {
+		return tSAGOVSecurityScreeningPage.verifySecurityScreeningText();
+	}
 
-@Step
-public boolean verifyClaimsText() {
-	return tSAGOVClaimsPage.verifyClaimsText();
-}
+	@Step
+	public TSAGOVIdentificationPage navigateToIdentification() {
+		return tSAGOVSecurityScreeningPage.navigateToIdentification();
+	}
 
-/***********************************************
- * Steps for TSAGOVSecurityScreeningPage
- ***********************************************/
-@Step
-public boolean verifySecurityScreeningText() {
-	return tSAGOVSecurityScreeningPage.verifySecurityScreeningText();
-}
+	@Step
 
-@Step
-public TSAGOVIdentificationPage navigateToIdentification() {
-	return tSAGOVSecurityScreeningPage.navigateToIdentification();
-}
+	public TSAGOVLiquidsRulePage navigateToLiquidsRule() {
+		return tSAGOVSecurityScreeningPage.navigateToLiquidsRule();
+	}
 
-@Step
+	@Step
+	public TSAGOVEmergingTechnologyPage naviagteToEmergingTechnology() {
+		return tSAGOVSecurityScreeningPage.naviagteToEmergingTechnology();
+	}
 
-public TSAGOVLiquidsRulePage navigateToLiquidsRule() {
-	return tSAGOVSecurityScreeningPage.navigateToLiquidsRule();
-}
+	@Step
+	public TSAGOVRealIDPage navigateToRealID() {
+		return tSAGOVSecurityScreeningPage.navigateToRealID();
+	}
 
+	@Step
+	public void securityScreeningExpand() {
+		tSAGOVSecurityScreeningPage.securityScreeningExpand();
+	}
 
-@Step
-public TSAGOVEmergingTechnologyPage naviagteToEmergingTechnology() {
-	return tSAGOVSecurityScreeningPage.naviagteToEmergingTechnology();
-}
+	@Step
+	public TSAGOVWhatCanIBringPage navigateToWCIB() {
+		return tSAGOVSecurityScreeningPage.navigateToWCIB();
+	}
 
-@Step 
-public TSAGOVRealIDPage navigateToRealID() {
-	return tSAGOVSecurityScreeningPage.navigateToRealID();
-}
+	/***********************************************
+	 * Steps for TSAGOVIdentificationPage
+	 ***********************************************/
 
-@Step
-public void securityScreeningExpand() {
-	tSAGOVSecurityScreeningPage.securityScreeningExpand();
-}
+	@Step
+	public boolean verifyIdentificationText() {
+		return tSAGOVIdentificationPage.verifyIdentificationText();
+	}
 
-@Step
-public TSAGOVWhatCanIBringPage navigateToWCIB() {
-	return tSAGOVSecurityScreeningPage.navigateToWCIB();
-}
+	/***********************************************
+	 * Steps for TSAGOVLiquidsRulePage
+	 ***********************************************/
 
-/***********************************************
- * Steps for TSAGOVIdentificationPage
- ***********************************************/
+	@Step
+	public boolean verifyLiquidsRuleText() {
+		return tSAGOVLiquidsRulePage.verifyLiquidsRuleText();
+	}
 
-@Step
-public boolean verifyIdentificationText() {
-	return tSAGOVIdentificationPage.verifyIdentificationText();
-}
+	/***********************************************
+	 * Steps for TSAGOVEmergingTechnologyPage
+	 ***********************************************/
 
-/***********************************************
- * Steps for TSAGOVLiquidsRulePage
- ***********************************************/
+	@Step
 
-@Step
-public boolean verifyLiquidsRuleText() {
-	return tSAGOVLiquidsRulePage.verifyLiquidsRuleText();
-}
-
-/***********************************************
- * Steps for TSAGOVEmergingTechnologyPage
- ***********************************************/
-
-@Step
-
-public boolean verifyEmergingTechnologyText() {
+	public boolean verifyEmergingTechnologyText() {
 		return tSAGOVEmergingTechnologyPage.verifyEmergingTechnologyText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVRealIDPage
+	 ***********************************************/
+
+	@Step
+	public boolean verifyRealIDText() {
+		return tSAGOVRealIDPage.verifyRealIDText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVTravelFAQPage
+	 ***********************************************/
+	@Step
+	public boolean verifyTravelFAQText() {
+		return tSAGOVTravelFAQPage.verifyTravelFAQText();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVTravelTipsPage
+	 ***********************************************/
+	@Step
+	public boolean verifyTravelTipsText() {
+		return tSAGOVTravelTipsPage.verifyTravelTipsText();
+	}
+
+	@Step
+	public TSAGOVTravelChecklistPage navigateToTravelChecklist() {
+		return tSAGOVTravelTipsPage.navigateToTravelChecklist();
+	}
+
+	@Step
+	public void travelTipsExpand() {
+		tSAGOVTravelTipsPage.travelTipsExpand();
+	}
+
+	/***********************************************
+	 * Steps for TSAGOVTravelChecklistPage
+	 ***********************************************/
+
+	@Step
+	public boolean verifyTravelChecklistText() {
+		return tSAGOVTravelChecklistPage.verifyTravelChecklistText();
+	}
 }
-
-/***********************************************
- * Steps for TSAGOVRealIDPage
- ***********************************************/
-
-@Step
-public boolean verifyRealIDText() {
-	return tSAGOVRealIDPage.verifyRealIDText();
-}
-
-
-/***********************************************
- * Steps for TSAGOVTravelFAQPage
- ***********************************************/
-@Step
-public boolean verifyTravelFAQText() {
-	return tSAGOVTravelFAQPage.verifyTravelFAQText();
-}
-
-/***********************************************
- * Steps for TSAGOVTravelTipsPage
- ***********************************************/
-@Step
-public boolean verifyTravelTipsText() {
-	return tSAGOVTravelTipsPage.verifyTravelTipsText();
-}
-
-@Step
-public TSAGOVTravelChecklistPage navigateToTravelChecklist() {
-	return tSAGOVTravelTipsPage.navigateToTravelChecklist();
-}
-
-@Step
-public void travelTipsExpand() {
-	tSAGOVTravelTipsPage.travelTipsExpand();
-}
-
-/***********************************************
- * Steps for TSAGOVTravelChecklistPage
- ***********************************************/
-
-@Step
-public boolean verifyTravelChecklistText() {
-	return tSAGOVTravelChecklistPage.verifyTravelChecklistText();
-}
-}
-
-

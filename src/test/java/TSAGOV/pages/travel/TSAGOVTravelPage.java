@@ -1,6 +1,6 @@
 package TSAGOV.pages.travel;
 
-import TSAGOV.pages.TSAGOVBasePage;
+import TSAGOV.pages.Home.TSAGOVHomePage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -8,7 +8,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("https://edit.staging.tsa.gov/travel")
 
-public class TSAGOVTravelPage extends TSAGOVBasePage {
+public class TSAGOVTravelPage extends TSAGOVHomePage {
 
 	
 	
