@@ -188,6 +188,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	}
 
+	@Step
+
+	public void enterSearchText(String searchItem) {
+		tSAGOVWhatCanIBringPage.enterSearchText(searchItem);
+	}
+
+	@Step
+	public void searchResultList() {
+		tSAGOVWhatCanIBringPage.searchResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVWhatCanIBringPageFlammables
 	 ***********************************************/

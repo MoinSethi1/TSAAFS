@@ -46,6 +46,7 @@ TSAGOV\pages\industry\TSAGOVSecurityFeesPage.class
 TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.class
 TSAGOV\pages\travel\TSAGOVCivilRightsPage.class
 TSAGOV\steps\TSAGOVTravelSteps.class
+TSAGOV\glue\TSAGOVSearchRegressionGlue.class
 TSAGOV\pages\travel\TSAGOVChildrenPage.class
 TSAGOV\pages\media\TSAGOVTestimonyPage.class
 TSAGOV\pages\Home\TSAGOVDHSPage.class
