@@ -1,5 +1,6 @@
 package TSAGOV.steps;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import TSAGOV.pages.Home.TSAGOVHomePage;
@@ -190,13 +191,13 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	@Step
 
-	public void enterSearchText(String searchItem) {
+	public void enterSearchText(String searchItem) throws InterruptedException {
 		tSAGOVWhatCanIBringPage.enterSearchText(searchItem);
 	}
 
 	@Step
-	public void searchResultList() {
-		tSAGOVWhatCanIBringPage.searchResultList();
+	public List<WebElementFacade> searchResultList() {
+		return tSAGOVWhatCanIBringPage.searchResultList();
 	}
 
 	/***********************************************

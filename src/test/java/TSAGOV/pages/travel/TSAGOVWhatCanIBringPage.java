@@ -51,12 +51,10 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 	@FindBy(xpath = "//div[@class ='ajax-progress ajax-progress-fullscreen")
 	private WebElementFacade spinner;
 
-	public void searchResultList() {
+	public List<WebElementFacade> searchResultList() {
 		List<WebElementFacade> result = findAll("//div[@class='views-field views-field-nothing']");
-		int listSize = result.size();
-		for (int i = 0; i < listSize; i++) {
-			System.out.println(result.get(i).getText());
-		}
+
+		return result;
 	}
 
 	public boolean verifyWhatCanIBringText() {
@@ -120,7 +118,7 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 
 	}
 
-	public void enterSearchText(String searchItem) {
+	public void enterSearchText(String searchItem) throws InterruptedException {
 		searchBox.type(searchItem);
 		searchButton.click();
 		spinner.waitUntilNotVisible();
