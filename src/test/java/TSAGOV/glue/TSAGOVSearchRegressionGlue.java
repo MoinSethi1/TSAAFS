@@ -2,6 +2,7 @@ package TSAGOV.glue;
 
 import java.util.List;
 
+import TSAGOV.steps.TSAGOVAboutSteps;
 import TSAGOV.steps.TSAGOVMediaSteps;
 import TSAGOV.steps.TSAGOVTravelSteps;
 import cucumber.api.java.en.Given;
@@ -16,6 +17,8 @@ public class TSAGOVSearchRegressionGlue {
 	TSAGOVTravelSteps userT;
 	@Steps
 	TSAGOVMediaSteps userM;
+	@Steps
+	TSAGOVAboutSteps userA;
 
 	@Given("^user wants to perform search operation$")
 	public void user_wants_to_perform_search_operation() {
@@ -47,11 +50,16 @@ public class TSAGOVSearchRegressionGlue {
 			userM.navigateToSpeeches();
 			break;
 
+		case "Employee Stories":
+			userA.navigateToTSAGOV();
+			userA.navigateToAbout();
+			userA.navigateToEmployeeStories();
+			break;
 		}
 	}
 
-	@When("^user searches on page (.*) for text (.*), year (.*), month (.*)$")
-	public void user_enters_Food(String searchPage, String searchItem, String year, String month)
+	@When("^user searches on page (.*) for text (.*), year (.*), month (.*), category (.*)$")
+	public void user_enters_Food(String searchPage, String searchItem, String year, String month, String category)
 			throws InterruptedException {
 		System.out.println(searchPage);
 		System.out.println(searchItem);
@@ -68,6 +76,11 @@ public class TSAGOVSearchRegressionGlue {
 
 		case "Speeches":
 			userM.speechesSerchText(year, month);
+			break;
+
+		case "Employee Stories":
+			userA.empSerchText(year, month, category);
+			break;
 
 		}
 
@@ -113,6 +126,13 @@ public class TSAGOVSearchRegressionGlue {
 			System.out.println("LIST SIZE" + listS.size());
 			assert listS.size() > 0;
 			assert (listS.get(0).containsText(searchItem));
+			break;
+
+		case "Employee Stories":
+			List<WebElementFacade> listE = userA.empResultList();
+			System.out.println("LIST SIZE" + listE.size());
+			assert listE.size() > 0;
+			assert (listE.get(0).containsText(searchItem));
 			break;
 
 		}

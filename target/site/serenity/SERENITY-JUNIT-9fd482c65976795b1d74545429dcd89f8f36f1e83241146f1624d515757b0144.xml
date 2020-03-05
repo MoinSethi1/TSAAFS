@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search Functionality regression test" skipped="0" tests="1" time="21.35" timestamp="2020-03-05 12:31:28"><testcase name="As user I want to search on various pages"><failure type="java.lang.AssertionError"/><system-err>null&#13;
-TSAGOV.glue.TSAGOVSearchRegressionGlue.search_result_is_displayed(TSAGOVSearchRegressionGlue.java:115)&#13;
-✽.search result is displayed on page Speeches for text TSA Acting Deputy Administrator z, year 2019, month Oct(src/test/resources/TSAGOVFeatures/TSAGOVSearchRegression.feature:8)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Search Functionality regression test" skipped="0" tests="1" time="22.18" timestamp="2020-03-05 01:44:13"><testcase name="As user I want to search on various pages"/></testsuite>
