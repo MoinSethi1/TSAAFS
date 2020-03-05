@@ -128,7 +128,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2020 13:44</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2020 14:57</span>
     <br style="clear:left"/>
 </div>
 
@@ -163,9 +163,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">As user I want to search on various pages
+                                <span class="error-color">As user I want to search on various pages
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -186,32 +186,56 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not visible exception: Timed out after 2 seconds. Element not available</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotVisibleException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>TSAGOV.pages.travel.TSAGOVTSAPrecheckPage.navigateToFaq(TSAGOVTSAPrecheckPage.java:46)<br />TSAGOV.steps.TSAGOVTravelSteps.navigateToFaq(TSAGOVTravelSteps.java:351)<br />TSAGOV.glue.TSAGOVSearchRegressionGlue.user_access_What_Can_I_Bring_page(TSAGOVSearchRegressionGlue.java:68)<br />✽.user access TSA Pre FAQ page(src/test/resources/TSAGOVFeatures/TSAGOVSearchRegression.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource4915726080974675972.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" Example: {searchPage=Employee Stories, searchItem=What people are saying about TSA, year=2019, month=Dec, category=Human interest}" width="1295"/>
-                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" When user access Employee Stories page" width="1295"/>
+                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" Example: {searchPage=TSA Pre FAQ, searchItem=TSA Pre, year=, month=, category=}" width="1295"/>
+                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" When user access TSA Pre FAQ page" width="1295"/>
                 <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" Navigate to TSAGOV" width="1295"/>
-                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" Navigate to about" width="1295"/>
-                <img src="d115cb3035f3f9db1ced67c0de537a83745e4146d5e0604c3bc8e5f9130238f2.png" title=" Navigate to about" width="1295"/>
-                <img src="80dda6445d94f1b72a4dc091c0d410746877879f11f0a0478276cf5695db8627.png" title=" Navigate to about" width="1295"/>
-                <img src="80dda6445d94f1b72a4dc091c0d410746877879f11f0a0478276cf5695db8627.png" title=" Navigate to about (completed)" width="1295"/>
-                <img src="80dda6445d94f1b72a4dc091c0d410746877879f11f0a0478276cf5695db8627.png" title=" Navigate to employee stories" width="1295"/>
-                <img src="0937f494de79c66f48a6ac9f37caa824e6bf036cfe73f595c8cc8152c9ac0537.png" title=" Navigate to employee stories" width="1295"/>
-                <img src="0937f494de79c66f48a6ac9f37caa824e6bf036cfe73f595c8cc8152c9ac0537.png" title=" Navigate to employee stories (completed)" width="1295"/>
-                <img src="0937f494de79c66f48a6ac9f37caa824e6bf036cfe73f595c8cc8152c9ac0537.png" title=" When user access Employee Stories page (completed)" width="1295"/>
-                <img src="0937f494de79c66f48a6ac9f37caa824e6bf036cfe73f595c8cc8152c9ac0537.png" title=" And user searches on page Employee Stories for text What people are saying about TSA, year 2019, month Dec, category Human interest" width="1295"/>
-                <img src="0937f494de79c66f48a6ac9f37caa824e6bf036cfe73f595c8cc8152c9ac0537.png" title=" Emp serch text: 2019, Dec, Human interest" width="1295"/>
-                <img src="e402a94aef7339c7589563c2af8382a5af4b69d44a5229caf881cd8cff2bcff2.png" title=" Emp serch text: 2019, Dec, Human interest" width="1295"/>
-                <img src="510b2572cb6bd328b75c07d06fe7bf62d927ccfe80b6fba0d9ed270f2fe8abb1.png" title=" Emp serch text: 2019, Dec, Human interest" width="1295"/>
-                <img src="5323747bb26ce7308691720110298ebded7a066d65172fe8eb923674cb6fb533.png" title=" Emp serch text: 2019, Dec, Human interest" width="1295"/>
-                <img src="5323747bb26ce7308691720110298ebded7a066d65172fe8eb923674cb6fb533.png" title=" Emp serch text: 2019, Dec, Human interest (completed)" width="1295"/>
-                <img src="5323747bb26ce7308691720110298ebded7a066d65172fe8eb923674cb6fb533.png" title=" And user searches on page Employee Stories for text What people are saying about TSA, year 2019, month Dec, category Human interest (completed)" width="1295"/>
-                <img src="5323747bb26ce7308691720110298ebded7a066d65172fe8eb923674cb6fb533.png" title=" Then search result is displayed on page Employee Stories for text What people are saying about TSA, year 2019, month Dec" width="1295"/>
-                <img src="5323747bb26ce7308691720110298ebded7a066d65172fe8eb923674cb6fb533.png" title=" Emp result list" width="1295"/>
-                <img src="94ed2b9e55116a706f2d15566684ceba20a4e638f2aa93b93fd58a4756ff592b.png" title=" Emp result list" width="1295"/>
-                <img src="8f8856d076f0e991fe066383062c6e6f5ed0853ce001dfcdb7e5ec208819edb1.png" title=" Emp result list (completed)" width="1295"/>
-                <img src="8f8856d076f0e991fe066383062c6e6f5ed0853ce001dfcdb7e5ec208819edb1.png" title=" Then search result is displayed on page Employee Stories for text What people are saying about TSA, year 2019, month Dec (completed)" width="1295"/>
-                <img src="8f8856d076f0e991fe066383062c6e6f5ed0853ce001dfcdb7e5ec208819edb1.png" title=" Example: {searchPage=Employee Stories, searchItem=What people are saying about TSA, year=2019, month=Dec, category=Human interest} (completed): <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="51557ba7d1999c8b1965e607d79c785fcb3e1d72a4b396a1154088fd81be4a24.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="06cd6a6aa304f0719cfd8c665f167812af77ecc6520e505b2650a10d892804e3.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="c1f20adfb81c3f1cb81e045d92916465c907eaa8cf57c1af9ad856ab3ba33c55.png" title=" Navigate to TSA travel" width="1295"/>
+                <img src="c1f20adfb81c3f1cb81e045d92916465c907eaa8cf57c1af9ad856ab3ba33c55.png" title=" Navigate to TSA travel (completed)" width="1295"/>
+                <img src="c1f20adfb81c3f1cb81e045d92916465c907eaa8cf57c1af9ad856ab3ba33c55.png" title=" Navigate to faq" width="1295"/>
+                <img src="c1f20adfb81c3f1cb81e045d92916465c907eaa8cf57c1af9ad856ab3ba33c55.png" title=" Navigate to faq (completed): <span class='error-color'>ERROR</span>" width="1295"/>
             </div>
         </div>
 

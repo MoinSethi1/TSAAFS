@@ -55,6 +55,18 @@ public class TSAGOVSearchRegressionGlue {
 			userA.navigateToAbout();
 			userA.navigateToEmployeeStories();
 			break;
+
+		case "FAQ":
+			userT.navigateToTSAGOV();
+			userT.navigateToTSATravel();
+			userT.navigateToTravelFAQ();
+			break;
+
+		case "TSA Pre FAQ":
+			userT.navigateToTSAGOV();
+			userT.navigateToTSATravel();
+			userT.navigateToFaq();
+			break;
 		}
 	}
 
@@ -81,6 +93,13 @@ public class TSAGOVSearchRegressionGlue {
 		case "Employee Stories":
 			userA.empSerchText(year, month, category);
 			break;
+
+		case "FAQ":
+			userT.faqSerchText(searchItem);
+			break;
+
+		case "TSA Pre FAQ":
+			userT.prefaqSerchText(searchItem);
 
 		}
 
@@ -133,6 +152,20 @@ public class TSAGOVSearchRegressionGlue {
 			System.out.println("LIST SIZE" + listE.size());
 			assert listE.size() > 0;
 			assert (listE.get(0).containsText(searchItem));
+			break;
+
+		case "FAQ":
+			List<WebElementFacade> listF = userT.faqResultList();
+			System.out.println("LIST SIZE" + listF.size());
+			assert listF.size() > 0;
+			assert (listF.get(2).containsText(searchItem));
+			break;
+
+		case "TSA PreFAQ":
+			List<WebElementFacade> listPF = userT.prefaqResultList();
+			System.out.println("LIST SIZE" + listPF.size());
+			assert listPF.size() > 0;
+			assert (listPF.get(2).containsText("TSA Pre✓® for Military Members"));
 			break;
 
 		}

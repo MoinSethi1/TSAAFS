@@ -1,4 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: serenity.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.116 sec - in serenity.CucumberTestSuite
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.819 sec <<< FAILURE! - in serenity.CucumberTestSuite
+As user I want to search on various pages(Search Functionality regression test)  Time elapsed: 21.638 sec  <<< ERROR!
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:163)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:118)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:30)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:217)
+	at net.serenitybdd.core.pages.WebElementExpectations$5.apply(WebElementExpectations.java:106)
+	at net.serenitybdd.core.pages.WebElementExpectations$5.apply(WebElementExpectations.java:98)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.waitUntilClickable(Unknown Source)
+	at TSAGOV.pages.travel.TSAGOVTSAPrecheckPage.navigateToFaq(TSAGOVTSAPrecheckPage.java:46)
+	at TSAGOV.steps.TSAGOVTravelSteps.navigateToFaq(TSAGOVTravelSteps.java:351)
+	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.CGLIB$navigateToFaq$73(<generated>)
+	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec$$FastClassByCGLIB$$2c60ee02.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at TSAGOV.steps.TSAGOVTravelSteps$$EnhancerByCGLIB$$1c3e1cec.navigateToFaq(<generated>)
+	at TSAGOV.glue.TSAGOVSearchRegressionGlue.user_access_What_Can_I_Bring_page(TSAGOVSearchRegressionGlue.java:68)
+	at ?.user access TSA Pre FAQ page(src/test/resources/TSAGOVFeatures/TSAGOVSearchRegression.feature:6)
+

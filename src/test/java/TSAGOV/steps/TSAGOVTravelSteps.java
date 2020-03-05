@@ -390,6 +390,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 		return tSAGOVFAQPage.verifyFaqText();
 	}
 
+	@Step
+	public void prefaqSerchText(String searchItem) {
+		tSAGOVFAQPage.prefaqSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> prefaqResultList() {
+		return tSAGOVFAQPage.prefaqResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVATrustedTravelerProgramsPage
 	 ***********************************************/
@@ -640,6 +651,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	@Step
 	public boolean verifyTravelFAQText() {
 		return tSAGOVTravelFAQPage.verifyTravelFAQText();
+	}
+
+	@Step
+	public void faqSerchText(String searchItem) {
+		tSAGOVTravelFAQPage.faqSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> faqResultList() {
+		return tSAGOVTravelFAQPage.faqResultList();
 	}
 
 	/***********************************************
