@@ -1,7 +1,8 @@
 package TSAGOV.steps;
 
+import java.util.List;
+
 import TSAGOV.pages.Home.TSAGOVHomePage;
-import TSAGOV.pages.about.TSAGOVAboutPage;
 import TSAGOV.pages.media.TSAGOVBlogPage;
 import TSAGOV.pages.media.TSAGOVFactsheetsPage;
 import TSAGOV.pages.media.TSAGOVMediaPage;
@@ -12,11 +13,12 @@ import TSAGOV.pages.media.TSAGOVSpeechesPage;
 import TSAGOV.pages.media.TSAGOVStatementsPage;
 import TSAGOV.pages.media.TSAGOVTestimonyPage;
 import TSAGOV.pages.media.TSAGOVVideoPage;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class TSAGOVMediaSteps extends ScenarioSteps {
-	
+
 	TSAGOVHomePage tSAGOVHomePage;
 	TSAGOVMediaPage tSAGOVMediaPage;
 	TSAGOVMediaRoomPage tSAGOVMediaRoomPage;
@@ -28,148 +30,186 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	TSAGOVStatementsPage tSAGOVStatementsPage;
 	TSAGOVTestimonyPage tSAGOVTestimonyPage;
 	TSAGOVVideoPage tSAGOVVideoPage;
-	
+
 	/***********************************************
 	 * Steps for TSAGOVHomePage
 	 ***********************************************/
-	
-@Step
+
+	@Step
 	public void navigateToTSAGOV() {
 		tSAGOVHomePage.navigateToTSAGOV();
 	}
 
-
-@Step
-public String actualUrl() {
-	return tSAGOVHomePage.actualUrl();
+	@Step
+	public String actualUrl() {
+		return tSAGOVHomePage.actualUrl();
 	}
 
-@Step	
+	@Step
 	public TSAGOVMediaPage navigateToMedia() {
 		return tSAGOVHomePage.navigateToMedia();
 	}
-	
-@Step
+
+	@Step
 	public TSAGOVMediaRoomPage navigateToMediaRoom() {
 		return tSAGOVHomePage.navigateToMediaRoom();
 	}
-	
 
 	/***********************************************
 	 * Steps for TSAGOVMediaPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyMediaText() {
 		return tSAGOVMediaPage.verifyMediaText();
-		}
-@Step
+	}
+
+	@Step
 	public TSAGOVSocialMediaPage navigateToSocialMedia() {
 		return tSAGOVMediaPage.navigateToSocialMedia();
 	}
-@Step
+
+	@Step
 	public TSAGOVBlogPage navigateToBlog() {
 		return tSAGOVMediaPage.navigateToBlog();
 	}
-@Step
+
+	@Step
 	public TSAGOVVideoPage navigateToVideo() {
 		return tSAGOVMediaPage.navigateToVideo();
 	}
-	
+
 	/***********************************************
 	 * Steps for TSAGOVMediaRoomPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyMediaRoomText() {
 		return tSAGOVMediaRoomPage.verifyMediaRoomText();
 	}
-@Step	
+
+	@Step
 	public TSAGOVPressReleasesPage navigateToPressReleases() {
 		return tSAGOVMediaRoomPage.navigateToPressReleases();
 	}
-@Step
+
+	@Step
 	public TSAGOVTestimonyPage navigateToTestimony() {
 		return tSAGOVMediaRoomPage.navigateToTestimony();
 	}
-@Step
+
+	@Step
 	public TSAGOVSpeechesPage navigateToSpeeches() {
 		return tSAGOVMediaRoomPage.navigateToSpeeches();
 	}
-@Step	
+
+	@Step
 	public TSAGOVStatementsPage navigateTOStatements() {
 		return tSAGOVMediaRoomPage.navigateTOStatements();
-		
+
 	}
-@Step	
+
+	@Step
 	public TSAGOVFactsheetsPage navigateToFactSheets() {
 		return tSAGOVMediaRoomPage.navigateToFactSheets();
-		
-			}
-	
-		/***********************************************
+
+	}
+
+	/***********************************************
 	 * Steps for TSAGOVPressReleasesPage
 	 ***********************************************/
-	
-@Step	
+
+	@Step
 	public boolean verifyPressReleasesText() {
 		return tSAGOVPressReleasesPage.verifyPressReleasesText();
 	}
-	
+
 	/***********************************************
 	 * Steps for TSAGOVBlogPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyBlogText() {
 		return tSAGOVBlogPage.verifyBlogText();
 	}
-	
+
+	@Step
+	public void enterSearchText(String searchItem, String year) {
+		tSAGOVBlogPage.enterSearchText(searchItem, year);
+	}
+
+	@Step
+	public List<WebElementFacade> searchResultList() {
+
+		return tSAGOVBlogPage.searchResultList();
+	}
 
 	/***********************************************
 	 * Steps for TSAGOVFactsheetsPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyFactsheetsText() {
 		return tSAGOVFactsheetsPage.verifyFactsheetsText();
 	}
-	
+
 	/***********************************************
 	 * Steps for TSAGOVSocialMediaPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifySocialMediaText() {
 		return tSAGOVSocialMediaPage.verifySocialMediaText();
-		}
-	
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVSpeechesPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifySpeechesText() {
 		return tSAGOVSpeechesPage.verifySpeechesText();
-	}	
-	
+	}
+
+	@Step
+	public void speechesSerchText(String year, String month) {
+		tSAGOVSpeechesPage.speechesSerchText(year, month);
+
+	}
+
+	@Step
+	public List<WebElementFacade> speechesResultList() {
+		return tSAGOVSpeechesPage.speechesResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVStatementsPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyStatementsText() {
 		return tSAGOVStatementsPage.verifyStatementsText();
 	}
-	
+
 	/***********************************************
 	 * Steps for TSAGOVTestimonyPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyTestimonyText() {
-		
+
 		return tSAGOVTestimonyPage.verifyTestimonyText();
 	}
-	
+
+	@Step
+	public void testimonySerchText(String year, String month) {
+		tSAGOVTestimonyPage.testimonySerchText(year, month);
+	}
+
+	@Step
+	public List<WebElementFacade> testimonyResultList() {
+
+		return tSAGOVTestimonyPage.testimonyResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVVideoPage
 	 ***********************************************/
-@Step
+	@Step
 	public boolean verifyVideoBanner() {
 		return tSAGOVVideoPage.verifyVideoBanner();
 	}
-	
+
 }

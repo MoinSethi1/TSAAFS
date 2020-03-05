@@ -52,6 +52,8 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 	private WebElementFacade spinner;
 
 	public List<WebElementFacade> searchResultList() {
+		searchButton.click();
+		spinner.waitUntilNotVisible();
 		List<WebElementFacade> result = findAll("//div[@class='views-field views-field-nothing']");
 
 		return result;
@@ -120,8 +122,7 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 
 	public void enterSearchText(String searchItem) throws InterruptedException {
 		searchBox.type(searchItem);
-		searchButton.click();
-		spinner.waitUntilNotVisible();
+
 	}
 
 }
