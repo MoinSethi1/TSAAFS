@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search Functionality regression test","As user I want to search on various pages","ERROR","2020-03-05T14:57:08.336-05:00[America/New_York]","0.0","20.05"
+"Search Functionality regression test","As user I want to search on various pages","SUCCESS","2020-03-06T14:24:14.123-05:00[America/New_York]","0.0","41.81"

@@ -3,6 +3,7 @@ package TSAGOV.glue;
 import java.util.List;
 
 import TSAGOV.steps.TSAGOVAboutSteps;
+import TSAGOV.steps.TSAGOVHomeSteps;
 import TSAGOV.steps.TSAGOVMediaSteps;
 import TSAGOV.steps.TSAGOVTravelSteps;
 import cucumber.api.java.en.Given;
@@ -19,13 +20,15 @@ public class TSAGOVSearchRegressionGlue {
 	TSAGOVMediaSteps userM;
 	@Steps
 	TSAGOVAboutSteps userA;
+	@Steps
+	TSAGOVHomeSteps userH;
 
 	@Given("^user wants to perform search operation$")
 	public void user_wants_to_perform_search_operation() {
 
 	}
 
-	@When("^user access (.*) page$")
+	@When("^user access the (.*) page$")
 	public void user_access_What_Can_I_Bring_page(String searchPage) throws InterruptedException {
 		switch (searchPage) {
 		case "What Can I Bring":
@@ -65,14 +68,46 @@ public class TSAGOVSearchRegressionGlue {
 		case "TSA Pre FAQ":
 			userT.navigateToTSAGOV();
 			userT.navigateToTSATravel();
+			userT.tsaPreCheckExpand();
 			userT.navigateToFaq();
+			break;
+
+		case "Press Releases":
+			userM.navigateToTSAGOV();
+			userM.navigateToMediaRoom();
+			userM.navigateToPressReleases();
+			break;
+
+		case "Travel Tips":
+			userT.navigateToTSAGOV();
+			userT.navigateToTSATravel();
+			userT.navigateToTravelTips();
+			break;
+
+		case "A-Z Index":
+			userH.navigateToTSAGOV();
+			userH.navigateToAToZFooterLink();
+			break;
+
+		case "Schedule":
+			userT.navigateToTSAGOV();
+			userT.navigateToTSATravel();
+			userT.tsaPreCheckExpand();
+			userT.navigateToScedule();
+			break;
+
+		case "Airport Airlines":
+			userT.navigateToTSAGOV();
+			userT.navigateToTSATravel();
+			userT.tsaPreCheckExpand();
+			userT.navigateToAirportsAirlines();
 			break;
 		}
 	}
 
-	@When("^user searches on page (.*) for text (.*), year (.*), month (.*), category (.*)$")
-	public void user_enters_Food(String searchPage, String searchItem, String year, String month, String category)
-			throws InterruptedException {
+	@When("^user searches on page (.*) for text (.*), year (.*), month (.*), category (.*), Press Releases (.*), topic (.*), day (.*), time (.*)$")
+	public void user_enters_Food(String searchPage, String searchItem, String year, String month, String category,
+			String pressReleases, String topic, String day, String time) throws InterruptedException {
 		System.out.println(searchPage);
 		System.out.println(searchItem);
 		switch (searchPage) {
@@ -100,21 +135,41 @@ public class TSAGOVSearchRegressionGlue {
 
 		case "TSA Pre FAQ":
 			userT.prefaqSerchText(searchItem);
+			break;
 
+		case "Press Releases":
+			userM.pressReleaseSerchText(year, month, pressReleases, topic);
+			break;
+
+		case "Travel Tips":
+			userT.travelTipsSerchText(searchItem);
+			break;
+
+		case "A-Z Index":
+			userH.aTozSerchText(searchItem);
+			break;
+
+		case "Schedule":
+			userT.scheduleSerchText(searchItem, day, time);
+			break;
+
+		case "Airport Airlines":
+			userT.airportSerchText(searchItem);
+			break;
 		}
 
 	}
 
-	@Then("^search result is displayed on page (.*) for text (.*), year(.*), month (.*)$")
-	public void search_result_is_displayed(String searchPage, String searchItem, String year, String month) {
+	@Then("^search result is displayed on page (.*) with expected text (.*)$")
+	public void search_result_is_displayed(String searchPage, String expectedText) {
 
 		switch (searchPage) {
 
 		case "What Can I Bring":
 			List<WebElementFacade> listT = userT.searchResultList();
 			assert listT.size() > 0;
-			System.out.println(searchItem);
-			assert (listT.get(0).containsText(searchItem) || listT.get(0).containsText(searchItem.toLowerCase()));
+
+			assert (listT.get(0).containsText(expectedText) || listT.get(0).containsText(expectedText.toLowerCase()));
 			// for (int i = 0; i < listSize; i++) {
 			// System.out.println(result.get(i).getText());
 			// if (result.get(i).containsText("Food") || result.get(i).containsText("food"))
@@ -129,45 +184,72 @@ public class TSAGOVSearchRegressionGlue {
 		case "Blog":
 			List<WebElementFacade> listM = userT.searchResultList();
 			assert listM.size() > 0;
-			System.out.println(searchItem);
-			assert (listM.get(0).containsText(searchItem)
-					|| listM.get(0).containsText(searchItem.toLowerCase()) && listM.get(0).containsText(year));
+
+			assert (listM.get(0).containsText(expectedText) || listM.get(0).containsText(expectedText.toLowerCase()));
 			break;
 
 		case "Testimony":
 			List<WebElementFacade> listTm = userM.testimonyResultList();
 			assert listTm.size() > 0;
-			assert (listTm.get(0).containsText(searchItem));
+			assert (listTm.get(0).containsText(expectedText));
 			break;
 
 		case "Speeches":
 			List<WebElementFacade> listS = userM.speechesResultList();
 			System.out.println("LIST SIZE" + listS.size());
 			assert listS.size() > 0;
-			assert (listS.get(0).containsText(searchItem));
+			assert (listS.get(0).containsText(expectedText));
 			break;
 
 		case "Employee Stories":
 			List<WebElementFacade> listE = userA.empResultList();
 			System.out.println("LIST SIZE" + listE.size());
 			assert listE.size() > 0;
-			assert (listE.get(0).containsText(searchItem));
+			assert (listE.get(0).containsText(expectedText));
 			break;
 
 		case "FAQ":
 			List<WebElementFacade> listF = userT.faqResultList();
 			System.out.println("LIST SIZE" + listF.size());
 			assert listF.size() > 0;
-			assert (listF.get(2).containsText(searchItem));
+			assert (listF.get(0).containsText(expectedText));
 			break;
 
-		case "TSA PreFAQ":
+		case "TSA Pre FAQ":
 			List<WebElementFacade> listPF = userT.prefaqResultList();
 			System.out.println("LIST SIZE" + listPF.size());
 			assert listPF.size() > 0;
-			assert (listPF.get(2).containsText("TSA Pre✓® for Military Members"));
+			assert (listPF.get(0).containsText(expectedText));
 			break;
 
+		case "Press Releases":
+			List<WebElementFacade> listPR = userM.pressReleasefaqResultList();
+			System.out.println("LIST SIZE" + listPR.size());
+			assert listPR.size() > 0;
+			assert (listPR.get(0).containsText(expectedText));
+			break;
+
+		case "Travel Tips":
+			List<WebElementFacade> listTT = userT.travelTipsResultList();
+			System.out.println("LIST SIZE" + listTT.size());
+			assert listTT.size() > 0;
+			assert (listTT.get(0).containsText(expectedText));
+			break;
+
+		case "A-Z Index":
+			List<WebElementFacade> listZ = userH.aTozResultList();
+			System.out.println("LIST SIZE" + listZ.size());
+			assert listZ.size() > 0;
+			assert (listZ.get(0).containsText(expectedText));
+			break;
+
+		case "Schedule":
+			assert userT.scheduleResultList().containsText(expectedText);
+			break;
+
+		case "Airport Airlines":
+			assert userT.airportResultList().containsText(expectedText);
+			break;
 		}
 	}
 }

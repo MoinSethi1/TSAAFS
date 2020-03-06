@@ -31,7 +31,9 @@ public class TSAGOVTravelFAQPage extends TSAGOVTravelPage {
 	public List<WebElementFacade> faqResultList() {
 		searchButton.click();
 		spinner.waitUntilNotVisible();
-		List<WebElementFacade> result = findAll("//div[@class='views-field views-field-field-faq-category']");
+		List<WebElementFacade> result = findAll(
+				"//*[@id=\"block-mainpagecontent\"]/div/div/div/div[2]/div/div/div[2]/div/ul/li");
+
 		return result;
 	}
 

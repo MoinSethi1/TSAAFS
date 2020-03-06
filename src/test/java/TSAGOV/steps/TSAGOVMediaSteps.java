@@ -122,6 +122,16 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 		return tSAGOVPressReleasesPage.verifyPressReleasesText();
 	}
 
+	@Step
+	public void pressReleaseSerchText(String year, String month, String pressReleases, String topic) {
+		tSAGOVPressReleasesPage.pressReleaseSerchText(year, month, pressReleases, topic);
+
+	}
+
+	public List<WebElementFacade> pressReleasefaqResultList() {
+		return tSAGOVPressReleasesPage.pressReleasefaqResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVBlogPage
 	 ***********************************************/

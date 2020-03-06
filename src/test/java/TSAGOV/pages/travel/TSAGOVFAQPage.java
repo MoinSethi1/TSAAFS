@@ -10,7 +10,7 @@ public class TSAGOVFAQPage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade faqText;
 
-	@FindBy(xpath = "//input[@class='form-text required usa-input']")
+	@FindBy(xpath = "//input[@id='edit-combine']")
 	private WebElementFacade searchBox;
 
 	@FindBy(xpath = "//div[@class ='ajax-progress ajax-progress-fullscreen")

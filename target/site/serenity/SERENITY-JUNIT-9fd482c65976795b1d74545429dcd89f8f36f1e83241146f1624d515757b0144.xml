@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Search Functionality regression test" skipped="0" tests="1" time="20.05" timestamp="2020-03-05 02:57:08"><testcase name="As user I want to search on various pages"><error message="Timed out after 2 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 2 seconds. Element not available
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not available
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AFSWWD0CQT7LE1', ip: '10.84.12.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown&#13;
-TSAGOV.pages.travel.TSAGOVTSAPrecheckPage.navigateToFaq(TSAGOVTSAPrecheckPage.java:46)&#13;
-TSAGOV.steps.TSAGOVTravelSteps.navigateToFaq(TSAGOVTravelSteps.java:351)&#13;
-TSAGOV.glue.TSAGOVSearchRegressionGlue.user_access_What_Can_I_Bring_page(TSAGOVSearchRegressionGlue.java:68)&#13;
-✽.user access TSA Pre FAQ page(src/test/resources/TSAGOVFeatures/TSAGOVSearchRegression.feature:6)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Search Functionality regression test" skipped="0" tests="2" time="41.81" timestamp="2020-03-06 02:24:14"><testcase name="As user I want to search on various pages"/></testsuite>

@@ -371,6 +371,18 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 		return tSAGovAirportsAirlinesPage.verifyAirportsAirlinesText();
 	}
 
+	@Step
+	public void airportSerchText(String searchItem) {
+		tSAGovAirportsAirlinesPage.airportSerchText(searchItem);
+
+	}
+
+	@Step
+	public WebElementFacade airportResultList() {
+
+		return tSAGovAirportsAirlinesPage.airportResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVASchedulePage
 	 ***********************************************/
@@ -379,6 +391,16 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	public boolean verifyScheduleText() {
 		return tSAGOVSchedulePage.verifyScheduleText();
 
+	}
+
+	@Step
+	public void scheduleSerchText(String searchItem, String day, String time) {
+		tSAGOVSchedulePage.scheduleSerchText(searchItem, day, time);
+	}
+
+	@Step
+	public WebElementFacade scheduleResultList() {
+		return tSAGOVSchedulePage.scheduleResultList();
 	}
 
 	/***********************************************
@@ -680,6 +702,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	@Step
 	public void travelTipsExpand() {
 		tSAGOVTravelTipsPage.travelTipsExpand();
+	}
+
+	@Step
+	public void travelTipsSerchText(String searchItem) {
+		tSAGOVTravelTipsPage.travelTipsSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> travelTipsResultList() {
+		return tSAGOVTravelTipsPage.travelTipsResultList();
 	}
 
 	/***********************************************

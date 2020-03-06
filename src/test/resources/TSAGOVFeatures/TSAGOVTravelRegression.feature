@@ -21,6 +21,9 @@ Feature: Travel section regression test
       | Seniors                         |
       | Law Enforcement                 |
       | Cultural                        |
+      | TSA PreCheck                    |
+      | Airport Airlines                |
+      | Schedule                        |
       | FAQ                             |
       | Trusted Traveler Programs       |
       | Passenger Support               |
