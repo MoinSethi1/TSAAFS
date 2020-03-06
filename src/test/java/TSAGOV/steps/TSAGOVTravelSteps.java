@@ -1,5 +1,6 @@
 package TSAGOV.steps;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import TSAGOV.pages.Home.TSAGOVHomePage;
@@ -188,6 +189,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	}
 
+	@Step
+
+	public void enterSearchText(String searchItem) throws InterruptedException {
+		tSAGOVWhatCanIBringPage.enterSearchText(searchItem);
+	}
+
+	@Step
+	public List<WebElementFacade> searchResultList() {
+		return tSAGOVWhatCanIBringPage.searchResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVWhatCanIBringPageFlammables
 	 ***********************************************/
@@ -359,6 +371,18 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 		return tSAGovAirportsAirlinesPage.verifyAirportsAirlinesText();
 	}
 
+	@Step
+	public void airportSerchText(String searchItem) {
+		tSAGovAirportsAirlinesPage.airportSerchText(searchItem);
+
+	}
+
+	@Step
+	public WebElementFacade airportResultList() {
+
+		return tSAGovAirportsAirlinesPage.airportResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVASchedulePage
 	 ***********************************************/
@@ -369,6 +393,16 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	}
 
+	@Step
+	public void scheduleSerchText(String searchItem, String day, String time) {
+		tSAGOVSchedulePage.scheduleSerchText(searchItem, day, time);
+	}
+
+	@Step
+	public WebElementFacade scheduleResultList() {
+		return tSAGOVSchedulePage.scheduleResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVAFAQPage
 	 ***********************************************/
@@ -376,6 +410,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	@Step
 	public boolean verifyFaqText() {
 		return tSAGOVFAQPage.verifyFaqText();
+	}
+
+	@Step
+	public void prefaqSerchText(String searchItem) {
+		tSAGOVFAQPage.prefaqSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> prefaqResultList() {
+		return tSAGOVFAQPage.prefaqResultList();
 	}
 
 	/***********************************************
@@ -630,6 +675,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 		return tSAGOVTravelFAQPage.verifyTravelFAQText();
 	}
 
+	@Step
+	public void faqSerchText(String searchItem) {
+		tSAGOVTravelFAQPage.faqSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> faqResultList() {
+		return tSAGOVTravelFAQPage.faqResultList();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVTravelTipsPage
 	 ***********************************************/
@@ -646,6 +702,17 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	@Step
 	public void travelTipsExpand() {
 		tSAGOVTravelTipsPage.travelTipsExpand();
+	}
+
+	@Step
+	public void travelTipsSerchText(String searchItem) {
+		tSAGOVTravelTipsPage.travelTipsSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> travelTipsResultList() {
+		return tSAGOVTravelTipsPage.travelTipsResultList();
 	}
 
 	/***********************************************

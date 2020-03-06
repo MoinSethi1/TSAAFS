@@ -3,15 +3,28 @@ package TSAGOV.pages.travel;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage{
+public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 
-@FindBy (xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")	
-private WebElementFacade airportsAirlinesText;
+	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
+	private WebElementFacade airportsAirlinesText;
 
-public boolean verifyAirportsAirlinesText() {
-	
-	return airportsAirlinesText.isPresent();
-}
+	@FindBy(xpath = "//input[@id=\"edit-precheck-search-box\"]")
+	private WebElementFacade airportBox;
 
+	public boolean verifyAirportsAirlinesText() {
+
+		return airportsAirlinesText.isPresent();
+	}
+
+	public void airportSerchText(String searchItem) {
+		airportBox.type(searchItem);
+
+	}
+
+	public WebElementFacade airportResultList() {
+
+		WebElementFacade result = findBy("//*[@id='precheck-search-results']/div/ul/li");
+		return result;
+	}
 
 }

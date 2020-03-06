@@ -1,5 +1,7 @@
 package TSAGOV.steps;
 
+import java.util.List;
+
 import TSAGOV.pages.Home.TSAGOVAToZPage;
 import TSAGOV.pages.Home.TSAGOVDHSPage;
 import TSAGOV.pages.Home.TSAGOVEmployeePage;
@@ -13,6 +15,7 @@ import TSAGOV.pages.Home.TSAGOVSubscribePage;
 import TSAGOV.pages.Home.TSAGOVUSAGOVPage;
 import TSAGOV.pages.Home.TSAGOVWebMetricsPage;
 import TSAGOV.pages.industry.TSAGOVIndustryPage;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 
 public class TSAGOVHomeSteps {
@@ -240,6 +243,18 @@ public class TSAGOVHomeSteps {
 	@Step
 	public String aToZText() {
 		return tSAGOVAToZPage.aToZText();
+	}
+
+	@Step
+	public void aTozSerchText(String searchItem) {
+		tSAGOVAToZPage.aTozSerchText(searchItem);
+
+	}
+
+	@Step
+	public List<WebElementFacade> aTozResultList() {
+
+		return tSAGOVAToZPage.aTozResultList();
 	}
 
 	/***********************************************

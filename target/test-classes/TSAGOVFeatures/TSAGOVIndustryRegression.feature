@@ -6,22 +6,22 @@ Feature: Industry section regression test
     Then page <pageName> under Industry section is accessible
 
     Examples: 
-      | pageName                      |
-     # | HAZMAT                        |
-     # | Cargo Programs                |
-      #| ASAC                          |
-      #| Baggage Screening             |
-     ###| Cybersecurity Toolkit         |
-      #| First Observer Plus           |
-     # | General Aviation              |
-      #| IStep                         |
-     # | Innovation Task Force         |
-     # | PASS                          |
-      #| Reimbursable Screening        |
-     # 3| Screening Partnership         |
-     | Security Fees                 |
-      #| SSI                           |
-      #| STSAC                         |
-      #| Surface Transportation        |
-      #3| Training                      |
-      #| TWIC                          |
+      | pageName               |
+      | HAZMAT                 |
+      | Cargo Programs         |
+      | ASAC                   |
+      | Baggage Screening      |
+      | Cybersecurity Toolkit  |
+      | First Observer Plus    |
+      | General Aviation       |
+      | IStep                  |
+      | Innovation Task Force  |
+      | PASS                   |
+      | Reimbursable Screening |
+      | Screening Partnership  |
+      | Security Fees          |
+      | SSI                    |
+      | STSAC                  |
+      | Surface Transportation |
+      | Training               |
+      | TWIC                   |
