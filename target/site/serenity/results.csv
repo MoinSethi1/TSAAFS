@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search Functionality regression test","As user I want to search on various pages","SUCCESS","2020-03-06T14:24:14.123-05:00[America/New_York]","0.0","41.81"
+"Travel section regression test","As user I want to access all pages under Travel section","FAILURE","2020-03-10T12:09:36.52-04:00[America/New_York]","0.0","487.78"

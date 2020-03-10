@@ -182,7 +182,7 @@ public class TSAGOVSearchRegressionGlue {
 			break;
 
 		case "Blog":
-			List<WebElementFacade> listM = userT.searchResultList();
+			List<WebElementFacade> listM = userM.searchResultList();
 			assert listM.size() > 0;
 
 			assert (listM.get(0).containsText(expectedText) || listM.get(0).containsText(expectedText.toLowerCase()));

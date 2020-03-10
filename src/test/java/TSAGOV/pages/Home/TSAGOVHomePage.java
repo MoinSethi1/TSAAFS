@@ -21,7 +21,7 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//a[@href ='/travel/security-screening/whatcanibring/all']")
 	private WebElementFacade whatCanIBringLink;
 
-	@FindBy(xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[1]/button/span")
+	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/div/nav/ul[2]/li[1]/button/span")
 	private WebElementFacade travelMenu;
 
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[1]/li/span")
