@@ -29,8 +29,8 @@ public class TSAGOVSchedulePage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//input[@id='edit-submit']")
 	private WebElementFacade applyButton;
 
-	public boolean verifyScheduleText() {
-		return scheduleText.isPresent();
+	public String verifyScheduleText() {
+		return scheduleText.getText();
 
 	}
 
