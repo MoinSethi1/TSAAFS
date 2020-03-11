@@ -19,8 +19,8 @@ public class TSAGOVFAQPage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//input[@class='button js-form-submit form-submit usa-button']")
 	private WebElementFacade searchButton;
 
-	public boolean verifyFaqText() {
-		return faqText.isPresent();
+	public String verifyFaqText() {
+		return faqText.getText();
 	}
 
 	public void prefaqSerchText(String searchItem) {

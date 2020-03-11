@@ -5,12 +5,11 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class TSAGOVRealIDPage extends TSAGOVSecurityScreeningPage {
 
-	@FindBy (xpath ="//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
+	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade realIDText;
-	
-	
-	public boolean verifyRealIDText() {
-		return realIDText.isPresent();
+
+	public String verifyRealIDText() {
+		return realIDText.getText();
 	}
-	
+
 }

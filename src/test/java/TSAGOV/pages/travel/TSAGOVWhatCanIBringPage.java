@@ -11,7 +11,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 
 public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 
-	@FindBy(xpath = "//*[contains(text(),'What Can I Bring')]")
+	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 
 	private WebElementFacade whatCanIBringText;
 
@@ -59,9 +59,9 @@ public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 		return result;
 	}
 
-	public boolean verifyWhatCanIBringText() {
+	public String verifyWhatCanIBringText() {
 
-		return whatCanIBringText.isPresent();
+		return whatCanIBringText.getText();
 	}
 
 	public TSAGOVWhatCanIBringAllItemsPage navigateToAll() {

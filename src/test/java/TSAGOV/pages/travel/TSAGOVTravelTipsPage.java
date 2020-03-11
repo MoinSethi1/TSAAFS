@@ -26,8 +26,8 @@ public class TSAGOVTravelTipsPage extends TSAGOVTravelPage {
 	@FindBy(xpath = "//input[@class='button js-form-submit form-submit usa-button']")
 	private WebElementFacade searchButton;
 
-	public boolean verifyTravelTipsText() {
-		return travelTipsText.isPresent();
+	public String verifyTravelTipsText() {
+		return travelTipsText.getText();
 	}
 
 	public TSAGOVTravelChecklistPage navigateToTravelChecklist() {

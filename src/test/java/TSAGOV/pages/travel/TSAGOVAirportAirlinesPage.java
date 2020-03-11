@@ -11,9 +11,9 @@ public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//input[@id=\"edit-precheck-search-box\"]")
 	private WebElementFacade airportBox;
 
-	public boolean verifyAirportsAirlinesText() {
+	public String verifyAirportsAirlinesText() {
 
-		return airportsAirlinesText.isPresent();
+		return airportsAirlinesText.getText();
 	}
 
 	public void airportSerchText(String searchItem) {

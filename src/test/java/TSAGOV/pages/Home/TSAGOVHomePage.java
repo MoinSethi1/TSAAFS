@@ -27,13 +27,13 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[1]/li/span")
 	private WebElementFacade travelLink;
 
-	@FindBy(xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[3]/button/span")
+	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/div/nav/ul[2]/li[3]/button/span")
 	private WebElementFacade aboutMenu;
 
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-3\"]/a[1]/li")
 	private WebElementFacade aboutLink;
 
-	@FindBy(xpath = "/html/body/div/div/header/nav/div/nav/ul[2]/li[2]/button/span")
+	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/div/nav/ul[2]/li[2]/button/span")
 	private WebElementFacade mediaMenu;
 
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-2\"]/a[1]/li/span")

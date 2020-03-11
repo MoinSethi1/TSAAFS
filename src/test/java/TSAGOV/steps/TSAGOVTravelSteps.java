@@ -124,7 +124,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyWhatCanIBringText() {
+	public String verifyWhatCanIBringText() {
 		return tSAGOVWhatCanIBringPage.verifyWhatCanIBringText();
 
 	}
@@ -292,8 +292,8 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	@Step
 
-	public boolean verifyTravelImage() {
-		return tSAGOVTravelPage.verifyTravelImage();
+	public String verifyTravelText() {
+		return tSAGOVTravelPage.verifyTravelText();
 	}
 
 	@Step
@@ -366,7 +366,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyAirportsAirlinesText() {
+	public String verifyAirportsAirlinesText() {
 
 		return tSAGovAirportsAirlinesPage.verifyAirportsAirlinesText();
 	}
@@ -388,7 +388,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyScheduleText() {
+	public String verifyScheduleText() {
 		return tSAGOVSchedulePage.verifyScheduleText();
 
 	}
@@ -408,7 +408,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyFaqText() {
+	public String verifyFaqText() {
 		return tSAGOVFAQPage.verifyFaqText();
 	}
 
@@ -437,7 +437,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTSpecialProcedurePage
 	 ***********************************************/
 
-	public boolean verifySpecialProcedureText() {
+	public String verifySpecialProcedureText() {
 		return tSAGOVSpecialProceduresPage.verifySpecialProcedureText();
 
 	}
@@ -484,7 +484,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTDisabilitiesAndMediaclPage
 	 ***********************************************/
 	@Step
-	public boolean verifyDisabilitiesAndMedcalText() {
+	public String verifyDisabilitiesAndMedcalText() {
 		return tSAGOVDisabilitiesAndMedicalPage.verifyDisabilitiesAndMedcalText();
 
 	}
@@ -493,7 +493,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTMilitaryPage
 	 ***********************************************/
 	@Step
-	public boolean verifyMilitaryText() {
+	public String verifyMilitaryText() {
 		return tSAGOVMilitaryPage.verifyMilitaryText();
 	}
 
@@ -502,7 +502,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyChildrenText() {
+	public String verifyChildrenText() {
 		return tSAGOVChildrenPage.verifyChildrenText();
 	}
 
@@ -511,7 +511,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifySeniorText() {
+	public String verifySeniorText() {
 		return tSAGOVSeniorPage.verifySeniorText();
 	}
 
@@ -520,7 +520,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyLawEnforcemenText() {
+	public String verifyLawEnforcemenText() {
 		return tSAGOVLawEnforcementPage.verifyLawEnforcemenText();
 
 	}
@@ -531,7 +531,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	@Step
 
-	public boolean verifyCulturalText() {
+	public String verifyCulturalText() {
 		return tSAGOVCulturalPage.verifyCulturalText();
 	}
 
@@ -540,7 +540,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyPassengerSupportText() {
+	public String verifyPassengerSupportText() {
 		return tSAGOVPassengerSupportPage.verifyPassengerSupportText();
 	}
 
@@ -569,7 +569,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyCivilRightsText() {
+	public String verifyCivilRightsText() {
 		return tSAGOVCivilRightsPage.verifyCivilRightsText();
 	}
 
@@ -578,7 +578,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyTravelRedressText() {
+	public String verifyTravelRedressText() {
 		return tSAGOVTravelRedressPage.verifyTravelRedressText();
 	}
 
@@ -587,7 +587,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyClaimsText() {
+	public String verifyClaimsText() {
 		return tSAGOVClaimsPage.verifyClaimsText();
 	}
 
@@ -595,7 +595,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVSecurityScreeningPage
 	 ***********************************************/
 	@Step
-	public boolean verifySecurityScreeningText() {
+	public String verifySecurityScreeningText() {
 		return tSAGOVSecurityScreeningPage.verifySecurityScreeningText();
 	}
 
@@ -635,7 +635,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyIdentificationText() {
+	public String verifyIdentificationText() {
 		return tSAGOVIdentificationPage.verifyIdentificationText();
 	}
 
@@ -644,7 +644,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyLiquidsRuleText() {
+	public String verifyLiquidsRuleText() {
 		return tSAGOVLiquidsRulePage.verifyLiquidsRuleText();
 	}
 
@@ -654,7 +654,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 
 	@Step
 
-	public boolean verifyEmergingTechnologyText() {
+	public String verifyEmergingTechnologyText() {
 		return tSAGOVEmergingTechnologyPage.verifyEmergingTechnologyText();
 	}
 
@@ -663,7 +663,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyRealIDText() {
+	public String verifyRealIDText() {
 		return tSAGOVRealIDPage.verifyRealIDText();
 	}
 
@@ -671,7 +671,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTravelFAQPage
 	 ***********************************************/
 	@Step
-	public boolean verifyTravelFAQText() {
+	public String verifyTravelFAQText() {
 		return tSAGOVTravelFAQPage.verifyTravelFAQText();
 	}
 
@@ -690,7 +690,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTravelTipsPage
 	 ***********************************************/
 	@Step
-	public boolean verifyTravelTipsText() {
+	public String verifyTravelTipsText() {
 		return tSAGOVTravelTipsPage.verifyTravelTipsText();
 	}
 
@@ -720,7 +720,7 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyTravelChecklistText() {
+	public String verifyTravelChecklistText() {
 		return tSAGOVTravelChecklistPage.verifyTravelChecklistText();
 	}
 }
