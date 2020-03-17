@@ -59,7 +59,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVMediaPage
 	 ***********************************************/
 	@Step
-	public boolean verifyMediaText() {
+	public String verifyMediaText() {
 		return tSAGOVMediaPage.verifyMediaText();
 	}
 
@@ -82,7 +82,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVMediaRoomPage
 	 ***********************************************/
 	@Step
-	public boolean verifyMediaRoomText() {
+	public String verifyMediaRoomText() {
 		return tSAGOVMediaRoomPage.verifyMediaRoomText();
 	}
 
@@ -118,7 +118,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 ***********************************************/
 
 	@Step
-	public boolean verifyPressReleasesText() {
+	public String verifyPressReleasesText() {
 		return tSAGOVPressReleasesPage.verifyPressReleasesText();
 	}
 
@@ -136,7 +136,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVBlogPage
 	 ***********************************************/
 	@Step
-	public boolean verifyBlogText() {
+	public String verifyBlogText() {
 		return tSAGOVBlogPage.verifyBlogText();
 	}
 
@@ -155,7 +155,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVFactsheetsPage
 	 ***********************************************/
 	@Step
-	public boolean verifyFactsheetsText() {
+	public String verifyFactsheetsText() {
 		return tSAGOVFactsheetsPage.verifyFactsheetsText();
 	}
 
@@ -163,7 +163,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVSocialMediaPage
 	 ***********************************************/
 	@Step
-	public boolean verifySocialMediaText() {
+	public String verifySocialMediaText() {
 		return tSAGOVSocialMediaPage.verifySocialMediaText();
 	}
 
@@ -171,7 +171,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVSpeechesPage
 	 ***********************************************/
 	@Step
-	public boolean verifySpeechesText() {
+	public String verifySpeechesText() {
 		return tSAGOVSpeechesPage.verifySpeechesText();
 	}
 
@@ -190,7 +190,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVStatementsPage
 	 ***********************************************/
 	@Step
-	public boolean verifyStatementsText() {
+	public String verifyStatementsText() {
 		return tSAGOVStatementsPage.verifyStatementsText();
 	}
 
@@ -198,7 +198,7 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 	 * Steps for TSAGOVTestimonyPage
 	 ***********************************************/
 	@Step
-	public boolean verifyTestimonyText() {
+	public String verifyTestimonyText() {
 
 		return tSAGOVTestimonyPage.verifyTestimonyText();
 	}

@@ -22,8 +22,8 @@ public class TSAGOVBlogPage extends TSAGOVMediaPage {
 	@FindBy(xpath = "//div[@class ='ajax-progress ajax-progress-fullscreen")
 	private WebElementFacade spinner;
 
-	public boolean verifyBlogText() {
-		return blogText.isPresent();
+	public String verifyBlogText() {
+		return blogText.getText();
 	}
 
 	public void enterSearchText(String searchItem, String year) {

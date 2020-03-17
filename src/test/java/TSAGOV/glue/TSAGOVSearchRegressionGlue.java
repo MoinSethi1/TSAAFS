@@ -160,6 +160,11 @@ public class TSAGOVSearchRegressionGlue {
 
 	}
 
+	@When("^user searches on page$")
+	public void user_searches_on_page() {
+		// emplty method
+	}
+
 	@Then("^search result is displayed on page (.*) with expected text (.*)$")
 	public void search_result_is_displayed(String searchPage, String expectedText) {
 

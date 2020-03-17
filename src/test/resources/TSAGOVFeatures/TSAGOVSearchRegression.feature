@@ -5,6 +5,7 @@ Feature: Search Functionality regression test
     Given user wants to perform search operation
     When user access the <searchPage> page
     And user searches on page <searchPage> for text <searchItem>, year <year>, month <month>, category <category>, Press Releases <pressReleases>, topic <topic>, day <day>, time <time>
+    And user searches on page
     Then search result is displayed on page <searchPage> with expected text <expectedText>
 
     Examples: 

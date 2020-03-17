@@ -22,9 +22,9 @@ public class TSAGOVTestimonyPage extends TSAGOVMediaPage {
 	@FindBy(xpath = "//div[@class ='ajax-progress ajax-progress-fullscreen")
 	private WebElementFacade spinner;
 
-	public boolean verifyTestimonyText() {
+	public String verifyTestimonyText() {
 
-		return testimonyText.isPresent();
+		return testimonyText.getText();
 	}
 
 	public void testimonySerchText(String year, String month) {

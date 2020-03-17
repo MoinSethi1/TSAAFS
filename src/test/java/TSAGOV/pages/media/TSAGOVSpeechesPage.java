@@ -10,8 +10,8 @@ public class TSAGOVSpeechesPage extends TSAGOVMediaPage {
 	@FindBy(css = "#block-tsa-gov-pagetitle > h1")
 	private WebElementFacade speechesText;
 
-	public boolean verifySpeechesText() {
-		return speechesText.isPresent();
+	public String verifySpeechesText() {
+		return speechesText.getText();
 	}
 
 	@FindBy(xpath = "//select[@id='edit-field-press-release-date-year']")

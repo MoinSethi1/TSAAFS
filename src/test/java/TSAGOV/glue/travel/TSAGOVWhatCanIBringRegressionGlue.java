@@ -14,6 +14,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 	@Given("^user wants to access all pages on What Can I Bring section$")
 	public void user_wants_to_access_all_pages_on_WhatCanIBring_section() throws InterruptedException {
 		user.navigateToTSAGOV();
+		user.navigateToWhatCanIBring();
 		// user.enterUsername("moinpreet.sethi@associates.tsa.dhs.gov");
 		// user.enterPassword("password1");
 		// user.login();
@@ -23,16 +24,15 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 	@When("^user access What Can I Bring\\? page$")
 	public void user_access_What_Can_I_Bring_page() throws InterruptedException {
 
-		user.navigateToWhatCanIBring();
-		Thread.sleep(1000);
 	}
 
-	@Then("^user is directed to What Can I Bring page$")
-	public void user_is_directed_to_correct_page() throws InterruptedException {
-		assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
-		assert (user.verifyWhatCanIBringText().equals("What Can I Bring?"));
+	// @Then("^user is directed to What Can I Bring page$")
+	// public void user_is_directed_to_correct_page() throws InterruptedException {
+	// assert
+	// (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+	// assert (user.verifyWhatCanIBringText().equals("What Can I Bring?"));
 
-	}
+	// }
 
 	@Then("^page (.*) on What can I bring section is accessible$")
 	public void all_sections_on_this_page_are_accessible(String pageName) {
@@ -43,7 +43,7 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 			user.navigateToAll();
 			assert (user.actualUrl())
 					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
-			assert (user.verifyWhatCanIBringText().equals("What Can I Bring"));
+			assert (user.verifyWhatCanIBringText().equals("What Can I Bring?"));
 			break;
 
 		case "Flammables":
