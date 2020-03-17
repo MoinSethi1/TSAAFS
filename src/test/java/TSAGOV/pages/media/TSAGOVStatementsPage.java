@@ -5,10 +5,10 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class TSAGOVStatementsPage extends TSAGOVMediaPage {
 
-	@FindBy (css ="#block-tsa-gov-pagetitle > h1")
+	@FindBy(css = "#block-tsa-gov-pagetitle > h1")
 	private WebElementFacade statemenetsText;
-	
-	public boolean verifyStatementsText() {
-		return statemenetsText.isPresent();
+
+	public String verifyStatementsText() {
+		return statemenetsText.getText();
 	}
 }

@@ -14,12 +14,13 @@ public class TSAGOVTravelRegressionGlue {
 	@Given("^user wants to access all pages on Travel section$")
 	public void user_wants_to_access_all_pages_on_Travel_section() {
 		user.navigateToTSAGOV();
+		user.navigateToTSATravel();
 	}
 
 	@When("^user access Travel pages$")
 	public void user_access_Travel_pages() {
+		// left empty work around for serenity report
 
-		user.navigateToTSATravel();
 	}
 
 	@Then("^page (.*) under Travel section is accessible$")

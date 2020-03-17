@@ -28,8 +28,8 @@ public class TSAGOVPressReleasesPage extends TSAGOVMediaPage {
 	@FindBy(xpath = "//input[@class='button js-form-submit form-submit usa-button']")
 	private WebElementFacade applyButton;
 
-	public boolean verifyPressReleasesText() {
-		return pressReleasesText.isPresent();
+	public String verifyPressReleasesText() {
+		return pressReleasesText.getText();
 	}
 
 	public void pressReleaseSerchText(String year, String month, String pressReleases, String topic) {

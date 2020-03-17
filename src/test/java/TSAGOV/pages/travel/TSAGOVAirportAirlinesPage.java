@@ -8,6 +8,8 @@ public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade airportsAirlinesText;
 
+	// {"method":"xpath","selector":"//*[@id='precheck-search-results']/div/ul/li"}
+
 	@FindBy(xpath = "//input[@id=\"edit-precheck-search-box\"]")
 	private WebElementFacade airportBox;
 
@@ -23,7 +25,8 @@ public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 
 	public WebElementFacade airportResultList() {
 
-		WebElementFacade result = findBy("//*[@id='precheck-search-results']/div/ul/li");
+		WebElementFacade result = findBy("//*[@id=\"precheck-search-results\"]/div/ul/li[1]/a");
+		// *[@id="precheck-search-results"]/div/ul/li[1]/a
 		return result;
 	}
 
