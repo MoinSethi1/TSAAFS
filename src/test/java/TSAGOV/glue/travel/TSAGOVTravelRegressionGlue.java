@@ -134,7 +134,7 @@ public class TSAGOVTravelRegressionGlue {
 			assert user.verifyTsaPrecheckText().equals("TSA Pre✓®");
 			break;
 
-		case "Airport Airlines ":
+		case "Airport Airlines":
 			user.tsaPreCheckExpand();
 			user.navigateToAirportsAirlines();
 			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/precheck/map");

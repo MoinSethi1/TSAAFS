@@ -13,6 +13,9 @@ public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 	@FindBy(xpath = "//input[@id=\"edit-precheck-search-box\"]")
 	private WebElementFacade airportBox;
 
+	@FindBy(xpath = "//*[@id=\"precheck-search-results\"]/div")
+	private WebElementFacade searchBoxResult;
+
 	public String verifyAirportsAirlinesText() {
 
 		return airportsAirlinesText.getText();
@@ -20,6 +23,7 @@ public class TSAGOVAirportAirlinesPage extends TSAGOVTSAPrecheckPage {
 
 	public void airportSerchText(String searchItem) {
 		airportBox.type(searchItem);
+		searchBoxResult.waitUntilPresent();
 
 	}
 
