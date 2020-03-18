@@ -66,16 +66,6 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//*[@class = 'usa-button']")
 	private WebElementFacade searchButton;
 
-	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/nav/ul[2]/li[1]/button/span")
-	// @FindBy(xpath = "//*[@class='usa-accordion__button usa-nav__link']")
-	private WebElementFacade travelMenuLink;
-
-	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/nav/ul[2]/li[2]/button/span")
-	private WebElementFacade mediaMenuLink;
-
-	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/nav/ul[2]/li[3]/button/span")
-	private WebElementFacade aboutMenuLink;
-
 	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/nav/ul[2]/li[4]/a/span")
 	private WebElementFacade contactLink;
 
@@ -203,20 +193,20 @@ public class TSAGOVHomePage extends PageObject {
 
 	public boolean verifyTravelMenuLink() {
 
-		return travelMenuLink.isPresent();
+		return travelMenu.isPresent();
 	}
 
 	public void TravelMenuLink() {
-		travelMenuLink.click();
+		travelMenu.click();
 	}
 
 	public boolean verifyMediaMenuLink() {
-		return mediaMenuLink.isPresent();
+		return mediaMenu.isPresent();
 
 	}
 
 	public boolean verifyAboutMenuLink() {
-		return aboutMenuLink.isPresent();
+		return aboutMenu.isPresent();
 	}
 
 	public boolean verifyContactLink() {
