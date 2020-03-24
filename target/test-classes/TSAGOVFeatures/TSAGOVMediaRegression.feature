@@ -3,7 +3,7 @@ Feature: Media section regression test
 
   Scenario Outline: As user I want to access all pages under Media section
     Given user wants to access all pages on Media section
-    When user access Media pages
+    When user access Media page <pageName> 
     Then page <pageName> under Media section is accessible
 
     Examples: 
