@@ -4,9 +4,9 @@ Feature: What can I Bring? section regression test
 	
   Scenario Outline: As user I want to access all pages on What Can I Bring? section
     Given user wants to access all pages on What Can I Bring section
-    When user access What Can I Bring? page
+    When user access What Can I Bring? page <pageName>
     #Then user is directed to What Can I Bring page
-    And page <pageName> on What can I bring section is accessible
+   Then page <pageName> on What can I bring section is accessible
     
 Examples:
 |pageName					|

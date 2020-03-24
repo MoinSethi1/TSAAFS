@@ -2,7 +2,7 @@ Feature: Travel section regression test
 
   Scenario Outline: As user I want to access all pages under Travel section
     Given user wants to access all pages on Travel section
-    When user access Travel pages
+    When user access Travel page <pageName>
     Then page <pageName> under Travel section is accessible
 
     Examples: 
