@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="serenity.CucumberTestSuite" time="153.192" tests="97" errors="0" skipped="0" failures="0">
+<testsuite name="serenity.CucumberTestSuite" time="89.324" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8675043485174332633.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\moinpreet.sethi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf357008634482287286.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%JAVA_HOME%\bin;%M2_HOME%\bin;C:\Users\moinpreet.sethi\Application Browsers;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\moinpreet.sethi\AppData\Local\Microsoft\WindowsApps;C:\Users\moinpreet.sethi\gradle-6.1.1-all\gradle-6.1.1\bin;C:\Users\moinpreet.sethi\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\moinpreet.sethi\AppData\Local\GitHubDesktop\bin;C:\Users\moinpreet.sethi\AppData\Local\atom\bin;C:\Users\moinpreet.sethi\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,101 +60,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="31.161"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="28.578"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="23.555"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="25.08"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="18.402"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="20.73"/>
-  <testcase name="As user I want to access all pages under About section" classname="About section regression test" time="26.78"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="17.36"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="12.964"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="15.268"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="17.028"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="12.04"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="16.188"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="16.086"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="16.399"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="15.492"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="11.593"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="12.424"/>
-  <testcase name="As user I want to access all links in the footer" classname="Footer Regression" time="20.196"/>
-  <testcase name="As user I want to access TSA.gov application" classname="Access TSA.gov" time="11.579"/>
-  <testcase name="As user I want to access TSA.gov application" classname="Access TSA.gov" time="8.217"/>
-  <testcase name="As user I want to access TSA.gov application" classname="Access TSA.gov" time="28.005"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="23.45"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.063"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="21.517"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="22.892"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.468"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="16.288"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="14.427"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="14.202"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="20.243"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="13.588"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="13.992"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="13.971"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="13.643"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="18.823"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.399"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.547"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="19.539"/>
-  <testcase name="As user I want to access all pages under Industry section" classname="Industry section regression test" time="82.431"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="17.115"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="14.164"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.276"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="19.804"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.479"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="17.193"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="18.304"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="22.454"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="20.855"/>
-  <testcase name="As user I want to access all pages under Media section" classname="Media section regression test" time="84.64"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="19.331"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="24.484"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="20.251"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="20.517"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="20.133"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="32.378"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="24.617"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="23.229"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="25.235"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="15.949"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="23.1"/>
-  <testcase name="As user I want to search on various pages" classname="Search Functionality regression test" time="98.189"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="15.809"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="22.312"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.658"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="16.827"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.275"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.829"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="20.223"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.608"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.219"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.794"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="20.232"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.842"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.208"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="21.395"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.758"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.354"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.367"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="19.091"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.842"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="20.809"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.428"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="17.879"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="20.055"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.944"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="18.592"/>
-  <testcase name="As user I want to access all pages under Travel section" classname="Travel section regression test" time="157.081"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="17.387"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="20.585"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="26.215"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="21.26"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="20.553"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="20.788"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="22.456"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="18.604"/>
-  <testcase name="As user I want to access all pages on What Can I Bring? section" classname="What can I Bring? section regression test" time="159.843"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="89.324"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="12.15"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="12.376"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="12.258"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="11.801"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="19.369"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="14.578"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="17.2"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="17.633"/>
+  <testcase name="As user I want to access all pages under Contact section" classname="Contact section regression test" time="33.728"/>
 </testsuite>

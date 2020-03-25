@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import TSAGOV.pages.about.TSAGOVAboutPage;
+import TSAGOV.pages.contact.TSAGOVContactPage;
 import TSAGOV.pages.industry.TSAGOVIndustryPage;
 import TSAGOV.pages.media.TSAGOVMediaPage;
 import TSAGOV.pages.media.TSAGOVMediaRoomPage;
@@ -324,6 +325,11 @@ public class TSAGOVHomePage extends PageObject {
 	public TSAGOVSubscribePage NavigateToSubscribe() {
 		subscribeButton.click();
 		return this.switchToPage(TSAGOVSubscribePage.class);
+	}
+
+	public TSAGOVContactPage navigateToContact() {
+		contactLink.click();
+		return this.switchToPage(TSAGOVContactPage.class);
 	}
 
 }

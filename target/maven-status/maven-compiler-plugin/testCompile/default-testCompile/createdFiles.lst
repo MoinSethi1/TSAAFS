@@ -3,6 +3,7 @@ TSAGOV\pages\travel\TSAGovWhatCanIBringFlammablesPage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringPage.class
 TSAGOV\steps\TSAGOVMediaSteps.class
 TSAGOV\pages\Home\TSAGOVHomePage.class
+TSAGOV\pages\contact\TSAGOVLostAndFoundPage.class
 TSAGOV\pages\industry\TSAGOVScreeningPartnershipPage.class
 TSAGOV\pages\media\TSAGOVStatementsPage.class
 TSAGOV\pages\travel\TSAGOVTrustedTravelerProgramPage.class
@@ -13,6 +14,7 @@ TSAGOV\pages\travel\TSAGOVAirportAirlinesPage.class
 TSAGOV\pages\travel\TSAGOVLiquidsRulePage.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringSharpObjectsPage.class
 TSAGOV\pages\Home\TSAGOVReportFraudWasteAbusePage.class
+TSAGOV\pages\contact\TSAGOVCustomerServicePage.class
 TSAGOV\steps\TSAGOVIndustrySteps.class
 TSAGOV\pages\travel\TSAGOVEmergingTechnologyPage.class
 TSAGOV\pages\about\TSAGOVTimelinePage.class
@@ -39,6 +41,7 @@ TSAGOV\pages\travel\TSAGOVClaimsPage.class
 TSAGOV\steps\TSAGOVHomeSteps.class
 TSAGOV\pages\travel\TSAGOVWhatCanIBringAllItemsPage.class
 TSAGOV\pages\about\TSAGOVAboutPage.class
+TSAGOV\glue\contact\TSAGOVContactRegressionGlue.class
 TSAGOV\pages\about\TSAGOVOrganizationPage.class
 TSAGOV\pages\industry\TSAGOVSecurityFeesPage.class
 TSAGOV\pages\travel\TSAGOVDisabilitiesAndMedicalPage.class
@@ -61,6 +64,7 @@ TSAGOV\pages\Home\TSAGOVEmployeePage.class
 TSAGOV\pages\travel\TSAGOVTravelRedressPage.class
 TSAGOV\pages\industry\TSAGOVSurfaceTransportationPage.class
 TSAGOV\pages\about\TSAGOVMissionPage.class
+TSAGOV\steps\TSAGOVContactSteps.class
 TSAGOV\pages\industry\TSAGOVIndustryPage.class
 TSAGOV\pages\travel\TSAGOVMilitaryPage.class
 TSAGOV\pages\industry\TSAGOVReimbursableScreeningPage.class
@@ -84,6 +88,7 @@ TSAGOV\pages\travel\TSAGOVWharCanIBringHouseholdToolsPage.class
 serenity\CucumberTestSuite.class
 TSAGOV\pages\industry\TSAGOVSTSACPage.class
 TSAGOV\glue\TSAGOVFooterRegressionGlue.class
+TSAGOV\pages\contact\TSAGOVContactPage.class
 TSAGOV\pages\Home\TSAGOVPrivacyPage.class
 TSAGOV\pages\industry\TSAGOVFirstObserverPlusPage.class
 TSAGOV\pages\travel\TSAGOVTravelPage.class
