@@ -55,20 +55,20 @@ public class TSAGOVSearchRegressionGlue {
 
 		case "Employee Stories":
 			userA.navigateToTSAGOV();
-			userA.navigateToAbout();
+			userA.aboutMenu();
 			userA.navigateToEmployeeStories();
 			break;
 
 		case "FAQ":
 			userT.navigateToTSAGOV();
-			userT.navigateToTSATravel();
+			userT.travelMenu();
 			userT.navigateToTravelFAQ();
 			break;
 
 		case "TSA Pre FAQ":
 			userT.navigateToTSAGOV();
-			userT.navigateToTSATravel();
-			userT.tsaPreCheckExpand();
+			userT.travelMenu();
+			userT.navigateToTSAPrecheck();
 			userT.navigateToFaq();
 			break;
 
@@ -80,7 +80,7 @@ public class TSAGOVSearchRegressionGlue {
 
 		case "Travel Tips":
 			userT.navigateToTSAGOV();
-			userT.navigateToTSATravel();
+			userT.travelMenu();
 			userT.navigateToTravelTips();
 			break;
 
@@ -91,15 +91,15 @@ public class TSAGOVSearchRegressionGlue {
 
 		case "Schedule":
 			userT.navigateToTSAGOV();
-			userT.navigateToTSATravel();
-			userT.tsaPreCheckExpand();
+			userT.travelMenu();
+			userT.navigateToTSAPrecheck();
 			userT.navigateToScedule();
 			break;
 
 		case "Airport Airlines":
 			userT.navigateToTSAGOV();
-			userT.navigateToTSATravel();
-			userT.tsaPreCheckExpand();
+			userT.travelMenu();
+			userT.navigateToTSAPrecheck();
 			userT.navigateToAirportsAirlines();
 			break;
 		}

@@ -9,13 +9,13 @@ public class TSAGOVMediaPage extends TSAGOVHomePage {
 	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade mediaText;
 
-	@FindBy(css = "#block-media-sidebar > nav.max-tablet-hidden > ul > li:nth-child(2) > a")
+	@FindBy(css = "#basic-nav-section-2 > a:nth-child(4) > li > span")
 	private WebElementFacade socialMediaLink;
 
-	@FindBy(css = "#block-media-sidebar > nav.max-tablet-hidden > ul > li:nth-child(3) > a")
+	@FindBy(css = "#basic-nav-section-2 > a:nth-child(5) > li > span")
 	private WebElementFacade blogLink;
 
-	@FindBy(css = "#block-media-sidebar > nav.max-tablet-hidden > ul > li:nth-child(4) > a")
+	@FindBy(css = "#basic-nav-section-2 > a:nth-child(6) > li > span")
 	private WebElementFacade videoLink;
 
 	public String verifyMediaText() {

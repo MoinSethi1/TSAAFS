@@ -110,7 +110,7 @@ public class TSAGOVHomePage extends PageObject {
 	private WebElementFacade subscribeButton;
 
 	public void navigateToTSAGOV() {
-		this.openAt("https://edit.staging.tsa.gov");
+		this.openAt("https://preview.tsa.gov");
 	}
 
 	public TSAGOVWhatCanIBringPage navigateToWhatCanIBring() throws InterruptedException {
@@ -151,6 +151,18 @@ public class TSAGOVHomePage extends PageObject {
 		getDriver().manage().timeouts().pageLoadTimeout(5000, TimeUnit.SECONDS);
 	}
 
+	public void aboutMenu() {
+		aboutMenu.click();
+	}
+
+	public void travelMenu() {
+		travelMenu.click();
+	}
+
+	public void mediaMenu() {
+		mediaMenu.click();
+	}
+
 	public TSAGOVAboutPage navigateToAbout() {
 		aboutMenu.click();
 		aboutLink.click();
@@ -163,6 +175,7 @@ public class TSAGOVHomePage extends PageObject {
 	}
 
 	public TSAGOVIndustryPage navigateToIndustry() {
+
 		industryLink.click();
 		return this.switchToPage(TSAGOVIndustryPage.class);
 	}

@@ -29,63 +29,63 @@ public class TSAGOVWhatCanIBringRegressionGlue {
 		case "All":
 			user.navigateToAll();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/all");
 
 			break;
 
 		case "Flammables":
 			user.navigateToFlammables();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/flammables");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/flammables");
 
 			break;
 
 		case "Firearms":
 			user.navigateToFirearms();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/firearms");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/firearms");
 
 			break;
 
 		case "Food":
 			user.navigateToFood();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/food");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/food");
 
 			break;
 
 		case "Household Tools":
 			user.navigateToHouseholdTools();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/household-and-tools");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/household-and-tools");
 
 			break;
 
 		case "Medical":
 			user.navigateToMedical();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/medical");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/medical");
 
 			break;
 
 		case "Sharp Objects":
 			user.navigateToSharpObjects();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sharp-objects");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/sharp-objects");
 
 			break;
 
 		case "Sporting Camping":
 			user.navigateToSportingCamping();
 			assert (user.actualUrl()).equals(
-					"https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/sporting-and-camping");
+					"https://preview.tsa.gov/travel/security-screening/whatcanibring/sporting-and-camping");
 
 			break;
 
 		case "Miscellaneous":
 			user.navigateToMiscellaneous();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/miscellaneous");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/miscellaneous");
 
 			break;
 

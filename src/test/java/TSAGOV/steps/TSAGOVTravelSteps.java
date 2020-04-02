@@ -322,6 +322,11 @@ public class TSAGOVTravelSteps extends ScenarioSteps {
 		return tSAGOVTravelPage.navigateToTravelTips();
 	}
 
+	@Step
+	public void travelMenu() {
+		tSAGOVTravelPage.travelMenu();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVTSAPreCheckPage
 	 ***********************************************/

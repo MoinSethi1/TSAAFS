@@ -84,6 +84,11 @@ public class TSAGOVAboutSteps extends ScenarioSteps {
 		return tSAGOVAboutPage.navigateToJobsAtTSA();
 	}
 
+	@Step
+	public void aboutMenu() {
+		tSAGOVAboutPage.aboutMenu();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVJobsAtTSAPage
 	 ***********************************************/

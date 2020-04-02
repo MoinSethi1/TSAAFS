@@ -7,7 +7,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
-@DefaultUrl("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all")
+@DefaultUrl("https://preview.tsa.gov/travel/security-screening/whatcanibring/all")
 
 public class TSAGOVWhatCanIBringPage extends TSAGOVHomePage {
 

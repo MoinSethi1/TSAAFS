@@ -15,6 +15,7 @@ public class TSAGOVSchedulePage extends TSAGOVTSAPrecheckPage {
 	private WebElementFacade spinner;
 
 	@FindBy(xpath = "//*[@id=\"edit_day_chosen\"]/a/div/b")
+
 	private WebElementFacade dayExpand;
 
 	String daySelectionBaseCss = "#edit_day_chosen > div > ul";
@@ -26,7 +27,8 @@ public class TSAGOVSchedulePage extends TSAGOVTSAPrecheckPage {
 	String timeSelectionBaseCss = "#edit_time_chosen > div > ul";
 	// #edit_time_chosen > div > ul > li:nth-child(1)
 
-	@FindBy(xpath = "//input[@id='edit-submit']")
+	@FindBy(xpath = "//*[@id=\"edit-submit\"]")
+	// *[@id="edit-submit--2"]
 	private WebElementFacade applyButton;
 
 	public String verifyScheduleText() {

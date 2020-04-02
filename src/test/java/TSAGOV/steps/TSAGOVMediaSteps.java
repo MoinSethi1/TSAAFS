@@ -78,6 +78,11 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 		return tSAGOVMediaPage.navigateToVideo();
 	}
 
+	@Step
+	public void mediaMenu() {
+		tSAGOVMediaPage.mediaMenu();
+	}
+
 	/***********************************************
 	 * Steps for TSAGOVMediaRoomPage
 	 ***********************************************/

@@ -5,29 +5,30 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
-@DefaultUrl("https://edit.staging.tsa.gov/travel")
+@DefaultUrl("https://preview.tsa.gov/travel")
 
 public class TSAGOVTravelPage extends TSAGOVHomePage {
 
-	@FindBy(css = "#block-travel-sidebar > nav.max-tablet-hidden > ul > li:nth-child(3) > div > a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[4]/li/span")
 	private WebElementFacade tsaPrecheckLink;
 
 	@FindBy(xpath = "//*[@id=\"block-tsa-gov-pagetitle\"]/h1")
 	private WebElementFacade travelText;
 
-	@FindBy(xpath = "//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[2]/div/a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[3]/li/span")
 	private WebElementFacade specialProcedureLink;
 
-	@FindBy(xpath = "//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[4]/div/a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[4]/li/span")
 	private WebElementFacade passangerSupportLink;
 
-	@FindBy(xpath = "//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[1]/div/a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[2]/li")
 	private WebElementFacade securityScreeningLink;
 
-	@FindBy(xpath = "//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[6]/a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[7]/li/span")
+
 	private WebElementFacade travelFAQLink;
 
-	@FindBy(xpath = "//*[@id=\"block-travel-sidebar\"]/nav[1]/ul/li[5]/div/a")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[6]/li/span")
 	private WebElementFacade travelTipsLink;
 
 	public TSAGOVTSAPrecheckPage navigateToTSAPrecheck() {
