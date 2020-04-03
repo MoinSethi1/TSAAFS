@@ -37,7 +37,7 @@ public class TSAGOVSearchRegressionGlue {
 			break;
 		case "Blog":
 			userM.navigateToTSAGOV();
-			userM.navigateToMediaRoom();
+			userM.mediaMenu();
 			userM.navigateToBlog();
 			break;
 

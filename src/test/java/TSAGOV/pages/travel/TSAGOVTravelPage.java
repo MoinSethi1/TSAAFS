@@ -18,7 +18,7 @@ public class TSAGOVTravelPage extends TSAGOVHomePage {
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[3]/li/span")
 	private WebElementFacade specialProcedureLink;
 
-	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[4]/li/span")
+	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[5]/li/span")
 	private WebElementFacade passangerSupportLink;
 
 	@FindBy(xpath = "//*[@id=\"basic-nav-section-1\"]/a[2]/li")
