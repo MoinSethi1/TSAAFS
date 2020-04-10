@@ -10,13 +10,13 @@ public class TSAGOVBlogPage extends TSAGOVMediaPage {
 	@FindBy(css = "#block-tsa-gov-pagetitle > h1")
 	private WebElementFacade blogText;
 
-	@FindBy(xpath = "//*[@id=\"edit-search\"]")
+	@FindBy(xpath = "//*[@id=\"edit-search\"]]")
 	private WebElementFacade searchBox;
 
 	@FindBy(xpath = "//*[@id=\"edit-submit-blog\"]")
 	private WebElementFacade searchButton;
 
-	@FindBy(xpath = "//*[@id=\"edit-created\"]")
+	@FindBy(xpath = "//*[@id=\"edit-year\"]")
 	private WebElementFacade yearSelect;
 
 	@FindBy(xpath = "//div[@class ='ajax-progress ajax-progress-fullscreen")
