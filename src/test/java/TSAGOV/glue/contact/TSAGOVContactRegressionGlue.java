@@ -91,7 +91,7 @@ public class TSAGOVContactRegressionGlue {
 			break;
 
 		case "TSA PreCheck":
-			assert user.verifyTsaPrecheckText().equals("TSA Pre✓®");
+			assert user.verifyTsaPrecheckText().equals("TSA PreCheck™");
 			break;
 
 		case "Passenger Support":

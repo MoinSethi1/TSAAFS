@@ -324,7 +324,7 @@ public class TSAGOVTravelRegressionGlue {
 
 		case "TSA PreCheck":
 
-			assert user.verifyTsaPrecheckText().equals("TSA Pre✓®");
+			assert user.verifyTsaPrecheckText().equals("TSA PreCheck™");
 			break;
 
 		case "Airport Airlines":
