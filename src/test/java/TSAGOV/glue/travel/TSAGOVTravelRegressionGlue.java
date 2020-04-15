@@ -329,7 +329,7 @@ public class TSAGOVTravelRegressionGlue {
 
 		case "Airport Airlines":
 
-			assert (user.verifyAirportsAirlinesText().equals("TSA Pre✓® Airports and Airlines"));
+			assert (user.verifyAirportsAirlinesText().equals("TSA PreCheck™ Airports and Airlines"));
 			break;
 
 		case "Schedule":
@@ -339,7 +339,7 @@ public class TSAGOVTravelRegressionGlue {
 
 		case "FAQ":
 
-			assert (user.verifyFaqText().equals("TSA Pre✓® FAQ"));
+			assert (user.verifyFaqText().equals("TSA PreCheck™ FAQ"));
 			break;
 
 		case "Trusted Traveler Programs":

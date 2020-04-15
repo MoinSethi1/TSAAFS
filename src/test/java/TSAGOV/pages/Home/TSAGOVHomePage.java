@@ -64,7 +64,7 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(id = "search-field-small")
 	private WebElementFacade searchBox;
 
-	@FindBy(xpath = "//*[@class = 'usa-button']")
+	@FindBy(xpath = "//*[@id=\"block-tsa-gov-searchform\"]/div/button")
 	private WebElementFacade searchButton;
 
 	@FindBy(xpath = "/html/body/div[2]/div/header/nav/div/div/nav/ul[2]/li[4]/a/span")
