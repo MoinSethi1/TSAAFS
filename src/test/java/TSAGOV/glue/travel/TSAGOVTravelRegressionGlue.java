@@ -334,7 +334,7 @@ public class TSAGOVTravelRegressionGlue {
 
 		case "Schedule":
 
-			assert (user.verifyScheduleText().equals("TSA Pre✓® Checkpoint Schedule"));
+			assert (user.verifyScheduleText().equals("TSA PreCheck™ Checkpoint Schedule"));
 			break;
 
 		case "FAQ":

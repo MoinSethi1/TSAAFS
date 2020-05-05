@@ -16,7 +16,7 @@ public class TSAGOVFooterRegressionGlue {
 	}
 
 	@Then("^link (.*) in the footer section shall be accessible$")
-	public void link_DHS_in_the_footer_section_shall_be_accessible(String linkName) {
+	public void link_DHS_in_the_footer_section_shall_be_accessible(String linkName) throws InterruptedException {
 
 		switch (linkName) {
 		case "A to Z Index":

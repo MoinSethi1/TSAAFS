@@ -143,7 +143,8 @@ public class TSAGOVMediaRegressionGlue {
 
 		case "Videos":
 
-			assert user.verifyVideoBanner();
+			// assert user.verifyVideoBanner();
+			assert user.verifyVideoText().equals("Video Gallery");
 			break;
 		}
 

@@ -2,6 +2,7 @@ package TSAGOV.pages.Home;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import TSAGOV.pages.about.TSAGOVAboutPage;
@@ -88,7 +89,8 @@ public class TSAGOVHomePage extends PageObject {
 	@FindBy(xpath = "//a[@href ='/foia']")
 	private WebElementFacade FOIALink;
 
-	@FindBy(xpath = "//a[@href='https://www.federalrelay.us/']")
+	@FindBy(xpath = "/html/body/div[2]/div/footer/div[1]/div/div[1]/nav/div/div[2]/ul/li[1]/a")
+
 	private WebElementFacade federalRelayLink;
 
 	@FindBy(xpath = "//a[@href='/web-metrics']")
@@ -280,9 +282,15 @@ public class TSAGOVHomePage extends PageObject {
 		return federalRelayLink.isPresent();
 	}
 
-	public TSAGOVFederalRelayPage navigateToFederalRelayLink() {
-		federalRelayLink.click();
-		return this.switchToPage(TSAGOVFederalRelayPage.class);
+	public void navigateToFederalRelayLink() throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("arguments[0].click();", federalRelayLink);
+		// Alert alert = getDriver().switchTo().alert();
+		// alert.accept();
+		// ArrayList<String> tabs = new
+		// ArrayList<String>(getDriver().getWindowHandles());
+		// getDriver().switchTo().window(tabs.get(1));
+		// return this.switchToPage(TSAGOVFederalRelayPage.class);
 	}
 
 	public boolean verifyWebMetricsLink() {

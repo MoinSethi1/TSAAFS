@@ -227,4 +227,8 @@ public class TSAGOVMediaSteps extends ScenarioSteps {
 		return tSAGOVVideoPage.verifyVideoBanner();
 	}
 
+	@Step
+	public String verifyVideoText() {
+		return tSAGOVVideoPage.verifyVideoText();
+	}
 }

@@ -6,7 +6,6 @@ import TSAGOV.pages.Home.TSAGOVAToZPage;
 import TSAGOV.pages.Home.TSAGOVDHSPage;
 import TSAGOV.pages.Home.TSAGOVEmployeePage;
 import TSAGOV.pages.Home.TSAGOVFOIAPage;
-import TSAGOV.pages.Home.TSAGOVFederalRelayPage;
 import TSAGOV.pages.Home.TSAGOVHomePage;
 import TSAGOV.pages.Home.TSAGOVNoFEARPage;
 import TSAGOV.pages.Home.TSAGOVPrivacyPage;
@@ -161,8 +160,8 @@ public class TSAGOVHomeSteps {
 	}
 
 	@Step
-	public TSAGOVFederalRelayPage navigateToFederalRelayLink() {
-		return tSAGOVHomePage.navigateToFederalRelayLink();
+	public void navigateToFederalRelayLink() throws InterruptedException {
+		tSAGOVHomePage.navigateToFederalRelayLink();
 	}
 
 	@Step

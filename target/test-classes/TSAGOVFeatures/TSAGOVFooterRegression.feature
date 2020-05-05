@@ -11,10 +11,10 @@ Feature: Footer Regression
       | Employee                 |
       | FOIA                     |
       | Federal Relay            |
-      | Industry                 |
-      | Metrics                  |
+     | Industry                 |
+     | Metrics                  |
       | No FEAR                  |
       | Privacy                  |
-      | Report Fraud Waste Abuse |
+     | Report Fraud Waste Abuse |
       | USA.gov                  |
       | Subscribe                |
