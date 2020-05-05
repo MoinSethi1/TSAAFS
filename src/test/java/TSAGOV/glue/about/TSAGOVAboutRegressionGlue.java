@@ -23,43 +23,43 @@ public class TSAGOVAboutRegressionGlue {
 
 		case "About":
 
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/about");
+			assert user.actualUrl().equals("https://preview.tsa.gov/about");
 
 			break;
 
 		case "Strategy":
 			user.navigateToStratregy();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/about/strategy");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/about/strategy");
 
 			break;
 
 		case "Mission":
 			user.navogateToMission();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/about/tsa-mission");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/about/tsa-mission");
 
 			break;
 
 		case "Organization":
 			user.navigateToOrganization();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/about/tsa-leadership");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/about/tsa-leadership");
 
 			break;
 
 		case "Timeline":
 			user.navigateToTimeline();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/timeline");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/timeline");
 
 			break;
 
 		case "Employee Stories":
 			user.navigateToEmployeeStories();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/about/employee-stories");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/about/employee-stories");
 
 			break;
 
 		case "Jobs At TSA":
 			user.navigateToJobsAtTSA();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/about/jobs-at-tsa");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/about/jobs-at-tsa");
 
 			break;
 		}

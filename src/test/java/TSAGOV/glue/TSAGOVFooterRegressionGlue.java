@@ -21,7 +21,7 @@ public class TSAGOVFooterRegressionGlue {
 		switch (linkName) {
 		case "A to Z Index":
 			user.navigateToAToZFooterLink();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/a-zindex");
+			assert user.actualUrl().equals("https://preview.tsa.gov/a-zindex");
 			assert user.aToZText().equals("A - Z Index");
 			break;
 
@@ -37,7 +37,7 @@ public class TSAGOVFooterRegressionGlue {
 
 		case "FOIA":
 			user.navigateToFOIALink();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/foia");
+			assert user.actualUrl().equals("https://preview.tsa.gov/foia");
 			assert user.verifyFOIAText().equals("Freedom of Information Act");
 			break;
 
@@ -48,25 +48,25 @@ public class TSAGOVFooterRegressionGlue {
 
 		case "Industry":
 			user.navigateToIndustry();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/for-industry");
+			assert user.actualUrl().equals("https://preview.tsa.gov/for-industry");
 			assert user.verifyIndustryText().equals("For Industry");
 			break;
 
 		case "Metrics":
 			user.navigateToWebMetricsLink();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/web-metrics");
+			assert user.actualUrl().equals("https://preview.tsa.gov/web-metrics");
 			assert user.verifyMetricsText().equals("Web Metrics");
 			break;
 
 		case "No FEAR":
 			user.navigateToNoFEARLink();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/no-fear-act");
+			assert user.actualUrl().equals("https://preview.tsa.gov/no-fear-act");
 			assert user.verifyNoFearText().equals("No FEAR Act");
 			break;
 
 		case "Privacy":
 			user.navigateToPrivacyLink();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/privacy-policy");
+			assert user.actualUrl().equals("https://preview.tsa.gov/privacy-policy");
 			assert user.verifyPrivacyText().equals("Privacy Policy");
 			break;
 

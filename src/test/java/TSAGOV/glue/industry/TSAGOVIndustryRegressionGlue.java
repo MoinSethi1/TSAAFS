@@ -30,7 +30,7 @@ public class TSAGOVIndustryRegressionGlue {
 
 		case "Cargo Programs":
 			user.navigateToCargoPrograms();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/for-industry/cargo-screening-program");
+			assert user.actualUrl().equals("https://preview.tsa.gov/for-industry/cargo-screening-program");
 			assert user.verifyCargoProgramsTxet().equals("Cargo Programs");
 			break;
 

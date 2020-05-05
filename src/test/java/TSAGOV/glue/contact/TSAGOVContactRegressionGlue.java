@@ -22,54 +22,54 @@ public class TSAGOVContactRegressionGlue {
 		switch (pageName) {
 		case "Contact":
 
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/contact");
+			assert user.actualUrl().equals("https://preview.tsa.gov/contact");
 			break;
 
 		case "Customer Service":
 			user.navigateToCustomerService();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/contact/customer-service");
+			assert user.actualUrl().equals("https://preview.tsa.gov/contact/customer-service");
 			break;
 
 		case "Lost & Found":
 			user.navigateToLostAndFound();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/contact/lost-and-found");
+			assert user.actualUrl().equals("https://preview.tsa.gov/contact/lost-and-found");
 			break;
 
 		case "TSA PreCheck":
 			user.navigateToPrecheck();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/precheck");
+			assert user.actualUrl().equals("https://preview.tsa.gov/precheck");
 			break;
 
 		case "Passenger Support":
 			user.navigateToPassengerSupport();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/travel/passenger-support");
+			assert user.actualUrl().equals("https://preview.tsa.gov/travel/passenger-support");
 			break;
 
 		case "Media":
 			user.navigateToMedia();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/news/press");
+			assert user.actualUrl().equals("https://preview.tsa.gov/news/press");
 			break;
 
 		case "TWIC":
 			user.navigateToTWIC();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/for-industry/twic");
+			assert user.actualUrl().equals("https://preview.tsa.gov/for-industry/twic");
 			break;
 
 		case "Claims":
 			user.navigateToClaims();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/travel/passenger-support/claims");
+			assert user.actualUrl().equals("https://preview.tsa.gov/travel/passenger-support/claims");
 			break;
 
 		case "Identification":
 
 			user.navigateToIdentification();
 
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/travel/security-screening/identification");
+			assert user.actualUrl().equals("https://preview.tsa.gov/travel/security-screening/identification");
 			break;
 
 		case "HAZMAT":
 			user.navigateToHAZMAT();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/for-industry/hazmat-endorsement");
+			assert user.actualUrl().equals("https://preview.tsa.gov/for-industry/hazmat-endorsement");
 			break;
 
 		}

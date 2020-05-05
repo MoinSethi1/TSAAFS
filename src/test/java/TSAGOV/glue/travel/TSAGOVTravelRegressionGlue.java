@@ -23,13 +23,13 @@ public class TSAGOVTravelRegressionGlue {
 		switch (pageName) {
 
 		case "Travel":
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel");
 
 			break;
 
 		case "Security Screening":
 			user.navigateToSecurityScreening();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/security-screening");
 
 			break;
 
@@ -37,25 +37,25 @@ public class TSAGOVTravelRegressionGlue {
 			user.securityScreeningExpand();
 			user.navigateToWCIB();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/whatcanibring/all");
+					.equals("https://preview.tsa.gov/travel/security-screening/whatcanibring/all");
 
 			break;
 
 		case "Identification":
 			user.securityScreeningExpand();
 			user.navigateToIdentification();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/identification");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/security-screening/identification");
 
 			break;
 
-		// assert(user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/identification");
+		// assert(user.actualUrl()).equals("https://preview.tsa.gov/travel/security-screening/identification");
 		// assert(user.verifyIdentificationText());
 		// break;
 
 		case "Liquids Rule":
 			user.securityScreeningExpand();
 			user.navigateToLiquidsRule();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/security-screening/liquids-rule");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/security-screening/liquids-rule");
 
 			break;
 
@@ -63,27 +63,27 @@ public class TSAGOVTravelRegressionGlue {
 			user.securityScreeningExpand();
 			user.naviagteToEmergingTechnology();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/security-screening/emerging-technology");
+					.equals("https://preview.tsa.gov/travel/security-screening/emerging-technology");
 
 			break;
 
 		case "REAL ID":
 			user.securityScreeningExpand();
 			user.navigateToRealID();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/real-id");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/real-id");
 
 			break;
 
 		case "Special Procedures":
 			user.navigateToSpecialProcedures();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/special-procedures");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/special-procedures");
 
 			break;
 
 		case "Disabilities Medical Conditions":
 			user.specialProceduresExpand();
 			user.navigateToDisabilitiesAndMedical();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/special-procedures");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/special-procedures");
 
 			break;
 
@@ -91,7 +91,7 @@ public class TSAGOVTravelRegressionGlue {
 			user.specialProceduresExpand();
 			user.navigateToMilitary();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/special-procedures/military-travelers");
+					.equals("https://preview.tsa.gov/travel/special-procedures/military-travelers");
 
 			break;
 
@@ -99,55 +99,55 @@ public class TSAGOVTravelRegressionGlue {
 			user.specialProceduresExpand();
 			user.navigateToChildren();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/special-procedures/traveling-children");
+					.equals("https://preview.tsa.gov/travel/special-procedures/traveling-children");
 
 			break;
 
 		case "Seniors":
 			user.specialProceduresExpand();
 			user.navigateToSenior();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/screening-passengers-75-and-older");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/screening-passengers-75-and-older");
 
 			break;
 
 		case "Law Enforcement":
 			user.specialProceduresExpand();
 			user.navigateToLawEnforcement();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/law-enforcement");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/law-enforcement");
 
 			break;
 
 		case "Cultural":
 			user.specialProceduresExpand();
 			user.navigateToCultural();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/special-procedures/cultural");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/special-procedures/cultural");
 
 			break;
 
 		case "TSA PreCheck":
 			user.navigateToTSAPrecheck();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/precheck");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/precheck");
 
 			break;
 
 		case "Airport Airlines":
 			user.tsaPreCheckExpand();
 			user.navigateToAirportsAirlines();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/precheck/map");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/precheck/map");
 
 			break;
 
 		case "Schedule":
 			user.tsaPreCheckExpand();
 			user.navigateToScedule();
-			assert (user.actualUrl()).contentEquals("https://edit.staging.tsa.gov/precheck/schedule");
+			assert (user.actualUrl()).contentEquals("https://preview.tsa.gov/precheck/schedule");
 
 			break;
 
 		case "FAQ":
 			user.tsaPreCheckExpand();
 			user.navigateToFaq();
-			assert (user.actualUrl()).contentEquals("https://edit.staging.tsa.gov/precheck/faq");
+			assert (user.actualUrl()).contentEquals("https://preview.tsa.gov/precheck/faq");
 
 			break;
 
@@ -160,14 +160,14 @@ public class TSAGOVTravelRegressionGlue {
 
 		case "Passenger Support":
 			user.navigateToPassengerSupport();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/passenger-support");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/passenger-support");
 
 			break;
 
 		case "Civil Rights":
 			user.passengerSupportExpand();
 			user.navigateToCivilRights();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/passenger-support/civil-rights");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/passenger-support/civil-rights");
 
 			break;
 
@@ -175,33 +175,33 @@ public class TSAGOVTravelRegressionGlue {
 			user.passengerSupportExpand();
 			user.navigateToTravelRedress();
 			assert (user.actualUrl())
-					.equals("https://edit.staging.tsa.gov/travel/passenger-support/travel-redress-program");
+					.equals("https://preview.tsa.gov/travel/passenger-support/travel-redress-program");
 
 			break;
 
 		case "Claims":
 			user.passengerSupportExpand();
 			user.navigateToClaims();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/passenger-support/claims");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/passenger-support/claims");
 
 			break;
 
 		case "Travel Tips":
 			user.navigateToTravelTips();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/travel-tips");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/travel-tips");
 
 			break;
 
 		case "Travel Checklist":
 			user.travelTipsExpand();
 			user.navigateToTravelChecklist();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/travel-tips/travel-checklist");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/travel-tips/travel-checklist");
 
 			break;
 
 		case "Travel FAQ":
 			user.navigateToTravelFAQ();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/travel/frequently-asked-questions");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/travel/frequently-asked-questions");
 
 			break;
 

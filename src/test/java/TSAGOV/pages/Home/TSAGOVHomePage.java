@@ -110,7 +110,7 @@ public class TSAGOVHomePage extends PageObject {
 	private WebElementFacade subscribeButton;
 
 	public void navigateToTSAGOV() {
-		this.openAt("https://edit.staging.tsa.gov");
+		this.openAt("https://preview.tsa.gov");
 	}
 
 	public TSAGOVWhatCanIBringPage navigateToWhatCanIBring() throws InterruptedException {

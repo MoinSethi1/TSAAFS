@@ -23,69 +23,69 @@ public class TSAGOVMediaRegressionGlue {
 
 		case "Media":
 			user.navigateToMedia();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news");
 
 			break;
 
 		case "Media Room":
 			user.navigateToMediaRoom();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press");
 
 			break;
 
 		case "Press Releases":
 			user.navigateToMediaRoom();
 			user.navigateToPressReleases();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press/releases");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press/releases");
 
 			break;
 
 		case "Testimony":
 			user.navigateToMediaRoom();
 			user.navigateToTestimony();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press/testimony");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press/testimony");
 
 			break;
 
 		case "Speeches":
 			user.navigateToMediaRoom();
 			user.navigateToSpeeches();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press/speeches");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press/speeches");
 
 			break;
 
 		case "Statements":
 			user.navigateToMediaRoom();
 			user.navigateTOStatements();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press/statements");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press/statements");
 
 			break;
 
 		case "Factsheets":
 			user.navigateToMediaRoom();
 			user.navigateToFactSheets();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/press/factsheets");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/press/factsheets");
 
 			break;
 
 		case "Social Media":
 			user.navigateToMediaRoom();
 			user.navigateToSocialMedia();
-			assert (user.actualUrl()).equals("https://edit.staging.tsa.gov/news/social_media");
+			assert (user.actualUrl()).equals("https://preview.tsa.gov/news/social_media");
 
 			break;
 
 		case "Blog":
 			user.navigateToMediaRoom();
 			user.navigateToBlog();
-			assert user.actualUrl().equals("https://edit.staging.tsa.gov/blog");
+			assert user.actualUrl().equals("https://preview.tsa.gov/blog");
 
 			break;
 
 		case "Videos":
 			user.navigateToMediaRoom();
 			user.navigateToVideo();
-			assert user.actualUrl().contains("https://edit.staging.tsa.gov/videos");
+			assert user.actualUrl().contains("https://preview.tsa.gov/videos");
 
 			break;
 		}
